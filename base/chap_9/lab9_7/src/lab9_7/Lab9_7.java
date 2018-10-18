@@ -16,7 +16,7 @@ public class Lab9_7 {
      */
     public static void main(String[] args) throws Exception {
         // TODO code application logic here
-        java.io.File file = new java.io.File("m1.txt");
+        java.io.File file = new java.io.File("m2.txt");
         if(file.exists()) {
             System.out.println("File already exists!");
             System.exit(0);
@@ -24,7 +24,8 @@ public class Lab9_7 {
         
         java.io.PrintWriter output = new java.io.PrintWriter(file);
         
-        output.print("James Wang");
+        output.print("James Wang ");
+        output.println(9000);
         output.close();
     }
     
