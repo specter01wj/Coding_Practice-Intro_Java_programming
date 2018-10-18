@@ -18,6 +18,11 @@ public class Lab9_6 {
         // TODO code application logic here
         java.io.File file = new java.io.File("image/us.gif");
         System.out.println("Does it exist? " + file.exists());
+        System.out.println("Len: " + file.length() + " bytes; " + "Can read: " + file.canRead()
+            + "; Can write: " + file.canWrite() + "; isDirect: " + file.isDirectory() 
+            + "; isFile: " + file.isFile() + "; isAbs: " + file.isAbsolute() 
+            + "; isHidden: " + file.isHidden() + "; absol path: " + file.getAbsolutePath());
+        System.out.println("Last modified: " + new java.util.Date(file.lastModified()));
     }
     
 }
