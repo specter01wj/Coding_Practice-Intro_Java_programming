@@ -1,0 +1,238 @@
+New data structures in ES6
+-------------------------------
+Map,WeakMap,Set,WeakSet
+-----------------------------------
+Map - You need key value pair
+----------------------------
+// There are four new data structures introduced in ES6
+//Map,WeakMap,Set,WeakSet
+const map = new Map();
+//To add values to map you can use set method
+map.set('eno',1001);
+map.set('eno1',1002);
+//To check no of elements [items], you can use the size property
+console.log(map.size);
+//Check whether the key exists or not
+console.log(map.has('eno')); //will return boolean value
+//to get value for the given key
+console.log(map.get('eno'));
+
+
+
+\\\\\\\\\\\\\Change the above code in below where key is stored in variable
+
+const map = new Map();
+const key='eno'; //********
+map.set(key,1001);
+console.log(map.size);
+console.log(map.has(key));
+console.log(map.get(key));
+////////////////////////
+If you add same key, it will overwrite the previous one
+const map = new Map();
+const key='eno';
+map.set(key,1001);
+map.set(key,1002); //*********rename key with 'eno' and then 'eno1'
+console.log(map.size);
+console.log(map.has(key));
+console.log(map.get(key));
+-------------------------------
+////Adding the data using constructor
+const map = new Map([['eno',1001]]); //****
+console.log(map.size);
+console.log(map.get('eno'));
+--------------------------------------
+const map = new Map([
+ 			['eno',1001],
+      ['eno1',1002]
+
+
+]);
+console.log(map.size);
+console.log(map.get('eno'));
+console.log(map.get('eno1'));
+
+----------------------------------------------
+Map is also chainable
+---------------------------
+const map = new Map()
+	.set('eno',1001)
+  .set('eno1',1002)
+  .set('eno2',1003);
+
+  console.log(map.size);
+  ---------------------------------------
+  //keys() returns iterable over keys
+  const map = new Map()
+  	.set('eno',1001)
+    .set('eno1',1002)
+    .set('eno2',1003);
+
+    console.log(map.size);
+
+    for (const key of map.keys()) {
+      console.log(key);
+      console.log(map.get(key));
+  }
+  ------------------------------
+  //values() returns iterable over values
+  const map = new Map()
+  	.set('eno',1001)
+    .set('eno1',1002)
+    .set('eno2',1003);
+
+    console.log(map.size);
+    for (const value of map.values()) {
+      console.log(value);
+
+    }
+    //***You can destructure the above loop
+    for (const [key,value] of map.entries()) {
+        console.log(key, value);
+    }
+  /////*****You can use forEach as well but here first will be value and then key
+  map.forEach((value,key)=>{
+    console.log(key,value);
+  })
+  ---------------------------------------------
+
+////Same as above but adding to html
+<ul id='dt'>
+</ul>
+map.forEach((value,key)=>{
+  let dt = document.getElementById('dt');
+  let x = document.createElement('li');
+
+  dt.appendChild(x,dt);
+  x.innerHTML = value;
+  console.log(key,value);
+})
+--------------------------------
+map.delete------
+     const map  = new Map();
+     map.set('eno',1001);
+     map.set('eno1',1002);
+     console.log(map.size);
+     map.delete('eno');
+     console.log(map.size);
+
+------------------------------------
+The map() method creates a new array with the results of calling a provided function on every element in the calling array.
+//////ES5 Array.prototype.map() = map method with array
+MDN Example
+var numbers = [1, 5, 10, 15];
+var doubles = numbers.map(function(x) {
+   return x * 2;
+});
+//ES6 Syntax numbers.map(x=> x*2);***
+console.log(doubles);
+// doubles is now [2, 10, 20, 30]
+// numbers is still [1, 5, 10, 15]
+------------------------
+MDN Example
+var numbers = [1, 4, 9];
+var roots = numbers.map(Math.sqrt);
+console.log(roots);
+// roots is now [1, 2, 3]
+// numbers is still [1, 4, 9]
+---------------------------------------
+===============WeakMap==========
+It is same as map with few differences
+1st diff.
+===============
+Keys in WeakMap are objects
+e.g.
+----------------------
+const wmap = new WeakMap();
+//wmap.set('abc','123'); this will not work TypeError
+wmap.set({},'123');
+console.log(wmap);
+-------------------------------
+2nd diff.
+=============
+WeakMap keys are weakly held
+
+The keys in a WeakMap are weakly held: Normally, an object that isn’t referred to by any storage location (variable, property, etc.)
+can be garbage-collected. WeakMap keys do not count as storage locations in that sense. In other words: an object being a key in a
+WeakMap does not prevent the object being garbage-collected.
+
+Additionally, once a key is gone, its entry will also disappear (eventually, but there is no way to detect when, anyway).
+
+3rd diff
+===================
+You can’t clear a WeakMap
+-----------------------------------
+===============================================Set=======================================
+Set is collection of unique elements
+Use add() method to add items
+
+ const st = new Set();
+  st.add('5');
+  st.add('5');
+  st.add(5);
+  console.log(st);
+  console.log(st.size);
+  console.log(st.has('5'));
+  st.delete('5');
+  console.log(st.has('5'));
+  st.clear();
+  console.log(st.size);
+  ========================
+  With constructor
+  =========================
+  const set = new Set(['a', 'b', 'c']);
+  =======================
+  Chaining
+  =========================
+  const set = new Set().add('a').add('b').add('c');
+
+  ===============
+  Iterating
+  ==============
+  const set = new Set().add('a').add('b').add('c');
+  for(const i of set){
+    console.log(i);
+  }
+  -------------
+  =========
+  ///Here ... is treated as REST param where all members of sqr are added to array then we apply map or filter function.
+  //Using map method with Set collection
+  const sqr = new Set([1, 2, 3]);
+  const arr = new Set([...sqr].map(x => x * x));
+  console.log(arr);
+  ----------------
+  //Using filter with Set
+  //Finding all even numbers
+  const set = new Set([1, 2, 3, 4, 5]);
+  const arr = new Set([...set].filter(x => (x % 2) == 0));
+  console.log(arr);
+  ---------------------------
+  Implementing Union with Set and Rest Parameter
+  ==============
+  const a = new Set([1,2,3]);
+  const b = new Set([4,3,2]);
+  const union = new Set([...a, ...b]);
+  console.log(union);
+  -----------------------
+  //Implementing intersection with filter and Set
+  const a = new Set([1,2,3]);
+  const b = new Set([4,3,2]);
+  const intersection = new Set(
+      [...a].filter(x => b.has(x)));
+      console.log(intersection);
+      -----------------------------
+      ----------------
+      Can also create "Difference" with !b.has()
+
+      const a = new Set([1,2,3]);
+      const b = new Set([4,3,2]);
+      const difference = new Set(
+          [...a].filter(x => !b.has(x)));
+
+--------------------
+      WeakSet
+
+       A WeakSet is a Set that doesn’t prevent its elements from being garbage-collected.
+       Consult the section on WeakMap for an explanation of why WeakSets don’t allow iteration, looping and clearing.
+
+       It also has method like has,size,add etc.
