@@ -30,10 +30,10 @@ public class Lab10_1 {
         
         Loan loan = new Loan(annualIntRate, numOfYears, loanAmount);
         
-        System.out.println("This loan was created on %s\n" + "The monthly payment: %.2f\n" 
-            + "The total payment is: %.2f\n", loan.getLoanDate().toString(), loan.getMonthlyPayment(), 
+        System.out.printf("This loan was created on %s\n" + 
+            "The monthly payment: %.2f\n" + "The total payment is: %.2f\n", 
+            loan.getLoanDate().toString(), loan.getMonthlyPayment(), 
             loan.getTotalPayment());
-        
         
     }
     
