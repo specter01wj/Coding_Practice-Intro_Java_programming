@@ -16,6 +16,8 @@ public class Lab10_3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        BMI bmi1 = new BMI("James Wang", 32, 150, 70);
+        System.out.println("BMI for " + bmi1.getName());
     }
     
 }
