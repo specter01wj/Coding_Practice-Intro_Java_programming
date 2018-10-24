@@ -43,7 +43,7 @@ public class BMI {
     }
     
     public double getBMI() {
-        double bmi = weight * KILO_PER_POUND / (height * METER_PER_ICH) * (height * METER_PER_ICH);
+        double bmi = weight * KILO_PER_POUND / ((height * METER_PER_ICH) * (height * METER_PER_ICH));
         return Math.round(bmi * 100) / 100.0;
     }
     
