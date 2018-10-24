@@ -42,6 +42,20 @@ public class BMI {
         return height;
     }
     
+    public double getBMI() {
+        double bmi = weight * KILO_PER_POUND / (height * METER_PER_ICH) * (height * METER_PER_ICH);
+        return Math.round(bmi * 100) / 100.0;
+    }
     
+    public String getStatus() {
+        double bmi = getBMI();
+        
+        if(bmi < 16) return "lv1: too skinny!!";
+        else if(bmi < 18) return "lv2: underweight!";
+        else if(bmi < 24) return "lv3: normal!";
+        else if(bmi < 29) return "lv4: overweight!";
+        else if(bmi < 35) return "lv5: too fat!";
+        else return "lv6: dying!!!";
+    }
     
 }
