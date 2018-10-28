@@ -22,7 +22,7 @@ public class GeometricObject1 {
     }
 
     public GeometricObject1(String color, boolean filled) {
-        this.filled = filled;
+        this.color = color;
         this.dateCreated = new java.util.Date();
         this.filled = filled;
     }
