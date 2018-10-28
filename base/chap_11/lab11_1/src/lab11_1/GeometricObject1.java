@@ -47,6 +47,8 @@ public class GeometricObject1 {
         this.filled = filled;
     }
     
-    
+    public Sring toString() {
+        
+    }
     
 }
