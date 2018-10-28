@@ -47,8 +47,9 @@ public class GeometricObject1 {
         this.filled = filled;
     }
     
-    public Sring toString() {
-        return "created on: " + dateCreated;
+    public String toString() {
+        return "created on: " + dateCreated + "\ncolor: " + color 
+                + " and filled: " + filled;
     }
     
 }
