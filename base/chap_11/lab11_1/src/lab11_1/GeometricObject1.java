@@ -48,7 +48,7 @@ public class GeometricObject1 {
     }
     
     public Sring toString() {
-        
+        return "created on: " + dateCreated;
     }
     
 }
