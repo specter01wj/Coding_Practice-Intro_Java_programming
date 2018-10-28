@@ -5,6 +5,8 @@
  */
 package lab11_1;
 
+import java.util.Date;
+
 /**
  *
  * @author jinwang
@@ -14,6 +16,15 @@ public class GeometricObject1 {
     private String color = "white";
     private boolean filled;
     private java.util.Date dateCreated;
+    
+    public GeometricObject1() {
+        dateCreated = new java.util.Date();
+    }
+
+    public GeometricObject1(String color, boolean filled) {
+        this.filled = filled;
+        this.dateCreated = dateCreated;
+    }
     
     
     
