@@ -26,6 +26,26 @@ public class GeometricObject1 {
         this.dateCreated = new java.util.Date();
         this.filled = filled;
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public boolean isFilled() {
+        return filled;
+    }
+
+    public Date getDateCreated() {
+        return dateCreated;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setFilled(boolean filled) {
+        this.filled = filled;
+    }
     
     
     
