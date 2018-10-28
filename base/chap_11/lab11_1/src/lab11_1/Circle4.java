@@ -9,6 +9,6 @@ package lab11_1;
  *
  * @author jinwang
  */
-public class Circle4 {
+public class Circle4 extends GeometricObject1 {
     
 }
