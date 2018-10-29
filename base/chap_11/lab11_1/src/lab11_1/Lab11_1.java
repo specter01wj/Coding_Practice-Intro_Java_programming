@@ -16,6 +16,13 @@ public class Lab11_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Circle4 circle = new Circle4(10);
+        System.out.println("This circle: " + circle.toString());
+        System.out.println("The radius: " + circle.getRadius() + "; The area: " 
+                + circle.getArea() + "; The diameter: " + circle.getDiameter());
+        
+        
     }
     
 }
