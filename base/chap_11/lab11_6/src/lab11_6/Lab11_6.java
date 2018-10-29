@@ -7,7 +7,7 @@ package lab11_6;
 
 /**
  *
- * @author jinwang
+ * @author james.wang
  */
 public class Lab11_6 {
 
@@ -16,10 +16,28 @@ public class Lab11_6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        m(new GraduateStudent());
+        
     }
     
     public static void m(Object x) {
         System.out.println(x.toString());
     }
     
+}
+
+class GraduateStudent extends Student {
+    
+}
+
+class Student extends Person {
+    public String toString() {
+        return "Student";
+    }
+}
+
+class Person extends Object {
+    public String toString() {
+        return "Person";
+    }
 }
