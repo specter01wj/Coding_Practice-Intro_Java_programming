@@ -16,7 +16,8 @@ public class Lab11_5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        displayObject(new Circle4(15, "red", true));
+        displayObject(new Rectangle1(13, 16, "purple", false));
     }
     
     public static void displayObject(GeometricObject1 object) {
