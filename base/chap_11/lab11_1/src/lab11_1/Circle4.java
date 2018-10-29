@@ -11,4 +11,20 @@ package lab11_1;
  */
 public class Circle4 extends GeometricObject1 {
     
+    private double radius;
+    
+    public Circle4() {
+        
+    }
+    
+    public Circle4(double radius) {
+        this.radius = radius;
+    }
+    
+    public Circle4(double radius, String color, boolean filled) {
+        this.radius = radius;
+        setColor(color);
+        setFilled(filled);
+    }
+    
 }
