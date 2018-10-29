@@ -31,6 +31,22 @@ public class Lab11_8 {
                 + ";loc of Denver: " + cityList.indexOf("Denver") 
                 + ";is empty?: " + cityList.isEmpty());
         System.out.println("ArrayList total: " + cityList.toString());
+        
+        cityList.add(2, "College Park");
+        cityList.remove("Miami");
+        cityList.remove(1);
+        System.out.println("ArrayList total: " + cityList.toString());
+        
+        for(int i = cityList.size() - 1; i >= 0; i--) {
+            System.out.println(cityList.get(i) + " ");
+        }
+        
+        cityList.add(new Circle4(10));
+        cityList.add(new Circle4(15));
+        
+        System.out.println("ArrayList area1: " + ((Circle4)cityList.get(5)).getArea()
+            + "; ArrayList area2: " + ((Circle4)cityList.get(6)).getArea());
+        
     }
     
 }
