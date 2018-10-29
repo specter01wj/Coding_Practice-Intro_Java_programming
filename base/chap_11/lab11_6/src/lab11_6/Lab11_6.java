@@ -18,4 +18,8 @@ public class Lab11_6 {
         // TODO code application logic here
     }
     
+    public static void m(Object x) {
+        System.out.println(x.toString());
+    }
+    
 }
