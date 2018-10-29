@@ -22,7 +22,10 @@ public class Lab11_1 {
         System.out.println("The radius: " + circle.getRadius() + "; The area: " 
                 + circle.getArea() + "; The diameter: " + circle.getDiameter());
         
-        
+        Rectangle1 rectangle = new Rectangle1(12, 15);
+        System.out.println("This rectangle: " + rectangle.toString());
+        System.out.println("The area: " + rectangle.getArea() + 
+                "; The diameter: " + rectangle.getDiameter());
     }
     
 }
