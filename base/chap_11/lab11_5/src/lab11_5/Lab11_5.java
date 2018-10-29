@@ -22,7 +22,7 @@ public class Lab11_5 {
     
     public static void displayObject(GeometricObject1 object) {
         System.out.println("Created on: " + object.getDateCreated() 
-            + "; Color is: " + object.getColor());
+            + "; Color is: " + object.getColor() + "; Filled is: " + object.isFilled());
     }
     
 }
