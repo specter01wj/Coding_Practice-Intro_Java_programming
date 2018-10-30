@@ -39,5 +39,4 @@ public class Lab12_3 extends JFrame {
         
     }
     
-    
 }
