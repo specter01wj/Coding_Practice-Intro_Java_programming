@@ -22,6 +22,12 @@ public class Lab12_8 extends JFrame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Lab12_8 frame = new Lab12_8();
+        frame.setTitle("TestImageIcon");
+        frame.setSize(300, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
     
     public Lab12_8() {
