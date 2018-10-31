@@ -18,7 +18,13 @@ public class Lab12_6 extends JFrame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Lab12_6 frame = new Lab12_6();
         
+        frame.setTitle("The Front View of Oven!");
+        frame.setSize(400, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
         
     }
     
@@ -35,7 +41,7 @@ public class Lab12_6 extends JFrame {
         p1.add(new JButton("Stop"));
         
         JPanel p2 = new JPanel(new BorderLayout());
-        p2.add(new JTestField("Time to display: "), BorderLayout.NORTH);
+        p2.add(new JTextField("Time to display: "), BorderLayout.NORTH);
         p2.add(p1, BorderLayout.CENTER);
         
         add(p2, BorderLayout.EAST);
