@@ -14,7 +14,7 @@ import javax.swing.*;
 public class Lab12_8 extends JFrame {
     
     private ImageIcon usIcon = new ImageIcon("image/us.gif");
-    private ImageIcon myIcon = new ImageIcon("image/my.gif");
+    private ImageIcon myIcon = new ImageIcon("image/cn.gif");
     private ImageIcon frIcon = new ImageIcon("image/fr.gif");
     private ImageIcon ukIcon = new ImageIcon("image/uk.gif");
     /**
@@ -24,7 +24,7 @@ public class Lab12_8 extends JFrame {
         // TODO code application logic here
         Lab12_8 frame = new Lab12_8();
         frame.setTitle("TestImageIcon");
-        frame.setSize(300, 300);
+        frame.setSize(500, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
