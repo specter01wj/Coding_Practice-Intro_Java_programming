@@ -7,6 +7,7 @@ package lab12_7;
 
 import java.awt.*;
 import javax.swing.*;
+import javax.swing.border.*;
 /**
  *
  * @author james.wang
@@ -18,6 +19,12 @@ public class Lab12_7 extends JFrame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFrame frame = new Lab12_7();
+        frame.setTitle("TestSwingCommonFeatures");
+        frame.setSize(400, 300);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
     
     public Lab12_7() {
