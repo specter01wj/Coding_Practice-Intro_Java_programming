@@ -5,6 +5,7 @@
  */
 package lab13_10;
 
+import java.io.*;
 /**
  *
  * @author james.wang
@@ -19,12 +20,17 @@ public class Lab13_10 {
         java.io.PrintWriter output = null;
         
         try {
-            output = java.io.PrintWriter("text.txt");
+            output = new java.io.PrintWriter("text.txt");
             output.println("James Wang!!! hello");
         }
         catch(java.io.IOException ex) {
-            
+            ex.printStackTrace();
         }
+        finally {
+            if(output != null) output.close();
+        }
+        
+        System.out.println("End of Program....");
         
     }
     
