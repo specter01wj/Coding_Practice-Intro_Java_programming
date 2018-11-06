@@ -20,6 +20,11 @@ public class Lab14_5 {
         Calendar calendar = new GregorianCalendar();
         
         System.out.println("Current time: " + new Date());
+        System.out.println("Year: " + calendar.get(Calendar.YEAR) + 
+                ", Month: " + calendar.get(Calendar.MONTH) +
+                ", Date: " + calendar.get(Calendar.DATE) +
+                ", Hour: " + calendar.get(Calendar.HOUR) +
+                ", Hour of day: " + calendar.get(Calendar.HOUR_OF_DAY) );
         
     }
     
