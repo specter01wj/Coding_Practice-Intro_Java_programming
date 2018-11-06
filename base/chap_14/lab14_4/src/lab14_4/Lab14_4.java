@@ -16,6 +16,18 @@ public class Lab14_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
+    }
+    
+    public static boolean equalArea(GeometricObject obj1, GeometricObject obj2) {
+        return obj1.getArea() == obj2.getArea();
+    }
+    
+    public static void displayGeometricObject(GeometricObject obj) {
+        System.out.println();
+        System.out.println("The area is: " + obj.getArea());
+        System.out.println("The perimeter: " + obj.getPerimeter());
     }
     
 }
