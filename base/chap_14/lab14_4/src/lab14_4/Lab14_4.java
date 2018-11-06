@@ -16,8 +16,13 @@ public class Lab14_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        GeometricObject geoObj1 = new Circle(10);
+        GeometricObject geoObj2 = new Rectangle(15, 25);
         
+        System.out.println("The 2 objects same area? " + equalArea(geoObj1, geoObj2));
         
+        displayGeometricObject(geoObj1);
+        displayGeometricObject(geoObj2);
     }
     
     public static boolean equalArea(GeometricObject obj1, GeometricObject obj2) {
