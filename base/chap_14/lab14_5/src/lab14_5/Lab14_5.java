@@ -5,6 +5,7 @@
  */
 package lab14_5;
 
+import java.util.*;
 /**
  *
  * @author james.wang
@@ -16,6 +17,10 @@ public class Lab14_5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Calendar calendar = new GregorianCalendar();
+        
+        System.out.println("Current time: " + new Date());
+        
     }
     
 }
