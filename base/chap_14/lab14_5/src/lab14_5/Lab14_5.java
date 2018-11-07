@@ -26,6 +26,11 @@ public class Lab14_5 {
                 ", Hour: " + calendar.get(Calendar.HOUR) +
                 ", Hour of day: " + calendar.get(Calendar.HOUR_OF_DAY) );
         
+        Calendar calendar1 = new GregorianCalendar(2018, 10, 19);
+        System.out.println("11/19/2018: " + 
+                dayNameOfWeek(calendar1.get(Calendar.DAY_OF_WEEK)));
     }
+    
+    
     
 }
