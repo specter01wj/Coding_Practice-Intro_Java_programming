@@ -22,7 +22,6 @@ public class Lab14_7 {
         ComparableRectangle rectangle2 = new ComparableRectangle(25, 35);
         
         System.out.println(Math.max(rectangle1, rectangle2));
-        
     }
     
 }
