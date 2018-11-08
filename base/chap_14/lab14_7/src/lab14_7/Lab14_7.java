@@ -5,6 +5,8 @@
  */
 package lab14_7;
 
+import java.util.*;
+import java.lang.*;
 /**
  *
  * @author james.wang
@@ -16,6 +18,11 @@ public class Lab14_7 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ComparableRectangle rectangle1 = new ComparableRectangle(10, 15);
+        ComparableRectangle rectangle2 = new ComparableRectangle(25, 35);
+        
+        System.out.println(Math.max(rectangle1, rectangle2));
+        
     }
     
 }
