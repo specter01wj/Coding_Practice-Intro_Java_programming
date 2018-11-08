@@ -16,8 +16,13 @@ public class Lab14_6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Object[] objects = {new Orange(), new Tiger(), new Chicken(), new Apple()};
         
-        
+        for(int i = 0; i < objects.length; i++) {
+            if(objects[i] instanceof Edible) {
+                System.out.println("Edible: " + ((Edible)objects[i]).howToEat());
+            }
+        }
     }
     
 }
