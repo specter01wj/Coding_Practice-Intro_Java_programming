@@ -16,6 +16,8 @@ public class Lab14_6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        
     }
     
 }
@@ -25,13 +27,27 @@ class Animal {
 }
 
 class Chicken extends Animal implements Edible {
+    public String howToEat() {
+        return "Hot pot! Eat";
+    }
+}
+
+class Tiger extends Animal {
+    
+}
+
+abstract class Fruit implements Edible {
     
 }
 
 class Apple extends Fruit {
-    
+    public String howToEat() {
+        return "Swallow! Eat";
+    }
 }
 
 class Orange extends Fruit {
-    
+    public String howToEat() {
+        return "Make Juice! Eat";
+    }
 }
