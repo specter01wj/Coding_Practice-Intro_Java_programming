@@ -24,5 +24,4 @@ public class Lab14_7 {
         System.out.println(Math.max(rectangle1, rectangle2));
     }
     
-    
 }
