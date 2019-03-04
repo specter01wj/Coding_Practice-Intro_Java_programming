@@ -11,7 +11,7 @@ package lab14_7;
  */
 public class Rectangle extends GeometricObject {
     
-        private double width, height;
+    private double width, height;
     
     public Rectangle() {
         

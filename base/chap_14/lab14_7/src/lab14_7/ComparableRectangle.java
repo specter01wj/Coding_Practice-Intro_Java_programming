@@ -9,12 +9,13 @@ package lab14_7;
  *
  * @author james.wang
  */
-public class ComparableRectangle extends Rectangle {
+public class ComparableRectangle extends Rectangle implements Comparable {
     
     public ComparableRectangle(double width, double height) {
         super(width, height);
     }
     
+    @Override
     public int compareTo(Object o) {
         if(getArea() > ((ComparableRectangle)o).getArea())
             return 1;
@@ -22,6 +23,11 @@ public class ComparableRectangle extends Rectangle {
             return -1;
         else
             return 0;
+    }
+    
+    @Override // Implement the toString method in GeometricObject
+    public String toString() {
+        return super.toString() + " Area: " + getArea();
     }
     
 }

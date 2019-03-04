@@ -12,7 +12,7 @@ import java.util.Date;
  */
 public class GeometricObject {
     
-        private String color = "white";
+    private String color = "white";
     private boolean filled;
     private java.util.Date dateCreated;
     
