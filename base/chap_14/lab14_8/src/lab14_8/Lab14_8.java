@@ -36,6 +36,12 @@ public class Lab14_8 extends JFrame {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        JFrame frame = new Lab14_8();
+        frame.setTitle("Handle Event");
+        frame.setSize(200, 150);
+        frame.setLocation(200, 100);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
     
 }
