@@ -31,8 +31,8 @@ public class Lab14_2 extends Application {
     /**
      * @param args the command line arguments
      */
-//    public static void main(String[] args) {
-//        // TODO code application logic here
-//    }
+    public static void main(String[] args) {
+        Application.launch(args);
+    }
     
 }
