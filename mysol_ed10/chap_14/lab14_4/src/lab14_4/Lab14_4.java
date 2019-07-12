@@ -26,6 +26,11 @@ public class Lab14_4 {
         circle.setRadius(50);
         circle.setStroke(Color.BLACK);
         circle.setFill(Color.WHITE);
+        
+        Pane pane = new Pane();
+        pane.getChildren().add(circle);
+        
+        
     }
     
     /**
