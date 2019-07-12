@@ -30,7 +30,10 @@ public class Lab14_4 {
         Pane pane = new Pane();
         pane.getChildren().add(circle);
         
-        
+        Scene scene = new Scene(pane, 200, 200);
+        primaryStage.setTitle("ShowCircle");
+        primaryStage.setScene(scene); // Place the scene in the stage
+        primaryStage.show();
     }
     
     /**
