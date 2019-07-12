@@ -18,6 +18,11 @@ import javafx.stage.Stage;
  */
 public class Lab14_4 {
 
+    @Override
+    public void start(Stage primaryStage) {
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
