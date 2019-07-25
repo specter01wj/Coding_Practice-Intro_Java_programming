@@ -23,8 +23,8 @@ public class Lab14_9 extends Application {
     @Override
     public void start(Stage primaryStage) {
         Pane pane = new HBox(10);
-        pane.setPadding(new Insets(5,5,5,5));
-        Image image = new Image("image/us.gif");
+        pane.setPadding(new Insets(5, 5, 5, 5));
+        Image image = new Image("image/usa.gif");
         pane.getChildren().add(new ImageView(image));
         
         ImageView imageView2 = new ImageView(image);
@@ -39,6 +39,7 @@ public class Lab14_9 extends Application {
         Scene scene = new Scene(pane);
         primaryStage.setTitle("ShowImage");
         primaryStage.setScene(scene);
+        primaryStage.show();
     }
     
     /**
