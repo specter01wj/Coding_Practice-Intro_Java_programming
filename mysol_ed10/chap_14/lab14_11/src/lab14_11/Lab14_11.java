@@ -44,6 +44,7 @@ public class Lab14_11 extends Application {
         primaryStage.setTitle("ShowGridPane");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
     }
     /**
      * @param args the command line arguments
