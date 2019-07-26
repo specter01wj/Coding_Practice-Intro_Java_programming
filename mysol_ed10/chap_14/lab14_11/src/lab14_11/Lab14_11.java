@@ -39,6 +39,11 @@ public class Lab14_11 extends Application {
         Button btAdd = new Button("Add Name");
         pane.add(btAdd, 1, 3);
         GridPane.setHalignment(btAdd, HPos.RIGHT);
+        
+        Scene scene = new Scene(pane);
+        primaryStage.setTitle("ShowGridPane");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     /**
      * @param args the command line arguments
