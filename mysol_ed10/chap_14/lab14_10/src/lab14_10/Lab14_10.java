@@ -5,17 +5,30 @@
  */
 package lab14_10;
 
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.FlowPane;
+import javafx.stage.Stage;
+
 /**
  *
  * @author james.wang
  */
-public class Lab14_10 {
+public class Lab14_10 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
 }
