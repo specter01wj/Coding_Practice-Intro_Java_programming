@@ -43,7 +43,6 @@ public class Lab14_12 extends Application {
     
 }
 
-
 class CustomPane extends StackPane {
     public CustomPane(String title) {
         getChildren().add(new Label(title));
