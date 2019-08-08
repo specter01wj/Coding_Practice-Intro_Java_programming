@@ -17,13 +17,37 @@ import javafx.stage.Stage;
  *
  * @author james.wang
  */
-public class Lab14_12 {
+public class Lab14_12 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        BorderPane pane = new BorderPane();
+        
+        pane.setTop(new CustomPane("Top"));
+        pane.setRight(new CustomPane("Right"));
+        pane.setBottom(new CustomPane("Bottom"));
+        pane.setLeft(new CustomPane("Left"));
+        pane.setCenter(new CustomPane("Center"));
+        
+        Scene scene = new Scene(pane);
+        primaryStage.setTitle("ShowBorderPane");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
+}
+
+
+class CustomPane extends StackPane {
+    public CustomPane(String title) {
+        getChildren().add(new Label(title));
+        setStyle("-fx-border-color:red");
+        setPadding(new Insets(11.5, 12.5, 13.5, 14.5));
+    }
 }
