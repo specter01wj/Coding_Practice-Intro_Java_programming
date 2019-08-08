@@ -51,6 +51,7 @@ public class Lab14_13 extends Application {
     private VBox getVBox() {
         VBox vBox = new VBox(15);
         vBox.setPadding(new Insets(15, 5, 5, 5));
+        vBox.setStyle("-fx-background-color:purple");
         vBox.getChildren().add(new Label("Courses"));
         
         Label[] courses = {new Label("ECE 1301"), new Label("ECE 1302"), 
