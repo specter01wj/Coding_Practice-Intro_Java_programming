@@ -20,13 +20,18 @@ import javafx.scene.text.FontPosture;
  *
  * @author james.wang
  */
-public class Lab14_14 {
+public class Lab14_14 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
 }
