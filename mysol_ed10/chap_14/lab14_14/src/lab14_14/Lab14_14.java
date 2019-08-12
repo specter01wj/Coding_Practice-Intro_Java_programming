@@ -28,6 +28,7 @@ public class Lab14_14 extends Application {
         pane.setPadding(new Insets(5,5,5,5));
         
         
+        
     }
     
     /**
