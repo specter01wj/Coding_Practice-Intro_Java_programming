@@ -24,6 +24,8 @@ public class Lab14_14 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
+        Pane pane = new Pane();
+        pane.setPadding(new Insets(5,5,5,5));
         
     }
     
