@@ -26,7 +26,18 @@ public class Lab14_14 extends Application {
     public void start(Stage primaryStage) {
         Pane pane = new Pane();
         pane.setPadding(new Insets(5,5,5,5));
+        Text text1 = new Text(20, 20, "FPGA Book!");
+        text1.setFont(Font.font("Courier", FontWeight.BOLD, FontPosture.ITALIC, 15));
+        pane.getChildren().add(text1);
         
+        Text text2 = new Text(60, 60, "DSP \nDisplay");
+        pane.getChildren().add(text2);
+        
+        Text text3 = new Text(10, 100, "MCU \nDisplay");
+        text3.setFill(Color.RED);
+        text3.setUnderline(true);
+        text3.setStrikethrough(true);
+        pane.getChildren().add(text3);
         
         
     }
