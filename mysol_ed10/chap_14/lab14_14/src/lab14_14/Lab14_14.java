@@ -39,7 +39,10 @@ public class Lab14_14 extends Application {
         text3.setStrikethrough(true);
         pane.getChildren().add(text3);
         
-        
+        Scene scene = new Scene(pane);
+        primaryStage.setTitle("ShowText");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     
     /**
