@@ -5,6 +5,13 @@
  */
 package lab14_15;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.scene.shape.Line;
+
 /**
  *
  * @author james.wang
@@ -15,7 +22,7 @@ public class Lab14_15 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
 }
