@@ -16,8 +16,15 @@ import javafx.scene.shape.Line;
  *
  * @author james.wang
  */
-public class Lab14_15 {
+public class Lab14_15 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        Scene scene = new Scene(new LinePane(), 200, 200);
+        primaryStage.setTitle("ShowLine");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
     /**
      * @param args the command line arguments
      */
@@ -25,4 +32,10 @@ public class Lab14_15 {
         Application.launch(args);
     }
     
+}
+
+class LinePane extends Pane {
+    public LinePane() {
+        Line line1 = new Line(10, 10, 10, 10);
+    }
 }
