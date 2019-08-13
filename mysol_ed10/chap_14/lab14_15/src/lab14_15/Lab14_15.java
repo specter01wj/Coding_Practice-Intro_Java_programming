@@ -36,11 +36,11 @@ public class Lab14_15 extends Application {
 
 class LinePane extends Pane {
     public LinePane() {
-        Line line1 = new Line(10, 10, 10, 10);
+        Line line1 = new Line(15, 15, 15, 15);
         line1.endXProperty().bind(widthProperty().subtract(10));
         line1.endYProperty().bind(heightProperty().subtract(10));
-        line1.setStrokeWidth(5);
-        line1.setStroke(Color.GREEN);
+        line1.setStrokeWidth(15);
+        line1.setStroke(Color.PURPLE);
         getChildren().add(line1);
         
         Line line2 = new Line(10, 10, 10, 10);
