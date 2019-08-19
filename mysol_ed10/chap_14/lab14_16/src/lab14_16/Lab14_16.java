@@ -29,6 +29,16 @@ public class Lab14_16 extends Application {
         pane.getChildren().add(new Text(10, 27, "r1"));
         pane.getChildren().add(r1);
         
+        Rectangle r2 = new Rectangle(25, 50, 60, 30);
+        pane.getChildren().add(new Text(10, 67, "r2"));
+        pane.getChildren().add(r2);
+        
+        Rectangle r3 = new Rectangle(25, 90, 60, 30);
+        r3.setArcWidth(15);
+        r3.setArcHeight(25);
+        pane.getChildren().add(new Text(10, 107, "r3"));
+        pane.getChildren().add(r3);
+        
         Scene scene = new Scene(pane, 250, 150);
         primaryStage.setTitle("ShowRectangle");
         primaryStage.setScene(scene);
