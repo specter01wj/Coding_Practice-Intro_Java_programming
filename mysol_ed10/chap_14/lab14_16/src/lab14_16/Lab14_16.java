@@ -5,17 +5,40 @@
  */
 package lab14_16;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.paint.Color;
+import javafx.stage.Stage;
+import javafx.scene.text.Text;
+import javafx.scene.shape.Rectangle;
+
 /**
  *
  * @author james.wang
  */
-public class Lab14_16 {
+public class Lab14_16 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        Pane pane = new Pane();
+        
+        Rectangle r1 = new Rectangle(25, 10, 60, 30);
+        r1.setStroke(Color.BLACK);
+        r1.setFill(Color.WHITE);
+        pane.getChildren().add(new Text(10, 27, "r1"));
+        pane.getChildren().add(r1);
+        
+        Scene scene = new Scene(pane, 250, 150);
+        primaryStage.setTitle("ShowRectangle");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
 }
