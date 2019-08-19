@@ -43,7 +43,8 @@ public class Lab14_16 extends Application {
             Rectangle r = new Rectangle(100, 50, 100, 30);
             r.setRotate(i * 360 / 8);
             r.setStroke(Color.color(Math.random(), Math.random(), Math.random()));
-            r.setFill(Color.WHITE);
+//            r.setFill(Color.WHITE);
+            r.setFill(Color.color(Math.random(), Math.random(), Math.random()));
             pane.getChildren().add(r);
         }
         
