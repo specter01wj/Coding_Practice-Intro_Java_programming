@@ -28,7 +28,19 @@ public class Lab14_19 extends Application {
         polygon.setStroke(Color.BLACK);
         ObservableList<Double> list = polygon.getPoints();
         
+        final double WIDTH = 200, HEIGHT = 200;
+        double centerX = WIDTH / 2, centerY = HEIGHT / 2;
+        double radius = Math.min(WIDTH, HEIGHT) * 0.4;
         
+        for(int i = 0; i < 6; i++) {
+            list.add(centerX + radius * Math.cos(2 * i * Math.PI / 6));
+            list.add(centerY - radius * Math.sin(2 * i * Math.PI / 6));
+        }
+        
+        Scene scene = new Scene(pane, WIDTH, HEIGHT);
+        primaryStage.setTitle("ShowPolygon");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     /**
      * @param args the command line arguments
