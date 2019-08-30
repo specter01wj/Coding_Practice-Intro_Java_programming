@@ -24,13 +24,15 @@ import javafx.stage.Stage;
  */
 public class Lab15_3 extends Application {
 
+    private CirclePane circlePane = new CirclePane();
+    
     @Override
     public void start(Stage primaryStage) {
-        StackPane pane = new StackPane();
+        /*StackPane pane = new StackPane();
         Circle circle = new Circle(50);
         circle.setStroke(Color.BLACK);
         circle.setFill(Color.GREEN);
-        pane.getChildren().add(circle);
+        pane.getChildren().add(circle);*/
         
         HBox hBox = new HBox();
         hBox.setSpacing(10);
@@ -40,13 +42,15 @@ public class Lab15_3 extends Application {
         hBox.getChildren().add(btEnlarge);
         hBox.getChildren().add(btShrink);
         
+        btEnlarge.setOnAction(new EnlargeHandler());
+        
         BorderPane borderPane = new BorderPane();
-        borderPane.setCenter(pane);
+        borderPane.setCenter(circlePane);
         borderPane.setBottom(hBox);
         BorderPane.setAlignment(hBox, Pos.CENTER);
         
         Scene scene = new Scene(borderPane, 200, 150);
-        primaryStage.setTitle("ControlCircle");
+        primaryStage.setTitle("ControlCircle_2");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
