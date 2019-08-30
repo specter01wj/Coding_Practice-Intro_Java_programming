@@ -6,6 +6,7 @@
 package lab15_2;
 
 import javafx.application.Application;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.StackPane;
@@ -14,7 +15,6 @@ import javafx.scene.layout.BorderPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
-import javafx.geometry.Pos;
 
 /**
  *
@@ -30,7 +30,18 @@ public class Lab15_2 extends Application {
         circle.setFill(Color.GREEN);
         pane.getChildren().add(circle);
         
+        HBox hBox = new HBox();
+        hBox.setSpacing(10);
+        hBox.setAlignment(Pos.CENTER);
+        Button btEnlarge = new Button("Enlarge");
+        Button btShrink = new Button("Shrink");
+        hBox.getChildren().add(btEnlarge);
+        hBox.getChildren().add(btShrink);
         
+        Scene scene = new Scene(pane);
+        primaryStage.setTitle("HandleEvent");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     /**
      * @param args the command line arguments
