@@ -38,8 +38,13 @@ public class Lab15_2 extends Application {
         hBox.getChildren().add(btEnlarge);
         hBox.getChildren().add(btShrink);
         
-        Scene scene = new Scene(pane);
-        primaryStage.setTitle("HandleEvent");
+        BorderPane borderPane = new BorderPane();
+        borderPane.setCenter(pane);
+        borderPane.setBottom(hBox);
+        BorderPane.setAlignment(hBox, Pos.CENTER);
+        
+        Scene scene = new Scene(borderPane, 200, 150);
+        primaryStage.setTitle("ControlCircle");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
