@@ -22,8 +22,34 @@ import javafx.stage.Stage;
  *
  * @author james.wang
  */
-public class Lab15_3 {
+public class Lab15_3 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        StackPane pane = new StackPane();
+        Circle circle = new Circle(50);
+        circle.setStroke(Color.BLACK);
+        circle.setFill(Color.GREEN);
+        pane.getChildren().add(circle);
+        
+        HBox hBox = new HBox();
+        hBox.setSpacing(10);
+        hBox.setAlignment(Pos.CENTER);
+        Button btEnlarge = new Button("Enlarge");
+        Button btShrink = new Button("Shrink");
+        hBox.getChildren().add(btEnlarge);
+        hBox.getChildren().add(btShrink);
+        
+        BorderPane borderPane = new BorderPane();
+        borderPane.setCenter(pane);
+        borderPane.setBottom(hBox);
+        BorderPane.setAlignment(hBox, Pos.CENTER);
+        
+        Scene scene = new Scene(borderPane, 200, 150);
+        primaryStage.setTitle("ControlCircle");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
     /**
      * @param args the command line arguments
      */
