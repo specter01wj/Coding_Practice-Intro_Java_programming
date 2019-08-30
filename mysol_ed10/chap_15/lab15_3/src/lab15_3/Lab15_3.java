@@ -54,6 +54,13 @@ public class Lab15_3 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    
+    class EnlargeHandler implements EventHandler<ActionEvent> {
+        @Override
+        public void handle(ActionEvent e) {
+            circlePane.enlarge();
+        }
+    }
     /**
      * @param args the command line arguments
      */
