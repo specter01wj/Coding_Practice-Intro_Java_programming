@@ -74,7 +74,9 @@ class CirclePane extends StackPane {
     private Circle circle = new Circle(50);
     
     public CirclePane() {
-        
+        getChildren().add(circle);
+        circle.setStroke(Color.BLACK);
+        circle.setFill(Color.PURPLE);
     }
 }
 
