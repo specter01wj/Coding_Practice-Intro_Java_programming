@@ -43,6 +43,7 @@ public class Lab15_3 extends Application {
         hBox.getChildren().add(btShrink);
         
         btEnlarge.setOnAction(new EnlargeHandler());
+        btShrink.setOnAction(new ShrinkHandler());
         
         BorderPane borderPane = new BorderPane();
         borderPane.setCenter(circlePane);
@@ -59,6 +60,13 @@ public class Lab15_3 extends Application {
         @Override
         public void handle(ActionEvent e) {
             circlePane.enlarge();
+        }
+    }
+    
+    class ShrinkHandler implements EventHandler<ActionEvent> {
+        @Override
+        public void handle(ActionEvent e) {
+            circlePane.shrink();
         }
     }
     /**
