@@ -87,6 +87,7 @@ class CirclePane extends StackPane {
         circle.setRadius(circle.getRadius() > 2 ? 
                 circle.getRadius() - 2 : circle.getRadius());
     }
+    
 }
 
 
