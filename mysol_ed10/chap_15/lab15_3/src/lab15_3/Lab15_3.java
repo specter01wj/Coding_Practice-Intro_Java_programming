@@ -69,3 +69,13 @@ public class Lab15_3 extends Application {
     }
     
 }
+
+class CirclePane extends StackPane {
+    private Circle circle = new Circle(50);
+    
+    public CirclePane() {
+        
+    }
+}
+
+
