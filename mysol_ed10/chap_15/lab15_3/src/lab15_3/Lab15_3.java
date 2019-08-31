@@ -68,6 +68,7 @@ public class Lab15_3 extends Application {
         public void handle(ActionEvent e) {
             circlePane.shrink();
             
+            
         }
     }
     /**
