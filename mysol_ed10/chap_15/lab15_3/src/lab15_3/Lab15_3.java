@@ -80,4 +80,7 @@ class CirclePane extends StackPane {
     }
 }
 
+public void enlarge() {
+
+}
 
