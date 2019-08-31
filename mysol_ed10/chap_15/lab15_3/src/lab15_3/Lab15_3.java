@@ -78,9 +78,11 @@ class CirclePane extends StackPane {
         circle.setStroke(Color.BLACK);
         circle.setFill(Color.PURPLE);
     }
+    
+    public void enlarge() {
+        circle.setRadius(circle.getRadius() + 2);
+    }
 }
 
-public void enlarge() {
 
-}
 
