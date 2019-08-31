@@ -82,6 +82,10 @@ class CirclePane extends StackPane {
     public void enlarge() {
         circle.setRadius(circle.getRadius() + 2);
     }
+    
+    public void shrink() {
+        
+    }
 }
 
 
