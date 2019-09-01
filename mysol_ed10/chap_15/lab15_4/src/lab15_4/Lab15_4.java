@@ -25,10 +25,11 @@ public class Lab15_4 extends Application {
         HBox hBox = new HBox();
         hBox.setSpacing(10);
         hBox.setAlignment(Pos.CENTER);
-        Button btEnlarge = new Button("Enlarge");
-        Button btShrink = new Button("Shrink");
-        hBox.getChildren().add(btEnlarge);
-        hBox.getChildren().add(btShrink);
+        Button btNew = new Button("New");
+        Button btOpen = new Button("Open");
+        Button btSave = new Button("Save");
+        Button btPrint = new Button("Print");
+        hBox.getChildren().add(btNew, btOpen, btSave, btPrint);
         
         
     }
