@@ -65,6 +65,24 @@ public class Lab15_6 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+    
+    private void calculateLoanPayment() {
+        // Get values from text fields
+        double interest =
+          Double.parseDouble(tfAnnualInterestRate.getText());
+        int year = Integer.parseInt(tfNumberOfYears.getText());
+        double loanAmount =
+          Double.parseDouble(tfLoanAmount.getText());
+
+        // Create a loan object. Loan defined in Listing 10.2
+        Loan loan = new Loan(interest, year, loanAmount);
+
+        // Display monthly payment and total payment
+        tfMonthlyPayment.setText(String.format("$%.2f",
+          loan.getMonthlyPayment()));
+        tfTotalPayment.setText(String.format("$%.2f",
+          loan.getTotalPayment()));
+    }
     /**
      * @param args the command line arguments
      */
