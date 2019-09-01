@@ -29,9 +29,14 @@ public class Lab15_4 extends Application {
         Button btOpen = new Button("Open");
         Button btSave = new Button("Save");
         Button btPrint = new Button("Print");
-        hBox.getChildren().add(btNew, btOpen, btSave, btPrint);
+        hBox.getChildren().addAll(btNew, btOpen, btSave, btPrint);
         
-        
+        btNew.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                System.out.println("Process New");
+            }
+        });
     }
     /**
      * @param args the command line arguments
