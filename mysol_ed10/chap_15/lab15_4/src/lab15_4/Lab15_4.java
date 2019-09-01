@@ -38,6 +38,27 @@ public class Lab15_4 extends Application {
             }
         });
         
+        btOpen.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                System.out.println("Process Open");
+            }
+        });
+        
+        btSave.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                System.out.println("Process Save");
+            }
+        });
+        
+        btPrint.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent e) {
+                System.out.println("Process Print");
+            }
+        });
+        
         
         Scene scene = new Scene(hBox, 300, 50);
         primaryStage.setTitle("AnonymousHandlerDemo");
