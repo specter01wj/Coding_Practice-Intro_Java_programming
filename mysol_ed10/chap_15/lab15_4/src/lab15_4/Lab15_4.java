@@ -18,8 +18,20 @@ import javafx.stage.Stage;
  *
  * @author james.wang
  */
-public class Lab15_4 {
+public class Lab15_4 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        HBox hBox = new HBox();
+        hBox.setSpacing(10);
+        hBox.setAlignment(Pos.CENTER);
+        Button btEnlarge = new Button("Enlarge");
+        Button btShrink = new Button("Shrink");
+        hBox.getChildren().add(btEnlarge);
+        hBox.getChildren().add(btShrink);
+        
+        
+    }
     /**
      * @param args the command line arguments
      */
