@@ -37,6 +37,12 @@ public class Lab15_4 extends Application {
                 System.out.println("Process New");
             }
         });
+        
+        
+        Scene scene = new Scene(hBox, 300, 50);
+        primaryStage.setTitle("AnonymousHandlerDemo");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     /**
      * @param args the command line arguments
