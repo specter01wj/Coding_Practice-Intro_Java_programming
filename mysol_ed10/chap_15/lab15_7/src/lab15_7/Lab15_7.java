@@ -15,7 +15,7 @@ import javafx.stage.Stage;
  *
  * @author james.wang
  */
-public class Lab15_7 extends Applicaiton {
+public class Lab15_7 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
@@ -27,6 +27,10 @@ public class Lab15_7 extends Applicaiton {
             text.setY(e.getY());
         });
         
+        Scene scene = new Scene(pane, 300, 100);
+        primaryStage.setTitle("MouseEventDemo");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     /**
      * @param args the command line arguments
