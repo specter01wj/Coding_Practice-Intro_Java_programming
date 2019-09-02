@@ -62,12 +62,12 @@ public class Lab15_9 extends Application {
         borderPane.setAlignment(hBox, Pos.CENTER);
         
         
-        Scene scene = new Scene(bBox, 300, 100);
-        primaryStage.setTitle("KeyEventDemo");
+        Scene scene = new Scene(borderPane, 200, 150);
+        primaryStage.setTitle("ControlCircle");
         primaryStage.setScene(scene);
         primaryStage.show();
         
-        text.requestFocus();
+        circlePane.requestFocus();
     }
     /**
      * @param args the command line arguments
