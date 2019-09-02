@@ -48,15 +48,21 @@ public class Lab15_9 extends Application {
             }
         });
         
-        circlePane.setOnMouseClicked(e -> {
-            if(e.getButton() == MouseButton.PRIMARY) {
+        circlePane.setOnKeyPressed(e -> {
+            if(e.getCode() == KeyCode.U) {
                 circlePane.enlarge();
-            } else if(e.getButton() == MouseButton.SECONDARY) {
+            } else if(e.getCode() == KeyCode.D) {
                 circlePane.shrink();
             }
         });
         
-        Scene scene = new Scene(pane, 300, 100);
+        BorderPane borderPane = new BorderPane();
+        borderPane.setCenter(circlePane);
+        borderPane.setBottom(hBox);
+        borderPane.setAlignment(hBox, Pos.CENTER);
+        
+        
+        Scene scene = new Scene(bBox, 300, 100);
         primaryStage.setTitle("KeyEventDemo");
         primaryStage.setScene(scene);
         primaryStage.show();
