@@ -37,10 +37,12 @@ public class Lab15_8 extends Application {
             }
         });
         
-        Scene scene = new Scene(pane);
+        Scene scene = new Scene(pane, 300, 100);
         primaryStage.setTitle("KeyEventDemo");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
+        text.requestFocus();
     }
     /**
      * @param args the command line arguments
