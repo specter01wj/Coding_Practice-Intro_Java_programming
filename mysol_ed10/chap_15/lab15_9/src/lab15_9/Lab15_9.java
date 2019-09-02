@@ -68,7 +68,6 @@ public class Lab15_9 extends Application {
         primaryStage.show();
         
         circlePane.requestFocus();
-        
     }
     /**
      * @param args the command line arguments
