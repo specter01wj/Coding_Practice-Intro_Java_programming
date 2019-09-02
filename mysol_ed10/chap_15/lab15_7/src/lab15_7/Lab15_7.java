@@ -22,6 +22,10 @@ public class Lab15_7 extends Applicaiton {
         Pane pane = new Pane();
         Text text = new Text(20, 20, "James Wang!");
         pane.getChildren().addAll(text);
+        text.setOnMouseDragged(e -> {
+            text.setX(e.getX());
+            text.setY(e.getY());
+        });
         
     }
     /**
