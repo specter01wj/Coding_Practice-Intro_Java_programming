@@ -5,6 +5,11 @@
  */
 package lab15_10;
 
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
+import javafx.beans.property.DoubleProperty;
+import javafx.beans.property.SimpleDoubleProperty;
+
 /**
  *
  * @author james.wang
@@ -15,7 +20,13 @@ public class Lab15_10 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        DoubleProperty balance = new SimpleDoubleProperty();
+        
+        balance.addListener(new InvalidationListener() {
+            public void invalidated(Observalbe ov) {
+                System.out.println("The new value is: " + balance.doubleValue());
+            }
+        });
     }
     
 }
