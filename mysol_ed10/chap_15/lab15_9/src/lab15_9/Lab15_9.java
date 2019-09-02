@@ -28,21 +28,31 @@ public class Lab15_9 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        HBox pane = new HBox();
-        Text text = new Text(20, 20, "A");
+        HBox hBox = new HBox();
+        hBox.setSpacing(10);
+        hBox.setAlignment(Pos.CENTER);
+        Button btEnlarge = new Button("Enlarge");
+        Button btShrink = new Button("Shrink");
         
-        pane.getChildren().add(text);
+        hBox.getChildren().add(btEnlarge);
+        hBox.getChildren().add(btShrink);
         
-        text.setOnKeyPressed(e -> {
-            switch(e.getCode()) {
-                case DOWN: text.setY(text.getY() + 10); break;
-                case UP: text.setY(text.getY() - 10); break;
-                case LEFT: text.setX(text.getX() - 10); break;
-                case RIGHT: text.setX(text.getX() + 10); break;
-                default:
-                    if(Character.isLetterOrDigit(e.getText().charAt(0))) {
-                        text.setText(e.getText());
-                    }
+        btEnlarge.setOnAction(e -> circlePane.enlarge());
+        btShrink.setOnAction(e -> circlePane.shrink());
+        
+        circlePane.setOnMouseClicked(e -> {
+            if(e.getButton() == MouseButton.PRIMARY) {
+                circlePane.enlarge();
+            } else if(e.getButton() == MouseButton.SECONDARY) {
+                circlePane.shrink();
+            }
+        });
+        
+        circlePane.setOnMouseClicked(e -> {
+            if(e.getButton() == MouseButton.PRIMARY) {
+                circlePane.enlarge();
+            } else if(e.getButton() == MouseButton.SECONDARY) {
+                circlePane.shrink();
             }
         });
         
