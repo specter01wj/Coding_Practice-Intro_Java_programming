@@ -30,9 +30,14 @@ public class Lab15_8 extends Application {
                 case UP: text.setY(text.getY() - 10); break;
                 case LEFT: text.setX(text.getX() - 10); break;
                 case RIGHT: text.setX(text.getX() + 10); break;
-                
+                default:
+                    if(Character.isLetterOrDigit(e.getText().charAt(0))) {
+                        text.setText(e.getText());
+                    }
             }
         });
+        
+        
     }
     /**
      * @param args the command line arguments
