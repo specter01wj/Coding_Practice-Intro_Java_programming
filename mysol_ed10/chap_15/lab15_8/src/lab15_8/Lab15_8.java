@@ -22,7 +22,17 @@ public class Lab15_8 extends Application {
         Pane pane = new Pane();
         Text text = new Text(20, 20, "A");
         
+        pane.getChildren().add(text);
         
+        text.setOnKeyPressed(e -> {
+            switch(e.getCode()) {
+                case DOWN: text.setY(text.getY() + 10); break;
+                case UP: text.setY(text.getY() - 10); break;
+                case LEFT: text.setX(text.getX() - 10); break;
+                case RIGHT: text.setX(text.getX() + 10); break;
+                
+            }
+        });
     }
     /**
      * @param args the command line arguments
