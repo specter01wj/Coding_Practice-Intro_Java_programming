@@ -5,17 +5,30 @@
  */
 package lab15_7;
 
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+
 /**
  *
  * @author james.wang
  */
-public class Lab15_7 {
+public class Lab15_7 extends Applicaiton {
 
+    @Override
+    public void start(Stage primaryStage) {
+        Pane pane = new Pane();
+        Text text = new Text(20, 20, "James Wang!");
+        pane.getChildren().addAll(text);
+        
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
 }
