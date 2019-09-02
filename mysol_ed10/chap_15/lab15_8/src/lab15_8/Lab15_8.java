@@ -15,8 +15,15 @@ import javafx.stage.Stage;
  *
  * @author james.wang
  */
-public class Lab15_8 {
+public class Lab15_8 extends Application {
 
+    @Override
+    public void start(Stage primaryStage) {
+        Pane pane = new Pane();
+        Text text = new Text(20, 20, "A");
+        
+        
+    }
     /**
      * @param args the command line arguments
      */
