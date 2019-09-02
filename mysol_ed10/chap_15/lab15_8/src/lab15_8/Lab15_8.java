@@ -5,6 +5,8 @@
  */
 package lab15_8;
 
+import javafx.application.Application;
+
 /**
  *
  * @author james.wang
@@ -15,7 +17,7 @@ public class Lab15_8 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Application.launch(args);
     }
     
 }
