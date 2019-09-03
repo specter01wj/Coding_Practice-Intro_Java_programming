@@ -39,8 +39,8 @@ public class Lab15_11 extends Application {
             clock.setWidth(pane.getWidth())
         );
         
-        pane.widthProperty().addListener(ov -> 
-            clock.setWidth(pane.getWidth())
+        pane.heightProperty().addListener(ov -> 
+            clock.setHeight(pane.getHeight())
         );
         
     }
