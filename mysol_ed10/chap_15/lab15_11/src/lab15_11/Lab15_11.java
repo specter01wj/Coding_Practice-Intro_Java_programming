@@ -34,6 +34,15 @@ public class Lab15_11 extends Application {
         primaryStage.setTitle("DisplayClock");
         primaryStage.setScene(scene);
         primaryStage.show();
+        
+        pane.widthProperty().addListener(ov -> 
+            clock.setWidth(pane.getWidth())
+        );
+        
+        pane.widthProperty().addListener(ov -> 
+            clock.setWidth(pane.getWidth())
+        );
+        
     }
     /**
      * @param args the command line arguments
