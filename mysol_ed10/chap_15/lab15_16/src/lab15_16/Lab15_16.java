@@ -34,7 +34,7 @@ public class Lab15_16 extends Application {
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
         
-        Scene scene = new Scene(clock, 250, 50);
+        Scene scene = new Scene(clock, 200, 200);
         primaryStage.setTitle("ClockAnimation");
         primaryStage.setScene(scene);
         primaryStage.show();
