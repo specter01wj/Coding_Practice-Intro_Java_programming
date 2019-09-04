@@ -29,14 +29,8 @@ public class Lab15_15 extends Application {
         StackPane pane = new StackPane();
         
         Text text = new Text(20, 50, "James Wang");
-        ellipse.setFill(Color.RED);
-        ellipse.setStroke(Color.BLACK);
-        ellipse.centerXProperty().bind(pane.widthProperty().divide(2));
-        ellipse.centerYProperty().bind(pane.heightProperty().divide(2));
-        ellipse.radiusXProperty().bind(pane.widthProperty().multiply(0.4));
-        ellipse.radiusYProperty().bind(pane.heightProperty().multiply(0.4));
-        
-        pane.getChildren().add(ellipse);
+        text.setFill(Color.RED);
+        pane.getChildren().add(text);
         
         FadeTransition ft = new FadeTransition(Duration.millis(3000), ellipse);
         ft.setFromValue(1.0);
