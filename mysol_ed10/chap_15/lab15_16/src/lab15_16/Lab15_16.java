@@ -18,28 +18,25 @@ import javafx.util.Duration;
  *
  * @author james.wang
  */
-public class Lab15_16 extends Applicaiton {
+public class Lab15_16 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Pane pane = new Pane();
+        ClockPane clock = new ClockPane();
         
-        Ellipse ellipse = new Ellipse(10, 10, 100, 50);
-        ellipse.setFill(Color.RED);
-        ellipse.setStroke(Color.BLACK);
-        ellipse.centerXProperty().bind(pane.widthProperty().divide(2));
-        ellipse.centerYProperty().bind(pane.heightProperty().divide(2));
-        ellipse.radiusXProperty().bind(pane.widthProperty().multiply(0.4));
-        ellipse.radiusYProperty().bind(pane.heightProperty().multiply(0.4));
+        EventHandler<ActionEvent> eventHandler = e -> {
+            if(text.getText().length() != 0) {
+                text.setText("");
+            } else {
+                text.setText("Jin Wang!!!");
+            }
+        };
         
-        pane.getChildren().add(ellipse);
-        
-        FadeTransition ft = new FadeTransition(Duration.millis(3000), ellipse);
-        ft.setFromValue(1.0);
-        ft.setToValue(0.1);
-        ft.setCycleCount(Timeline.INDEFINITE);
-        ft.setAutoReverse(true);
-        ft.play();
+        Timeline animation = new Timeline(
+            new KeyFrame(Duration.millis(1500), eventHandler)
+        );
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play();
         
         Scene scene = new Scene(pane, 200, 150);
         primaryStage.setTitle("FadeTransitionDemo");
