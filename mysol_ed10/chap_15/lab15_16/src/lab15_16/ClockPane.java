@@ -1,4 +1,4 @@
-package lab14_20_displayclock;
+package lab15_16;
 
 import java.util.Calendar; 
 import java.util.GregorianCalendar;
