@@ -25,11 +25,7 @@ public class Lab15_16 extends Application {
         ClockPane clock = new ClockPane();
         
         EventHandler<ActionEvent> eventHandler = e -> {
-            if(text.getText().length() != 0) {
-                text.setText("");
-            } else {
-                text.setText("Jin Wang!!!");
-            }
+            clock.setCurrentTime();
         };
         
         Timeline animation = new Timeline(
