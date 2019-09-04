@@ -40,12 +40,13 @@ public class Lab15_15 extends Application {
             }
         };
         
-        FadeTransition ft = new FadeTransition(Duration.millis(3000), ellipse);
-        ft.setFromValue(1.0);
-        ft.setToValue(0.1);
-        ft.setCycleCount(Timeline.INDEFINITE);
-        ft.setAutoReverse(true);
-        ft.play();
+        Timeline animation = new Timeline(
+            new KeyFrame(Duration.millis(500), eventHandler)
+        );
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play();
+        
+        
         
         Scene scene = new Scene(pane, 200, 150);
         primaryStage.setTitle("FadeTransitionDemo");
