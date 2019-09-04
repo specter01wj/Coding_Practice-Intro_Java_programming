@@ -41,7 +41,7 @@ public class Lab15_15 extends Application {
         };
         
         Timeline animation = new Timeline(
-            new KeyFrame(Duration.millis(500), eventHandler)
+            new KeyFrame(Duration.millis(1500), eventHandler)
         );
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
