@@ -26,9 +26,9 @@ public class Lab15_15 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Pane pane = new Pane();
+        StackPane pane = new StackPane();
         
-        Ellipse ellipse = new Ellipse(10, 10, 100, 50);
+        Text text = new Text(20, 50, "James Wang");
         ellipse.setFill(Color.RED);
         ellipse.setStroke(Color.BLACK);
         ellipse.centerXProperty().bind(pane.widthProperty().divide(2));
