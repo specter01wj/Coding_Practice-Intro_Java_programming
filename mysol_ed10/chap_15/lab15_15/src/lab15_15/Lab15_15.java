@@ -32,6 +32,14 @@ public class Lab15_15 extends Application {
         text.setFill(Color.RED);
         pane.getChildren().add(text);
         
+        EventHandler<ActionEvent> eventHandler = e -> {
+            if(text.getText().length() != 0) {
+                text.setText("");
+            } else {
+                text.setText("Jin Wang!!!");
+            }
+        };
+        
         FadeTransition ft = new FadeTransition(Duration.millis(3000), ellipse);
         ft.setFromValue(1.0);
         ft.setToValue(0.1);
