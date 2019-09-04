@@ -46,10 +46,16 @@ public class Lab15_15 extends Application {
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
         
+        text.setOnMouseClicked(e -> {
+            if(animation.getStatus() == Animation.Status.PAUSED) {
+                animation.play();
+            } else {
+                animation.pause();
+            }
+        });
         
-        
-        Scene scene = new Scene(pane, 200, 150);
-        primaryStage.setTitle("FadeTransitionDemo");
+        Scene scene = new Scene(pane, 250, 250);
+        primaryStage.setTitle("TimelineDemo");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
