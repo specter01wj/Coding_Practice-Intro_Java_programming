@@ -34,8 +34,8 @@ public class Lab15_16 extends Application {
         animation.setCycleCount(Timeline.INDEFINITE);
         animation.play();
         
-        Scene scene = new Scene(pane, 200, 150);
-        primaryStage.setTitle("FadeTransitionDemo");
+        Scene scene = new Scene(clock, 250, 50);
+        primaryStage.setTitle("ClockAnimation");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
