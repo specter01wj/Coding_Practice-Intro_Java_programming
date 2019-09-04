@@ -6,6 +6,17 @@
 package lab15_15;
 
 import javafx.application.Application;
+import javafx.animation.Animation;
+import javafx.animation.Timeline;
+import javafx.animation.KeyFrame;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
+import javafx.scene.Scene;
+import javafx.scene.layout.StackPane;
+import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
+import javafx.util.Duration;
 
 /**
  *
