@@ -35,7 +35,7 @@ public class Lab15_17_bouncingBall extends Application {
       });
 
       // Create a scene and place it in the stage
-      Scene scene = new Scene(ballPane, 250, 150);
+      Scene scene = new Scene(ballPane, 300, 250);
       primaryStage.setTitle("BounceBallControl"); // Set the stage title
       primaryStage.setScene(scene); // Place the scene in the stage
       primaryStage.show(); // Display the stage
