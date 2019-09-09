@@ -28,10 +28,15 @@ public class Lab16_1 extends Application {
     @Override
     public void start(Stage primaryStage) {
         ImageView us = new ImageView(new Image("image/usa.gif"));
+        
         Label lb1 = new Label("US\n50 States", us);
         lb1.setStyle("-fx-border-color:green; -fx-border-width:2");
         lb1.setContentDisplay(ContentDisplay.BOTTOM);
         lb1.setTextFill(Color.PURPLE);
+        
+        Label lb2 = new Label("Circle", new Circle(50, 50, 25));
+        lb2.setContentDisplay(ContentDisplay.TOP);
+        lb2.setTextFill(Color.GREEN);
         
         HBox pane = new HBox(20);
         pane.getChildren().addAll(lb1);
