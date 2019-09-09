@@ -64,7 +64,7 @@ public class Lab16_1 extends Application {
         pane.getChildren().addAll(lb1, lb2, lb3, lb4, lb5);
         
         Scene scene = new Scene(pane, 800, 350);
-        primaryStage.setTitle("ClockAnimation");
+        primaryStage.setTitle("LabelWithGraphic");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
