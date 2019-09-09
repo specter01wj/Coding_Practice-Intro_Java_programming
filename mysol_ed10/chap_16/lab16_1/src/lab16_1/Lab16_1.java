@@ -27,7 +27,7 @@ public class Lab16_1 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        ClockPane clock = new ClockPane();
+        ImageView clock = new ImageView(new Image("image/usa.gif"));
         
         EventHandler<ActionEvent> eventHandler = e -> {
             clock.setCurrentTime();
