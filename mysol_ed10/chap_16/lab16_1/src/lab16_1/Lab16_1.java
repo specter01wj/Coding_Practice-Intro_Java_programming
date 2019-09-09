@@ -38,7 +38,10 @@ public class Lab16_1 extends Application {
         lb2.setContentDisplay(ContentDisplay.TOP);
         lb2.setTextFill(Color.GREEN);
         
-        Label lb3 = new Label("Retangle", new Rectangle(10, 10, 50, 25));
+        Rectangle rectangle1 = new Rectangle(10, 10, 50, 25);
+        rectangle1.setStroke(Color.BLUE);
+        rectangle1.setFill(Color.GREEN);
+        Label lb3 = new Label("Retangle", rectangle1);
         lb3.setContentDisplay(ContentDisplay.RIGHT);
         
         Label lb4 = new Label("Ellipse", new Ellipse(50, 50, 50, 25));
