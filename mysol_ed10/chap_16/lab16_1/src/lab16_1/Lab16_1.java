@@ -35,9 +35,11 @@ public class Lab16_1 extends Application {
         lb1.setTextFill(Color.PURPLE);
         
         Circle circle1 = new Circle(50, 50, 25);
-        Label lb2 = new Label("Circle", circle1);
         circle1.setStroke(Color.BLUE);
         circle1.setFill(Color.YELLOW);
+        StackPane stackPane1 = new StackPane();
+        stackPane1.getChildren().addAll(circle1, new Label("James"));
+        Label lb2 = new Label("Circle", stackPane1);
         lb2.setContentDisplay(ContentDisplay.TOP);
         lb2.setTextFill(Color.GREEN);
         
