@@ -43,8 +43,17 @@ public class Lab16_3 extends Lab16_2 {
         paneForCheckBoxes.getChildren().addAll(chkBold, chkItalic);
         pane.setRight(paneForCheckBoxes);
         
-        btLeft.setOnAction(e -> text.setX(text.getX() - 10));
-        btRight.setOnAction(e -> text.setX(text.getX() + 10));
+        EventHandler<ActionEvent> handler = e -> {
+            if(chkBold.isSelected() && chkItalic.isSelected()) {
+                text.setFont(fontBoldItalic);
+            } else if(chkBold.isSelected()) {
+                text.setFont(fontBold);
+            } else if(chkItalic.isSelected()) {
+                text.setFont(fontItalic);
+            } else {
+                text.setFont(fontNormal);
+            }
+        };
         
         return pane;
     }
