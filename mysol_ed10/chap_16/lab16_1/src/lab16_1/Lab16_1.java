@@ -27,19 +27,15 @@ public class Lab16_1 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        ImageView clock = new ImageView(new Image("image/usa.gif"));
+        ImageView us = new ImageView(new Image("image/usa.gif"));
+        Label lb1 = new Label("US\n50 States", us);
+        lb1.setStyle("-fx-border-color:green; -fx-border-width:2");
+        lb1.setContentDisplay(ContentDisplay.BOTTOM);
+        lb1.setTextFill(Color.PURPLE);
         
-        EventHandler<ActionEvent> eventHandler = e -> {
-            clock.setCurrentTime();
-        };
         
-        Timeline animation = new Timeline(
-            new KeyFrame(Duration.millis(1500), eventHandler)
-        );
-        animation.setCycleCount(Timeline.INDEFINITE);
-        animation.play();
         
-        Scene scene = new Scene(clock, 200, 200);
+        Scene scene = new Scene(pane, 450, 150);
         primaryStage.setTitle("ClockAnimation");
         primaryStage.setScene(scene);
         primaryStage.show();
