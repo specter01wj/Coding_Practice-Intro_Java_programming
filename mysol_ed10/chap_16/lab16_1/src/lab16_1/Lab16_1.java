@@ -33,7 +33,8 @@ public class Lab16_1 extends Application {
         lb1.setContentDisplay(ContentDisplay.BOTTOM);
         lb1.setTextFill(Color.PURPLE);
         
-        
+        HBox pane = new HBox(20);
+        pane.getChildren().addAll(lb1);
         
         Scene scene = new Scene(pane, 450, 150);
         primaryStage.setTitle("ClockAnimation");
