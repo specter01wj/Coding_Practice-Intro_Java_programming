@@ -23,7 +23,7 @@ import javafx.scene.shape.Ellipse;
  *
  * @author jinwang
  */
-public class Lab16_1 {
+public class Lab16_1 extends Application {
 
     @Override
     public void start(Stage primaryStage) {
