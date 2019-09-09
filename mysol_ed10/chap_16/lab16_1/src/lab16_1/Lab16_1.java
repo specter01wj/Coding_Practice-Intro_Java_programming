@@ -36,7 +36,7 @@ public class Lab16_1 extends Application {
         HBox pane = new HBox(20);
         pane.getChildren().addAll(lb1);
         
-        Scene scene = new Scene(pane, 450, 150);
+        Scene scene = new Scene(pane, 800, 350);
         primaryStage.setTitle("ClockAnimation");
         primaryStage.setScene(scene);
         primaryStage.show();
