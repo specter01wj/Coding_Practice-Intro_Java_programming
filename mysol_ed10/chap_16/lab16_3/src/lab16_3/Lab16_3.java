@@ -38,9 +38,11 @@ public class Lab16_3 extends Lab16_2 {
         
         VBox paneForCheckBoxes = new VBox(20);
         paneForCheckBoxes.setPadding(new Insets(5, 5, 5, 5));
-        paneForCheckBoxes.setStyle("-fx-border-color:green");
+        paneForCheckBoxes.setStyle("-fx-border-color:purple");
         CheckBox chkBold = new CheckBox("Bold");
         CheckBox chkItalic = new CheckBox("Italic");
+        chkBold.setStyle("-fx-border-color:red");
+        chkItalic.setStyle("-fx-border-color:blue");
         paneForCheckBoxes.getChildren().addAll(chkBold, chkItalic);
         pane.setRight(paneForCheckBoxes);
         
