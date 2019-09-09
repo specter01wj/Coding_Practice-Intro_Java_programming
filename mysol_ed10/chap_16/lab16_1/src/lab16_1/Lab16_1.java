@@ -44,8 +44,16 @@ public class Lab16_1 extends Application {
         Label lb4 = new Label("Ellipse", new Ellipse(50, 50, 50, 25));
         lb4.setContentDisplay(ContentDisplay.LEFT);
         
+        Ellipse ellipse = new Ellipse(50, 50, 50, 25);
+        ellipse.setStroke(Color.BLUE);
+        ellipse.setFill(Color.ORANGE);
+        StackPane stackPane = new StackPane();
+        stackPane.getChildren().addAll(ellipse, new Label("JavaFX"));
+        Label lb5 = new Label("Pane inside Label", stackPane);
+        lb5.setContentDisplay(ContentDisplay.BOTTOM);
+        
         HBox pane = new HBox(20);
-        pane.getChildren().addAll(lb1, lb2, lb3, lb4);
+        pane.getChildren().addAll(lb1, lb2, lb3, lb4, lb5);
         
         Scene scene = new Scene(pane, 800, 350);
         primaryStage.setTitle("ClockAnimation");
