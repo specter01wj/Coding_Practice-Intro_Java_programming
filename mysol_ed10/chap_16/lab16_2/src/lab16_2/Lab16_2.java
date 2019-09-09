@@ -48,7 +48,7 @@ public class Lab16_2 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        Scene scene = new Scene(getPane(), 500, 250);
+        Scene scene = new Scene(getPane(), 600, 400);
         primaryStage.setTitle("ClockAnimation");
         primaryStage.setScene(scene);
         primaryStage.show();
