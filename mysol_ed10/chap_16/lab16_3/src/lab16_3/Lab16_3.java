@@ -8,7 +8,6 @@ package lab16_3;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
-import javafx.geometry.Insets;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.BorderPane;
@@ -34,12 +33,15 @@ public class Lab16_3 extends Lab16_2 {
         Font fontNormal = Font.font("Times New Roman", 
                 FontWeight.NORMAL, FontPosture.REGULAR, 20);
         
-        BorderPane pane = new BorderPane();
-        pane.setBottom(paneForButtons);
+        text.setFont(fontNormal);
         
-        Pane paneForText = new Pane();
-        paneForText.getChildren().add(text);
-        pane.setCenter(paneForText);
+        VBox paneForCheckBoxes = new VBox(20);
+        paneForCheckBoxes.setPadding(new Insets(5, 5, 5, 5));
+        paneForCheckBoxes.setStyle("-fx-border-color:green");
+        CheckBox chkBold = new CheckBox("Bold");
+        CheckBox chkItalic = new CheckBox("Italic");
+        paneForCheckBoxes.getChildren().addAll(chkBold, chkItalic);
+        pane.setRight(paneForCheckBoxes);
         
         btLeft.setOnAction(e -> text.setX(text.getX() - 10));
         btRight.setOnAction(e -> text.setX(text.getX() + 10));
