@@ -41,8 +41,11 @@ public class Lab16_1 extends Application {
         Label lb3 = new Label("Retangle", new Rectangle(10, 10, 50, 25));
         lb3.setContentDisplay(ContentDisplay.RIGHT);
         
+        Label lb4 = new Label("Ellipse", new Ellipse(50, 50, 50, 25));
+        lb4.setContentDisplay(ContentDisplay.LEFT);
+        
         HBox pane = new HBox(20);
-        pane.getChildren().addAll(lb1, lb2, lb3);
+        pane.getChildren().addAll(lb1, lb2, lb3, lb4);
         
         Scene scene = new Scene(pane, 800, 350);
         primaryStage.setTitle("ClockAnimation");
