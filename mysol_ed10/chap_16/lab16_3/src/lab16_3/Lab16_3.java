@@ -22,16 +22,17 @@ import javafx.scene.text.FontWeight;
  */
 public class Lab16_3 extends Lab16_2 {
 
-    protected Text text = new Text(50, 50, "JavaFX Programming.");
-    
+    @Override
     protected BorderPane getPane() {
-        HBox paneForButtons = new HBox(20);
-        Button btLeft = new Button("Left", new ImageView("image/left.gif"));
-        Button btRight = new Button("Right", new ImageView("image/right.gif"));
-        
-        paneForButtons.getChildren().addAll(btLeft, btRight);
-        paneForButtons.setAlignment(Pos.CENTER);
-        paneForButtons.setStyle("-fx-border-color:green");
+        BorderPane pane = super.getPane();
+        Font fontBoldItalic = Font.font("Times New Roman", 
+                FontWeight.BOLD, FontPosture.ITALIC, 20);
+        Font fontBold = Font.font("Times New Roman", 
+                FontWeight.BOLD, FontPosture.REGULAR, 20);
+        Font fontItalic = Font.font("Times New Roman", 
+                FontWeight.NORMAL, FontPosture.ITALIC, 20);
+        Font fontNormal = Font.font("Times New Roman", 
+                FontWeight.NORMAL, FontPosture.REGULAR, 20);
         
         BorderPane pane = new BorderPane();
         pane.setBottom(paneForButtons);

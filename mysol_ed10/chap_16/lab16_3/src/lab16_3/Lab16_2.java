@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab16_2;
+package lab16_3;
 
 import javafx.application.Application;
 import javafx.stage.Stage;
