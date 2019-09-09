@@ -25,6 +25,25 @@ import javafx.scene.shape.Ellipse;
  */
 public class Lab16_1 {
 
+    @Override
+    public void start(Stage primaryStage) {
+        ClockPane clock = new ClockPane();
+        
+        EventHandler<ActionEvent> eventHandler = e -> {
+            clock.setCurrentTime();
+        };
+        
+        Timeline animation = new Timeline(
+            new KeyFrame(Duration.millis(1500), eventHandler)
+        );
+        animation.setCycleCount(Timeline.INDEFINITE);
+        animation.play();
+        
+        Scene scene = new Scene(clock, 200, 200);
+        primaryStage.setTitle("ClockAnimation");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
     /**
      * @param args the command line arguments
      */
