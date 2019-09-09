@@ -8,6 +8,7 @@ package lab16_3;
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.scene.control.CheckBox;
 import javafx.scene.layout.VBox;
 import javafx.scene.layout.BorderPane;
@@ -54,6 +55,9 @@ public class Lab16_3 extends Lab16_2 {
                 text.setFont(fontNormal);
             }
         };
+        
+        chkBold.setOnAction(handler);
+        chkItalic.setOnAction(handler);
         
         return pane;
     }
