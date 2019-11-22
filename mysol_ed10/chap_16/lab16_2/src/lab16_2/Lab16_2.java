@@ -20,6 +20,8 @@ import javafx.scene.text.Text;
  *
  * @author james.wang
  */
+
+// ButtonDemo
 public class Lab16_2 extends Application {
 
     protected Text text = new Text(50, 50, "JavaFX Programming.");

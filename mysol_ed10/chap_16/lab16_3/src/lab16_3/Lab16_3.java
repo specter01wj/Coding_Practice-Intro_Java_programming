@@ -20,6 +20,8 @@ import javafx.scene.text.FontWeight;
  *
  * @author james.wang
  */
+
+// CheckBoxDemo
 public class Lab16_3 extends Lab16_2 {
 
     @Override
@@ -37,7 +39,7 @@ public class Lab16_3 extends Lab16_2 {
         text.setFont(fontNormal);
         
         VBox paneForCheckBoxes = new VBox(20);
-        paneForCheckBoxes.setPadding(new Insets(5, 5, 5, 5));
+        paneForCheckBoxes.setPadding(new Insets(15, 25, 25, 15));
         paneForCheckBoxes.setStyle("-fx-border-color:purple");
         CheckBox chkBold = new CheckBox("Bold");
         CheckBox chkItalic = new CheckBox("Italic");

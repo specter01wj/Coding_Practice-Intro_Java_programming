@@ -24,6 +24,7 @@ import javafx.scene.shape.Ellipse;
  * @author james.wang
  */
 
+// LabelWithGraphic
 public class Lab16_1 extends Application {
 
     @Override
