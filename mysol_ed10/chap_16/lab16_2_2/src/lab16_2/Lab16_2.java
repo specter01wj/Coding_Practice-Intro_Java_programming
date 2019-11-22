@@ -18,7 +18,7 @@ import javafx.scene.text.Text;
 
 /**
  *
- * @author james.wang
+ * @author jinwang
  */
 public class Lab16_2 extends Application {
 
@@ -53,12 +53,10 @@ public class Lab16_2 extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
-    
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         Application.launch(args);
     }
     
