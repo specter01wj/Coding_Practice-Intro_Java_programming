@@ -30,7 +30,12 @@ public class Lab16_4 extends Lab16_3 {
         paneForRadioButtons.setStyle("-fx-border-color: green");
         paneForRadioButtons.setStyle("-fx-border-width: 2px; -fx-border-color: green");
         
+        RadioButton rbRed = new RadioButton("Red");
+        RadioButton rbGreen = new RadioButton("Green");
+        RadioButton rbBlue = new RadioButton("Blue");
         
+        paneForRadioButtons.getChildren().addAll(rbRed, rbGreen, rbBlue);
+        pane.setLeft(paneForRadioButtons);
         
         return pane;
     }
