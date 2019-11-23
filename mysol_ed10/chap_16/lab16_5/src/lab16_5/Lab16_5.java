@@ -20,6 +20,12 @@ import javafx.scene.layout.BorderPane;
 // TextFieldDemo
 public class Lab16_5 extends Lab16_4 {
 
+    @Override // Override the getPane() method in the super class
+    protected BorderPane getPane() {
+        BorderPane pane = super.getPane();
+        
+        return pane;
+    }
     /**
      * @param args the command line arguments
      */
