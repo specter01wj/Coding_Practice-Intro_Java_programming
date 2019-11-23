@@ -42,6 +42,24 @@ public class Lab16_4 extends Lab16_3 {
         rbGreen.setToggleGroup(group);
         rbBlue.setToggleGroup(group);
         
+        rbRed.setOnAction(e -> {
+            if (rbRed.isSelected()) {
+              text.setFill(Color.RED);
+            }
+        });
+
+        rbGreen.setOnAction(e -> {
+          if (rbGreen.isSelected()) {
+            text.setFill(Color.GREEN);
+          }
+        });
+
+        rbBlue.setOnAction(e -> {
+          if (rbBlue.isSelected()) {
+            text.setFill(Color.BLUE);
+          }
+        });
+        
         return pane;
     }
     /**
