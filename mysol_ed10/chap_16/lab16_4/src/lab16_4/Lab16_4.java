@@ -37,6 +37,11 @@ public class Lab16_4 extends Lab16_3 {
         paneForRadioButtons.getChildren().addAll(rbRed, rbGreen, rbBlue);
         pane.setLeft(paneForRadioButtons);
         
+        ToggleGroup group = new ToggleGroup();
+        rbRed.setToggleGroup(group);
+        rbGreen.setToggleGroup(group);
+        rbBlue.setToggleGroup(group);
+        
         return pane;
     }
     /**
