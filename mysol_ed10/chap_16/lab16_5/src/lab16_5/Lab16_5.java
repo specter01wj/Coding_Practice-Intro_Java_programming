@@ -5,6 +5,13 @@
  */
 package lab16_5;
 
+import javafx.application.Application;
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.BorderPane;
+
 /**
  *
  * @author james.wang
@@ -16,6 +23,7 @@ public class Lab16_5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Application.launch(args);
     }
     
 }
