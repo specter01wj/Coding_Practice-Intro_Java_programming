@@ -15,7 +15,7 @@ import javafx.scene.image.ImageView;
  * @author james.wang
  */
 
-// DescriptionPane
+// TextAreaDemo
 public class Lab16_6 extends Application {
 
     @Override

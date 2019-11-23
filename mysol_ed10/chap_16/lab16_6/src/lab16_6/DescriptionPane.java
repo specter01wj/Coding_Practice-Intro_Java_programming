@@ -32,7 +32,7 @@ public class DescriptionPane extends BorderPane {
         taDescription.setFont(new Font("Serif", 14));
 
         taDescription.setWrapText(true);
-        taDescription.setEditable(false);
+        taDescription.setEditable(true);
 
         ScrollPane scrollPane = new ScrollPane(taDescription);
 
