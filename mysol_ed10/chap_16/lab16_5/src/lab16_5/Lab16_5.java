@@ -16,7 +16,9 @@ import javafx.scene.layout.BorderPane;
  *
  * @author james.wang
  */
-public class Lab16_5 {
+
+// TextFieldDemo
+public class Lab16_5 extends Lab16_4 {
 
     /**
      * @param args the command line arguments
