@@ -25,6 +25,13 @@ public class Lab16_4 extends Lab16_3 {
     protected BorderPane getPane() {
         BorderPane pane = super.getPane();
         
+        VBox paneForRadioButtons = new VBox(20);
+        paneForRadioButtons.setPadding(new Insets(5, 5, 5, 5)); 
+        paneForRadioButtons.setStyle("-fx-border-color: green");
+        paneForRadioButtons.setStyle("-fx-border-width: 2px; -fx-border-color: green");
+        
+        
+        
         return pane;
     }
     /**
