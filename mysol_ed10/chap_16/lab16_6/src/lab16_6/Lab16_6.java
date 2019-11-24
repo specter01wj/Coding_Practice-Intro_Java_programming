@@ -30,6 +30,7 @@ public class Lab16_6 extends Application {
       
       
       
+      
       Scene scene = new Scene(descriptionPane, 450, 200);
       primaryStage.setTitle("TextAreaDemo");
       primaryStage.setScene(scene);
