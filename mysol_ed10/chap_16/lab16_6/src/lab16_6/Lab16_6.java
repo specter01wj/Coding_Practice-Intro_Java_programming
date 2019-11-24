@@ -28,6 +28,7 @@ public class Lab16_6 extends Application {
       descriptionPane.setImageView(new ImageView("image/ca2.gif"));
       descriptionPane.setDescription(description);
       
+      
       Scene scene = new Scene(descriptionPane, 450, 200);
       primaryStage.setTitle("TextAreaDemo");
       primaryStage.setScene(scene);
