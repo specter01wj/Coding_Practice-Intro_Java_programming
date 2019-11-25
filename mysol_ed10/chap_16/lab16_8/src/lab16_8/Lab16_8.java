@@ -46,7 +46,10 @@ public class Lab16_8 extends Application {
         lv.setPrefSize(400, 400);
         lv.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         
-        
+        FlowPane imagePane = new FlowPane(10, 10);
+        BorderPane pane = new BorderPane();
+        pane.setLeft(new ScrollPane(lv));   
+        pane.setCenter(imagePane);
     }
     /**
      * @param args the command line arguments
