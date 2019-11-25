@@ -20,8 +20,25 @@ import javafx.scene.layout.FlowPane;
  *
  * @author james.wang
  */
+
+// ListViewDemo
 public class Lab16_8 extends Application {
 
+    private String[] flagTitles = {"Canada", "China", "Denmark",
+    "France", "Germany", "India", "Norway", "United Kingdom",
+    "United States of America"};
+    
+    private ImageView[] ImageViews = {
+        new ImageView("image/ca.gif"),
+        new ImageView("image/china.gif"),
+        new ImageView("image/denmark.gif"),
+        new ImageView("image/fr.gif"),
+        new ImageView("image/germany.gif"),
+        new ImageView("image/india.gif"),
+        new ImageView("image/norway.gif"),
+        new ImageView("image/uk.gif"),
+        new ImageView("image/us.gif")
+    };
     /**
      * @param args the command line arguments
      */
