@@ -71,6 +71,7 @@ public class Lab16_7 extends Application {
         cbo.setOnAction(e -> setDisplay(items.indexOf(cbo.getValue())));
         
         
+        
         Scene scene = new Scene(pane, 650, 350);
         primaryStage.setTitle("ComboBoxDemo");
         primaryStage.setScene(scene);
