@@ -43,7 +43,7 @@ public class Lab16_8 extends Application {
     @Override
     public void start(Stage primaryStage) {
         ListView<String> lv = new ListView<> (FXCollections.observableArrayList(flagTitles));
-        lv.setPrefSize(400, 400);
+        lv.setPrefSize(200, 400);
         lv.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         
         FlowPane imagePane = new FlowPane(10, 10);
@@ -58,6 +58,11 @@ public class Lab16_8 extends Application {
                 imagePane.getChildren().add(ImageViews[i]);
               }
         });
+        
+        Scene scene = new Scene(pane, 650, 250);
+        primaryStage.setTitle("ListViewDemo");
+        primaryStage.setScene(scene);
+        primaryStage.show();    
     }
     /**
      * @param args the command line arguments
