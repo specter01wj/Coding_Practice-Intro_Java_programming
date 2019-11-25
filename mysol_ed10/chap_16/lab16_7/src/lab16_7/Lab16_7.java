@@ -28,11 +28,11 @@ public class Lab16_7 extends Application {
     private ImageView[] flagImage = {new ImageView("image/ca.gif"),
       new ImageView("image/china.gif"), 
       new ImageView("image/denmark.gif"), 
-      new ImageView("image/fr.gif"), 
+      new ImageView("image/france.gif"), 
       new ImageView("image/germany.gif"),
       new ImageView("image/india.gif"), 
       new ImageView("image/norway.gif"),
-      new ImageView("image/uk.gif"), new ImageView("image/us.gif")};
+      new ImageView("image/uk.gif"), new ImageView("image/usa.gif")};
     
     private String[] flagDescription = new String[9];
     private DescriptionPane descriptionPane = new DescriptionPane();
