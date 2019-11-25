@@ -38,6 +38,14 @@ public class Lab16_9 extends Application {
         pane.setBottom(sbHorizontal);
         pane.setRight(sbVertical);
         
+        sbHorizontal.valueProperty().addListener(ov -> 
+            text.setX(sbHorizontal.getValue() * paneForText.getWidth() /
+              sbHorizontal.getMax()));
+        
+        sbVertical.valueProperty().addListener(ov -> 
+            text.setY(sbVertical.getValue() * paneForText.getHeight() /
+              sbVertical.getMax()));
+        
         Scene scene = new Scene(pane, 450, 170);
         primaryStage.setTitle("ScrollBarDemo");
         primaryStage.setScene(scene);
