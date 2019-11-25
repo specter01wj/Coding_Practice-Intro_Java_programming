@@ -72,6 +72,7 @@ public class Lab16_7 extends Application {
         
         
         
+        
         Scene scene = new Scene(pane, 650, 350);
         primaryStage.setTitle("ComboBoxDemo");
         primaryStage.setScene(scene);
