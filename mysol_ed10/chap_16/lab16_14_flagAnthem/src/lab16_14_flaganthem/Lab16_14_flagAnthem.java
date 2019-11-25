@@ -45,12 +45,10 @@ public class Lab16_14_flagAnthem extends Application {
         System.out.println(System.getProperty("user.dir"));
         
         for (int i = 0; i < NUMBER_OF_NATIONS; i++) {
-            FileInputStream inputstream1 = new FileInputStream("image/" + i + ".gif");
             //images[i] = new Image( "image/" + i + ".gif");
-            images[i] = new Image(inputstream1);
-            File file1 = new File("anthem/" + i + ".mp3");
+            images[i] = new Image(new FileInputStream("image/" + i + ".gif"));
             //mp[i] = new MediaPlayer(new Media("anthem/" + i + ".mp3"));
-            mp[i] = new MediaPlayer(new Media(file1.toURI().toString()));
+            mp[i] = new MediaPlayer(new Media(new File("anthem/" + i + ".mp3").toURI().toString()));
         }
         
         Button btPlayPause = new Button(">");
