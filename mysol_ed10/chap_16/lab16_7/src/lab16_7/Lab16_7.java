@@ -19,8 +19,30 @@ import javafx.scene.layout.BorderPane;
  *
  * @author james.wang
  */
-public class Lab16_7 {
+public class Lab16_7 extends Application {
 
+    private String[] flagTitles = {"Canada", "China", "Denmark", 
+      "France", "Germany", "India", "Norway", "United Kingdom",
+      "United States of America"};
+    
+    private ImageView[] flagImage = {new ImageView("image/ca.gif"),
+      new ImageView("image/china.gif"), 
+      new ImageView("image/denmark.gif"), 
+      new ImageView("image/fr.gif"), 
+      new ImageView("image/germany.gif"),
+      new ImageView("image/india.gif"), 
+      new ImageView("image/norway.gif"),
+      new ImageView("image/uk.gif"), new ImageView("image/us.gif")};
+    
+    private String[] flagDescription = new String[9];
+    private DescriptionPane descriptionPane = new DescriptionPane();
+    private ComboBox<String> cbo = new ComboBox<>();
+    
+    @Override
+    public void start(Stage primaryStage) {
+        
+    }
+    
     /**
      * @param args the command line arguments
      */
