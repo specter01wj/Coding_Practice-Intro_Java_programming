@@ -39,6 +39,11 @@ public class Lab16_8 extends Application {
         new ImageView("image/uk.gif"),
         new ImageView("image/usa.gif")
     };
+    
+    @Override
+    public void start(Stage primaryStage) {
+        
+    }
     /**
      * @param args the command line arguments
      */
