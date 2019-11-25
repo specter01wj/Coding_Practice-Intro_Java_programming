@@ -50,6 +50,14 @@ public class Lab16_8 extends Application {
         BorderPane pane = new BorderPane();
         pane.setLeft(new ScrollPane(lv));   
         pane.setCenter(imagePane);
+        
+        lv.getSelectionModel().selectedItemProperty().addListener(
+            ov -> { 
+              imagePane.getChildren().clear();
+              for (Integer i: lv.getSelectionModel().getSelectedIndices()) {
+                imagePane.getChildren().add(ImageViews[i]);
+              }
+        });
     }
     /**
      * @param args the command line arguments
