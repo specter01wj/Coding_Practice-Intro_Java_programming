@@ -32,12 +32,12 @@ public class Lab16_8 extends Application {
         new ImageView("image/ca.gif"),
         new ImageView("image/china.gif"),
         new ImageView("image/denmark.gif"),
-        new ImageView("image/fr.gif"),
+        new ImageView("image/france.gif"),
         new ImageView("image/germany.gif"),
         new ImageView("image/india.gif"),
         new ImageView("image/norway.gif"),
         new ImageView("image/uk.gif"),
-        new ImageView("image/us.gif")
+        new ImageView("image/usa.gif")
     };
     /**
      * @param args the command line arguments
