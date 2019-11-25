@@ -24,15 +24,16 @@ import javafx.scene.shape.Ellipse;
 // TicTacToe
 public class Lab16_12 extends Application {
 
+    private int height = 3, width = 3;
     private char whoseTurn = 'X';
-    private Cell[][] cell =  new Cell[3][3];
+    private Cell[][] cell =  new Cell[height][width];
     private Label lblStatus = new Label("X's turn to play");
     
     @Override
     public void start(Stage primaryStage) {
         GridPane pane = new GridPane(); 
-        for (int i = 0; i < 3; i++) {
-          for (int j = 0; j < 3; j++) {
+        for (int i = 0; i < height; i++) {
+          for (int j = 0; j < width; j++) {
             pane.add(cell[i][j] = new Cell(), j, i);
           }
         }
@@ -111,6 +112,47 @@ public class Lab16_12 extends Application {
             }
           }
         }
+    }
+    
+    public boolean isFull() {
+        for (int i = 0; i < height; i++)
+          for (int j = 0; j < width; j++)
+            if (cell[i][j].getToken() == ' ')
+              return false;
+
+        return true;
+    }
+    
+    public boolean isWon(char token) {
+        for (int i = 0; i < height; i++) {
+          if (cell[i][0].getToken() == token
+              && cell[i][1].getToken() == token
+              && cell[i][2].getToken() == token) {
+            return true;
+          }
+        }
+
+        for (int j = 0; j < width; j++) {
+          if (cell[0][j].getToken() ==  token
+              && cell[1][j].getToken() == token
+              && cell[2][j].getToken() == token) {
+            return true;
+          }
+        }
+
+        if (cell[0][0].getToken() == token 
+            && cell[1][1].getToken() == token        
+            && cell[2][2].getToken() == token) {
+          return true;
+        }
+
+        if (cell[0][2].getToken() == token
+            && cell[1][1].getToken() == token
+            && cell[2][0].getToken() == token) {
+          return true;
+        }
+
+        return false;
     }
     /**
      * @param args the command line arguments
