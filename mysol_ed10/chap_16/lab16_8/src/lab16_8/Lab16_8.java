@@ -42,6 +42,10 @@ public class Lab16_8 extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+        ListView<String> lv = new ListView<> (FXCollections.observableArrayList(flagTitles));
+        lv.setPrefSize(400, 400);
+        lv.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
+        
         
     }
     /**
