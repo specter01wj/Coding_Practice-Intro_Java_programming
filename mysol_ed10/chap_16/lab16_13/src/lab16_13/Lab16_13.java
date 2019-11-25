@@ -29,7 +29,7 @@ import javafx.util.Duration;
 public class Lab16_13 extends Application {
 
     private static final String MEDIA_URL = 
-    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/WeAreGoingOnBullrun.mp4";
+    "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/VolkswagenGTIReview.mp4";
     
     @Override
     public void start(Stage primaryStage) {
@@ -37,9 +37,41 @@ public class Lab16_13 extends Application {
         MediaPlayer mediaPlayer = new MediaPlayer(media);
         MediaView mediaView = new MediaView(mediaPlayer);
         
+        Button playButton = new Button(">");
+        playButton.setOnAction(e -> {
+          if (playButton.getText().equals(">")) {
+            mediaPlayer.play();
+            playButton.setText("||");
+          } else {
+            mediaPlayer.pause();
+            playButton.setText(">");
+          }
+        });
         
+        Button rewindButton = new Button("<<");
+        rewindButton.setOnAction(e -> mediaPlayer.seek(Duration.ZERO));
         
+        Slider slVolume = new Slider();
+        slVolume.setPrefWidth(150);
+        slVolume.setMaxWidth(Region.USE_PREF_SIZE);
+        slVolume.setMinWidth(30);
+        slVolume.setValue(50);
+        mediaPlayer.volumeProperty().bind(
+          slVolume.valueProperty().divide(100));
         
+        HBox hBox = new HBox(10);
+        hBox.setAlignment(Pos.CENTER);
+        hBox.getChildren().addAll(playButton, rewindButton,
+          new Label("Volume"), slVolume);
+        
+        BorderPane pane = new BorderPane();
+        pane.setCenter(mediaView);
+        pane.setBottom(hBox);
+        
+        Scene scene = new Scene(pane, 650, 500);
+        primaryStage.setTitle("MediaDemo"); // Set the stage title
+        primaryStage.setScene(scene); // Place the scene in the stage
+        primaryStage.show();
     }
     /**
      * @param args the command line arguments
