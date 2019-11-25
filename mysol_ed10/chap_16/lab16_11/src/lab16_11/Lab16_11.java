@@ -20,22 +20,21 @@ import javafx.scene.layout.BorderPane;
 // BounceBallSlider
 public class Lab16_11 extends Application {
 
-    @Override // Override the start method in the Application class
+    @Override
     public void start(Stage primaryStage) {
       BallPane ballPane = new BallPane();
       Slider slSpeed = new Slider();
-      slSpeed.setMax(20);
+      slSpeed.setMax(100);
       ballPane.rateProperty().bind(slSpeed.valueProperty());
 
       BorderPane pane = new BorderPane();
       pane.setCenter(ballPane);
       pane.setBottom(slSpeed);
-
-      // Create a scene and place it in the stage
+      
       Scene scene = new Scene(pane, 250, 250);
-      primaryStage.setTitle("BounceBallSlider"); // Set the stage title
-      primaryStage.setScene(scene); // Place the scene in the stage
-      primaryStage.show(); // Display the stage
+      primaryStage.setTitle("BounceBallSlider");
+      primaryStage.setScene(scene);
+      primaryStage.show();
     }
     /**
      * @param args the command line arguments
