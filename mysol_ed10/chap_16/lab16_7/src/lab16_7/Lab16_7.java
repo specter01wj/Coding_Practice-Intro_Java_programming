@@ -19,6 +19,8 @@ import javafx.scene.layout.BorderPane;
  *
  * @author james.wang
  */
+
+// ComboBoxDemo
 public class Lab16_7 extends Application {
 
     private String[] flagTitles = {"Canada", "China", "Denmark", 
