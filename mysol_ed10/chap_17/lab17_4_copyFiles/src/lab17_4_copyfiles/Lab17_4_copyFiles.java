@@ -50,8 +50,6 @@ public class Lab17_4_copyFiles {
             while ((r = input.read()) != -1) {
               output.write((byte)r);
               numberOfBytesCopied++;
-              
-              
             }
             
             System.out.println(numberOfBytesCopied + " bytes copied");
