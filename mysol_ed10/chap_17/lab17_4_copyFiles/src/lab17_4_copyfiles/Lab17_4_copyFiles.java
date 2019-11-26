@@ -42,8 +42,7 @@ public class Lab17_4_copyFiles {
         }
         
         try (
-            BufferedInputStream input = 
-              new BufferedInputStream(new FileInputStream(sourceFile));
+            BufferedInputStream input = new BufferedInputStream(new FileInputStream(sourceFile));
             
             BufferedOutputStream output = 
               new BufferedOutputStream(new FileOutputStream(targetFile));
