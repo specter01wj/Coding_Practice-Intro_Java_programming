@@ -33,6 +33,16 @@ public class Lab17_4_copyFiles {
              + " does not exist");
            System.exit(2);
         }
+        
+        File targetFile = new File(args[1]);
+        if (targetFile.exists()) {
+          System.out.println("Target file " + args[1] 
+            + " already exists");
+          System.exit(3);
+        }
+        
+        
+        
     
     }
     
