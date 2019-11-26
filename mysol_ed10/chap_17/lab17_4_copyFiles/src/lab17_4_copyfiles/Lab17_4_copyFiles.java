@@ -16,10 +16,16 @@ import java.io.*;
 public class Lab17_4_copyFiles {
 
     /**
-     * @param args the command line arguments
+     * @param args[0] for sourcefile 
+     * @param args[1] for target file
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        if (args.length != 2) { 
+            System.out.println(
+              "Usage: java Copy sourceFile targetfile");
+            System.exit(1);
+        }
     }
     
 }
