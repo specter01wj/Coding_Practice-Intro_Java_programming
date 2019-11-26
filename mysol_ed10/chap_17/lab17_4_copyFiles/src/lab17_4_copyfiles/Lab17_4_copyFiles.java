@@ -51,6 +51,7 @@ public class Lab17_4_copyFiles {
               output.write((byte)r);
               numberOfBytesCopied++;
               
+              
             }
             
             System.out.println(numberOfBytesCopied + " bytes copied");
