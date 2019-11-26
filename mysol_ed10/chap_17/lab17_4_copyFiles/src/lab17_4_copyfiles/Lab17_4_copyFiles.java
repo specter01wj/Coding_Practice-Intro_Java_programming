@@ -41,7 +41,21 @@ public class Lab17_4_copyFiles {
           System.exit(3);
         }
         
-        
+        try (
+            BufferedInputStream input = 
+              new BufferedInputStream(new FileInputStream(sourceFile));
+            
+            BufferedOutputStream output = 
+              new BufferedOutputStream(new FileOutputStream(targetFile));
+        ) {
+            int r, numberOfBytesCopied = 0;
+            while ((r = input.read()) != -1) {
+              output.write((byte)r);
+              numberOfBytesCopied++;
+            }
+            
+            System.out.println(numberOfBytesCopied + " bytes copied");
+          }
         
     
     }
