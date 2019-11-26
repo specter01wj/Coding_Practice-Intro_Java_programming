@@ -44,8 +44,7 @@ public class Lab17_4_copyFiles {
         try (
             BufferedInputStream input = new BufferedInputStream(new FileInputStream(sourceFile));
             
-            BufferedOutputStream output = 
-              new BufferedOutputStream(new FileOutputStream(targetFile));
+            BufferedOutputStream output = new BufferedOutputStream(new FileOutputStream(targetFile));
         ) {
             int r, numberOfBytesCopied = 0;
             while ((r = input.read()) != -1) {
