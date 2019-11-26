@@ -5,10 +5,14 @@
  */
 package lab17_4_copyfiles;
 
+import java.io.*;
+
 /**
  *
  * @author james.wang
  */
+
+// Copy
 public class Lab17_4_copyFiles {
 
     /**
