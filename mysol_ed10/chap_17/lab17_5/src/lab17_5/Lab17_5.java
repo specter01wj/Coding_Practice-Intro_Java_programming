@@ -20,7 +20,7 @@ public class Lab17_5 {
      */
     public static void main(String[] args) throws IOException {
         // TODO code application logic here
-        try ( // Create an output stream for file object.dat
+        try (
             ObjectOutputStream output =
               new ObjectOutputStream(new FileOutputStream("object.dat"));
         ) {
