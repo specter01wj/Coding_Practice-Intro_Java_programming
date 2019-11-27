@@ -11,6 +11,8 @@ import java.io.*;
  *
  * @author james.wang
  */
+
+// TestObjectInputStream
 public class Lab17_6 {
 
     /**
