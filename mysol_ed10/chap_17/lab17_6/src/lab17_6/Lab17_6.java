@@ -18,7 +18,7 @@ public class Lab17_6 {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ClassNotFoundException, IOException {
         // TODO code application logic here
     }
     
