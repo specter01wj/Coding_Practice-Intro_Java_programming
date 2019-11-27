@@ -20,11 +20,10 @@ public class Lab17_6 {
      */
     public static void main(String[] args) throws ClassNotFoundException, IOException {
         // TODO code application logic here
-        try ( // Create an input stream for file object.dat
+        try (
             ObjectInputStream input =
               new ObjectInputStream(new FileInputStream("object.dat"));
         ) {
-            // Read a string, double value, and object from the file
             String name = input.readUTF();
             double score = input.readDouble();
             java.util.Date date = (java.util.Date)(input.readObject());
