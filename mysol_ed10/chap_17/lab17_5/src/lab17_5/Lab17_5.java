@@ -24,7 +24,7 @@ public class Lab17_5 {
             ObjectOutputStream output =
               new ObjectOutputStream(new FileOutputStream("object.dat"));
         ) {
-            output.writeUTF("John");
+            output.writeUTF("James");
             output.writeDouble(85.5);
             output.writeObject(new java.util.Date());
         }
