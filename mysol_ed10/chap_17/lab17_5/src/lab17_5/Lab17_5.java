@@ -28,7 +28,7 @@ public class Lab17_5 {
             output.writeUTF("John");
             output.writeDouble(85.5);
             output.writeObject(new java.util.Date());
-          }
+        }
     }
     
 }
