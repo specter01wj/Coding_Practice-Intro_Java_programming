@@ -29,6 +29,7 @@ public class Lab17_7 {
         ) {
             output.writeObject(numbers);
             output.writeObject(strings);
+
             
         }
         
