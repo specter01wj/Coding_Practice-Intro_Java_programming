@@ -29,6 +29,7 @@ public class Lab17_8 {
               inout.writeInt(i);
 
 
+
               
             }
             
