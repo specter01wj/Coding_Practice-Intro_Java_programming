@@ -37,8 +37,9 @@ public class Lab17_8 {
 
 
 
-              
 
+
+              
             }
             
             System.out.println("Current file length is " + inout.length());
