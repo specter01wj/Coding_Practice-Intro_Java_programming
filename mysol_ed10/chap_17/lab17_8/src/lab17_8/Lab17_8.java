@@ -28,6 +28,7 @@ public class Lab17_8 {
             for (int i = 0; i < 200; i++) {
               inout.writeInt(i);
 
+
               
             }
             
