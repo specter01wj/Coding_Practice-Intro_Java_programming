@@ -31,6 +31,7 @@ public class Lab17_7 {
             output.writeObject(strings);
 
 
+
             
         }
         
