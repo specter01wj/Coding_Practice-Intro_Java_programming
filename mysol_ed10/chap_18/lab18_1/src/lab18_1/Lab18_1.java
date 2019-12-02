@@ -19,6 +19,10 @@ public class Lab18_1 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        System.out.println("Enter a non-neg integer: ");
+        int n = input.nextInt();
+        
+        System.out.println("Factorial of " + n + " is " + factorial(n));
     }
     
     public static long factorial(int n) {
