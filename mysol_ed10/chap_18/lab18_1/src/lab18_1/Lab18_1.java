@@ -5,6 +5,8 @@
  */
 package lab18_1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author james.wang
@@ -16,6 +18,15 @@ public class Lab18_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+    }
+    
+    public static long factorial(int n) {
+        if(n == 0) {
+            return 1;
+        } else {
+            return n * factorial(n - 1);
+        }
     }
     
 }
