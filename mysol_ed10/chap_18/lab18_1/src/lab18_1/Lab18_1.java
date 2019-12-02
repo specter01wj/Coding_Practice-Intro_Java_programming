@@ -26,6 +26,7 @@ public class Lab18_1 {
 
 
 
+
         
         int n = input.nextInt();
         
