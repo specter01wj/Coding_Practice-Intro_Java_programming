@@ -21,6 +21,7 @@ public class Lab18_1 {
         Scanner input = new Scanner(System.in);
 
 
+
         
         System.out.println("Enter a non-neg integer: ");
         int n = input.nextInt();
