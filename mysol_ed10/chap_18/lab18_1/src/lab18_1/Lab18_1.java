@@ -20,6 +20,7 @@ public class Lab18_1 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
 
+
         
         System.out.println("Enter a non-neg integer: ");
         int n = input.nextInt();
