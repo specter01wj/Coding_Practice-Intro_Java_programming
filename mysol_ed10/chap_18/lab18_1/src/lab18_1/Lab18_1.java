@@ -31,6 +31,7 @@ public class Lab18_1 {
 
 
 
+
         
         System.out.println("Enter a non-neg integer: ");
         int n = input.nextInt();
