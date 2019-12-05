@@ -9,6 +9,8 @@ package lab18_4;
  *
  * @author james.wang
  */
+
+// RecursivePalindrome
 public class Lab18_4 {
 
     /**
