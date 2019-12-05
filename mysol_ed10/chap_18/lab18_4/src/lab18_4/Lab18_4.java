@@ -16,6 +16,10 @@ public class Lab18_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String[] ant1 = {"moon", "noon", "a", "aba", "ab"};
+        for(String i : ant1) {
+            System.out.println("is " + i + " a palindrome? - " + isPalindrome(i)); 
+        }
     }
     
     public static boolean isPalindrome(String s) {
