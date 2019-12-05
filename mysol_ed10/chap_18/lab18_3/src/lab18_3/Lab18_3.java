@@ -9,6 +9,8 @@ package lab18_3;
  *
  * @author james.wang
  */
+
+// RecursivePalindromeUsingSubstring
 public class Lab18_3 {
 
     /**
