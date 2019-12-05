@@ -18,4 +18,14 @@ public class Lab18_5 {
         // TODO code application logic here
     }
     
+    public static void sort(double[] list) {
+        sort(list, 0, list.length - 1);
+    }
+    
+    public static void sort(double[] list, int low, int high) {
+        if(low < high) {
+            
+        }
+    }
+    
 }
