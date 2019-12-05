@@ -11,6 +11,8 @@ import java.util.Scanner;
  *
  * @author james.wang
  */
+
+// ComputeFactorial
 public class Lab18_1 {
 
     /**
