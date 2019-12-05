@@ -33,6 +33,7 @@ public class Lab18_5 {
             double min = list[low];
             
             
+            
             for(int i = low + 1; i <= high; i++) {
                 if(list[i] < min) {
                     min = list[i];
