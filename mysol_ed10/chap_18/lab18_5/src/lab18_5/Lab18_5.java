@@ -16,6 +16,11 @@ public class Lab18_5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        double[] list = {2, 1, 3, 1, 2, 5, 2, -1, 0};
+        sort(list);
+        for (int i = 0; i < list.length; i++) {
+            System.out.println(list[i]);
+        }
     }
     
     public static void sort(double[] list) {
