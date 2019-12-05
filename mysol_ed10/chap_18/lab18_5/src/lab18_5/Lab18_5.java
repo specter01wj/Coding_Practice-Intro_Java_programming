@@ -37,6 +37,7 @@ public class Lab18_5 {
             list[indexOfMin] = list[low];
             list[low] = min;
             
+            sort(list, low + 1, high);
         }
     }
     
