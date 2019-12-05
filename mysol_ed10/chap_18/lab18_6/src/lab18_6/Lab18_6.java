@@ -9,6 +9,8 @@ package lab18_6;
  *
  * @author james.wang
  */
+
+// RecursiveBinarySearch
 public class Lab18_6 {
 
     /**
