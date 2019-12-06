@@ -5,10 +5,15 @@
  */
 package lab18_7_directorysize;
 
+import java.io.File;
+import java.util.Scanner; 
+
 /**
  *
  * @author james.wang
  */
+
+// DirectorySize
 public class Lab18_7_directorySize {
 
     /**
