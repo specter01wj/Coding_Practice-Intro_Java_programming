@@ -24,8 +24,7 @@ public class Lab18_7_directorySize {
         System.out.print("Enter a directory or a file: ");    
         Scanner input = new Scanner(System.in);
         String directory = input.nextLine();
-
-        // Display the size
+        
         System.out.println(getSize(new File(directory)) + " bytes");
     }
     
