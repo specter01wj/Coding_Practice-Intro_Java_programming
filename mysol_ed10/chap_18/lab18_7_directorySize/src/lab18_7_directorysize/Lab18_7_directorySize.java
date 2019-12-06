@@ -34,7 +34,7 @@ public class Lab18_7_directorySize {
         if (file.isDirectory()) {
           File[] files = file.listFiles();
           for (int i = 0; i < files.length; i++) {
-            size += getSize(files[i]); // Recursive call
+            size += getSize(files[i]);
           }
         }
         else { // Base case
