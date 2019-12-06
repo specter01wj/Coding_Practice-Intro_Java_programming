@@ -34,6 +34,7 @@ public class Lab18_5 {
             int indexOfMin = low;
 
 
+
             
             double min = list[low];
             
