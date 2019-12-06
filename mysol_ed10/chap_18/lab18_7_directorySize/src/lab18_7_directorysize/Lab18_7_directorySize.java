@@ -32,7 +32,7 @@ public class Lab18_7_directorySize {
         long size = 0;
 
         if (file.isDirectory()) {
-          File[] files = file.listFiles(); // All files and subdirectories
+          File[] files = file.listFiles();
           for (int i = 0; i < files.length; i++) {
             size += getSize(files[i]); // Recursive call
           }
