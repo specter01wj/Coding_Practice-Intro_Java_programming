@@ -20,4 +20,14 @@ public class Lab18_6 {
         // TODO code application logic here
     }
     
+    public static int recursiveBinarySearch(int[] list, int key) {
+        int low = 0;
+        int high = list.length - 1;
+        return recursiveBinarySearch(list, key, low, high);
+    }
+    
+    public static int recursiveBinarySearch(int[] list, int key, int low, int high) {
+        
+    }
+    
 }
