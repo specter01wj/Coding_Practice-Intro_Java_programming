@@ -33,6 +33,7 @@ public class Lab18_5 {
         if(low < high) {
             int indexOfMin = low;
 
+
             
             double min = list[low];
             
