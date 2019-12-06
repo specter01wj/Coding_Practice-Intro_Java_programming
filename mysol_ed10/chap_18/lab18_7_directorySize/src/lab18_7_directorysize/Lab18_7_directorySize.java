@@ -37,7 +37,7 @@ public class Lab18_7_directorySize {
             size += getSize(files[i]);
           }
         }
-        else { // Base case
+        else {
           size += file.length();
         }
 
