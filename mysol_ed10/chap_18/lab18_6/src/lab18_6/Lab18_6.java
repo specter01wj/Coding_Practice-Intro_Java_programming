@@ -19,7 +19,7 @@ public class Lab18_6 {
     public static void main(String[] args) {
         // TODO code application logic here
         int[] list = {-2, 1, 3, 7, 12, 15, 22, 31, 40};
-        int res = recursiveBinarySearch(list, 88);
+        int res = recursiveBinarySearch(list, 12);
         System.out.println("Result: " + res);
     }
     
