@@ -31,13 +31,13 @@ public class Lab18_7_directorySize {
     public static long getSize(File file) {
         long size = 0;
 
-        if (file.isDirectory()) {
+        if(file.isDirectory()) {
           File[] files = file.listFiles();
+          
           for (int i = 0; i < files.length; i++) {
             size += getSize(files[i]);
           }
-        }
-        else {
+        } else {
           size += file.length();
         }
 
