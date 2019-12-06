@@ -41,6 +41,7 @@ public class Lab18_5 {
 
 
 
+
             
             double min = list[low];
             
