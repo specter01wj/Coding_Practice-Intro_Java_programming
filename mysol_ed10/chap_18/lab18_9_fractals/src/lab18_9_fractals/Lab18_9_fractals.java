@@ -76,7 +76,6 @@ public class Lab18_9_fractals extends Application {
         private void displayTriangles(int order, Point2D p1, 
             Point2D p2, Point2D p3) {
           if (order == 0) {
-            // Draw a triangle to connect three points
             Polygon triangle = new Polygon();
             triangle.getPoints().addAll(p1.getX(), p1.getY(), p2.getX(), 
                 p2.getY(), p3.getX(), p3.getY());
