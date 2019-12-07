@@ -54,8 +54,7 @@ public class Lab18_9_fractals extends Application {
     
     static class SierpinskiTrianglePane extends Pane {
         private int order = 0;
-
-        /** Set a new order */
+        
         public void setOrder(int order) {
           this.order = order;
           paint();
