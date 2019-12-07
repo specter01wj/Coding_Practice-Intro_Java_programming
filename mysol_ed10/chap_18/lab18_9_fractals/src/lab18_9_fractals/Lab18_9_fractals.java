@@ -42,8 +42,7 @@ public class Lab18_9_fractals extends Application {
       BorderPane borderPane = new BorderPane();
       borderPane.setCenter(trianglePane);
       borderPane.setBottom(hBox);
-
-      // Create a scene and place it in the stage
+      
       Scene scene = new Scene(borderPane, 200, 210);
       primaryStage.setTitle("SierpinskiTriangle"); // Set the stage title
       primaryStage.setScene(scene); // Place the scene in the stage
