@@ -34,8 +34,7 @@ public class Lab18_9_fractals extends Application {
         e -> trianglePane.setOrder(Integer.parseInt(tfOrder.getText())));
       tfOrder.setPrefColumnCount(4);
       tfOrder.setAlignment(Pos.BOTTOM_RIGHT);
-
-      // Pane to hold label, text field, and a button
+      
       HBox hBox = new HBox(10);
       hBox.getChildren().addAll(new Label("Enter an order: "), tfOrder);
       hBox.setAlignment(Pos.CENTER);
