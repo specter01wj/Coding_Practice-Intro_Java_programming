@@ -5,6 +5,8 @@
  */
 package lab18_8_towerofhanoi;
 
+import java.util.Scanner;
+
 /**
  *
  * @author james.wang
