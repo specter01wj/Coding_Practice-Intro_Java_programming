@@ -9,6 +9,8 @@ package lab18_9_fractals;
  *
  * @author james.wang
  */
+
+// SierpinskiTriangle
 public class Lab18_9_fractals {
 
     /**
