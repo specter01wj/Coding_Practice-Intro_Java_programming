@@ -28,4 +28,8 @@ public class Lab18_8_towerOfHanoi {
         moveDisks(n, 'A', 'B', 'C');
     }
     
+    public static void moveDisks(int n, char fromTower, char toTower, char auxTower) {
+        
+    }
+    
 }
