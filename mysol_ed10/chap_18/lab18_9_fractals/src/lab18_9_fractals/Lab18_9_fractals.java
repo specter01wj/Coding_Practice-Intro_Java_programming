@@ -58,6 +58,7 @@ public class Lab18_9_fractals extends Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Application.launch(args);
     }
     
 }
