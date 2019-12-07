@@ -85,12 +85,10 @@ public class Lab18_9_fractals extends Application {
             this.getChildren().add(triangle);
           } 
           else {
-            // Get the midpoint on each edge in the triangle
             Point2D p12 = p1.midpoint(p2);
             Point2D p23 = p2.midpoint(p3);
             Point2D p31 = p3.midpoint(p1);
-
-            // Recursively display three triangles
+            
             displayTriangles(order - 1, p1, p12, p31);
             displayTriangles(order - 1, p12, p2, p23);
             displayTriangles(order - 1, p31, p23, p3);
