@@ -44,9 +44,9 @@ public class Lab18_9_fractals extends Application {
       borderPane.setBottom(hBox);
       
       Scene scene = new Scene(borderPane, 200, 210);
-      primaryStage.setTitle("SierpinskiTriangle"); // Set the stage title
-      primaryStage.setScene(scene); // Place the scene in the stage
-      primaryStage.show(); // Display the stage
+      primaryStage.setTitle("SierpinskiTriangle");
+      primaryStage.setScene(scene);
+      primaryStage.show();
 
       scene.widthProperty().addListener(ov -> trianglePane.paint());
       scene.heightProperty().addListener(ov -> trianglePane.paint());
