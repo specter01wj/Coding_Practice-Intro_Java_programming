@@ -24,7 +24,7 @@ import javafx.stage.Stage;
  */
 
 // SierpinskiTriangle
-public class Lab18_9_fractals {
+public class Lab18_9_fractals extends Application {
 
     @Override // Override the start method in the Application class
     public void start(Stage primaryStage) {       
