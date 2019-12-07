@@ -64,12 +64,11 @@ public class Lab18_9_fractals extends Application {
         }
 
         protected void paint() {
-          // Select three points in proportion to the panel size
           Point2D p1 = new Point2D(getWidth() / 2, 10);
           Point2D p2 = new Point2D(10, getHeight() - 10);
           Point2D p3 = new Point2D(getWidth() - 10, getHeight() - 10);
 
-          this.getChildren().clear(); // Clear the pane before redisplay
+          this.getChildren().clear();
 
           displayTriangles(order, p1, p2, p3);
         }
