@@ -20,6 +20,9 @@ public class Lab18_8_towerOfHanoi {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter number of disks: ");
+        int n = input.nextInt();
     }
     
 }
