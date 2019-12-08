@@ -43,7 +43,7 @@ public class Lab18_9_fractals extends Application {
       borderPane.setCenter(trianglePane);
       borderPane.setBottom(hBox);
       
-      Scene scene = new Scene(borderPane, 200, 210);
+      Scene scene = new Scene(borderPane, 500, 450);
       primaryStage.setTitle("SierpinskiTriangle");
       primaryStage.setScene(scene);
       primaryStage.show();
@@ -83,8 +83,7 @@ public class Lab18_9_fractals extends Application {
             triangle.setFill(Color.WHITE);
 
             this.getChildren().add(triangle);
-          } 
-          else {
+          } else {
             Point2D p12 = p1.midpoint(p2);
             Point2D p23 = p2.midpoint(p3);
             Point2D p31 = p3.midpoint(p1);
