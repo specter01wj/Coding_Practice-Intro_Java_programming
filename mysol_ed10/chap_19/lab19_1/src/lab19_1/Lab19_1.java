@@ -24,6 +24,13 @@ public class Lab19_1 {
         stack1.push("Berlin");
         
         System.out.println(stack1);
+        
+        GenericStack<Integer> stack2 = new GenericStack<>();
+        stack2.push(122);
+        stack2.push(334);
+        stack2.push(678);
+        
+        System.out.println(stack2);
     }
     
     public static class GenericStack<E> {
