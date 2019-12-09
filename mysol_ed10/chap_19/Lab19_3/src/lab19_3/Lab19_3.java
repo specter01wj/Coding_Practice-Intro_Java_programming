@@ -5,6 +5,10 @@
  */
 package lab19_3;
 
+import lab19_3.Circle;
+import lab19_3.GeometricObject;
+import lab19_3.Rectangle;
+
 /**
  *
  * @author james.wang
@@ -18,8 +22,14 @@ public class Lab19_3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Rectangle rec1 = new Rectangle(2, 2);
+        Circle cir1 = new Circle(2);
+        
+        System.out.println("Same area? " + equalArea(rec1, cir1));
     }
     
-    public static <E extends >
+    public static <E extends GeometricObject> boolean equalArea(E object1, E object2) {
+        return object1.getArea() == object2.getArea();
+    }
     
 }

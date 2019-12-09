@@ -1,4 +1,4 @@
-package chapter13;
+package lab19_3;
 
 public class Rectangle extends GeometricObject {
   private double width;
