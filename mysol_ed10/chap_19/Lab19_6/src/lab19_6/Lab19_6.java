@@ -18,6 +18,15 @@ public class Lab19_6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        System.out.println(Lab19_6.max("James", 23));
+    }
+    
+    public static <E extends Comparable<E>> E max(E o1, E o2) {
+        if (o1.compareTo(o2) > 0) {
+          return o1;
+        } else {
+          return o2;
+        }
     }
     
 }
