@@ -18,7 +18,8 @@ public class Lab19_6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println(Lab19_6.max("James", 23));
+//        System.out.println(Lab19_6.max("James", 23)); // error
+        System.out.println(Lab19_6.max("James", "Kim"));
     }
     
     public static <E extends Comparable<E>> E max(E o1, E o2) {
