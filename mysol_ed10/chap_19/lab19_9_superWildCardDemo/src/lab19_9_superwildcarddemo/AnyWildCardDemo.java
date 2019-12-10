@@ -17,5 +17,6 @@ public class AnyWildCardDemo {
     while (!stack.isEmpty()) {
       System.out.print(stack.pop() + " ");
     }
+    System.out.println("");
   }
 }
