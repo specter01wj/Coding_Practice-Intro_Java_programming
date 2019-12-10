@@ -9,6 +9,8 @@ package lab19_10_genericmatrix;
  *
  * @author james.wang
  */
+
+// GenericMatrix
 public class Lab19_10_genericMatrix {
 
     /**
