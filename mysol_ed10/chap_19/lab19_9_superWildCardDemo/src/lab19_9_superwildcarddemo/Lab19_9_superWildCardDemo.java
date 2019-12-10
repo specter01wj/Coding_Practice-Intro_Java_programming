@@ -20,4 +20,10 @@ public class Lab19_9_superWildCardDemo {
         // TODO code application logic here
     }
     
+    public static <T> void add(GenericStack<T> stack1, GenericStack<? super T> stack2) {
+        while (!stack1.isEmpty()) {
+            stack2.push(stack1.pop());
+        }
+    }
+    
 }
