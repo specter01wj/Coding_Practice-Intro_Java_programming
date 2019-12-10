@@ -18,6 +18,10 @@ public class Lab19_7_wildCardNeedDemo {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        GenericStack<Integer> intStack = new GenericStack<>();
+        intStack.push(1); // 1 is autoboxed into new Integer(1)
+        intStack.push(2);
+        intStack.push(-2);
     }
     
     public static double max(GenericStack<Number> stack) {
