@@ -20,4 +20,10 @@ public class Lab19_8_anyWildCardDemo {
         // TODO code application logic here
     }
     
+    public static void print(GenericStack<?> stack) {
+        while (!stack.isEmpty()) {
+          System.out.print(stack.pop() + " ");
+        }
+    }
+    
 }
