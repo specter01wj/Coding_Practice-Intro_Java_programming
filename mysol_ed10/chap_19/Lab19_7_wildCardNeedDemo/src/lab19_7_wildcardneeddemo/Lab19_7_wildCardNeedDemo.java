@@ -20,4 +20,17 @@ public class Lab19_7_wildCardNeedDemo {
         // TODO code application logic here
     }
     
+    public static double max(GenericStack<Number> stack) {
+        double max = stack.pop().doubleValue(); // initialize max
+
+        while (!stack.isEmpty()) {
+          double value = stack.pop().doubleValue();
+          if (value > max) {
+            max = value;
+          }
+        }
+
+        return max;
+   }
+    
 }
