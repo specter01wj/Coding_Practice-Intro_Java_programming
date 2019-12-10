@@ -24,9 +24,12 @@ public class Lab19_7_wildCardNeedDemo {
         intStack.push(1); // 1 is autoboxed into new Integer(1)
         intStack.push(2);
         intStack.push(-2);
+        
+        System.out.println("The max number is " + max(intStack));
     }
     
-    public static double max(GenericStack<Number> stack) {
+//    public static double max(GenericStack<Number> stack) {
+    public static double max(GenericStack<? extends Number> stack) {
         double max = stack.pop().doubleValue(); // initialize max
 
         while (!stack.isEmpty()) {
