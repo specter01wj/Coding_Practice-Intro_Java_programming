@@ -5,6 +5,8 @@
  */
 package lab19_9_superwildcarddemo;
 
+import lab19_9_superwildcarddemo.GenericStack;
+
 /**
  *
  * @author james.wang
