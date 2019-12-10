@@ -5,6 +5,8 @@
  */
 package lab19_7_wildcardneeddemo;
 
+import lab19_7_wildcardneeddemo.GenericStack;
+
 /**
  *
  * @author james.wang
