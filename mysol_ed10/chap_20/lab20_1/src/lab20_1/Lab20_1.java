@@ -30,7 +30,9 @@ public class Lab20_1 {
         System.out.println(arrList1);
         System.out.println("Dallas? - " + arrList1.contains("Dallas"));
         
-        
+        System.out.println("Before: " + arrList1.size() + " cities.");
+        arrList1.remove("Dallas");
+        System.out.println("After: " + arrList1.size() + " cities.");
     }
     
 }
