@@ -5,10 +5,14 @@
  */
 package lab20_1;
 
+import java.util.*;
+
 /**
  *
  * @author james.wang
  */
+
+// TestCollection
 public class Lab20_1 {
 
     /**
@@ -16,6 +20,16 @@ public class Lab20_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        ArrayList<String> arrList1 = new ArrayList<>();
+        arrList1.add("New York");
+        arrList1.add("Atlanta");
+        arrList1.add("Dallas");
+        arrList1.add("Baltimore");
+        System.out.println("A List of collection1: ");
+        System.out.println(arrList1);
+        
+        
+        
     }
     
 }
