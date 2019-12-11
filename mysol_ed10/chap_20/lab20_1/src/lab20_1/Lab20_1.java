@@ -25,9 +25,10 @@ public class Lab20_1 {
         arrList1.add("Atlanta");
         arrList1.add("Dallas");
         arrList1.add("Baltimore");
+        
         System.out.println("A List of collection1: ");
         System.out.println(arrList1);
-        
+        System.out.println("Dallas? - " + arrList1.contains("Dallas"));
         
         
     }
