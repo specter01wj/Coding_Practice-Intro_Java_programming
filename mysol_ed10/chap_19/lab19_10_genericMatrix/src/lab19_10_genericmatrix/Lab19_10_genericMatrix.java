@@ -20,6 +20,7 @@ public class Lab19_10_genericMatrix {
         // TODO code application logic here
         
         
+        
     }
     
 }
