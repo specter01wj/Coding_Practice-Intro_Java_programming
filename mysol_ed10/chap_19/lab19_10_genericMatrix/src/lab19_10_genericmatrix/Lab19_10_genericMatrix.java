@@ -18,6 +18,7 @@ public class Lab19_10_genericMatrix {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
     }
     
 }
