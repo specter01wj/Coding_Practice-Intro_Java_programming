@@ -9,6 +9,8 @@ package lab19_11_genericmatrix_rationalmatrix;
  *
  * @author james.wang
  */
+
+// RationalMatrix
 public class Lab19_11_genericmatrix_RationalMatrix {
 
     /**
