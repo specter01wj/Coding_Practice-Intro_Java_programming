@@ -1,4 +1,4 @@
-package lab19_10_genericmatrix;
+package lab19_10_genericmatrix_IntegerMatrix;
 
 public abstract class GenericMatrix<E extends Number> {
   /** Abstract method for adding two elements of the matrices */

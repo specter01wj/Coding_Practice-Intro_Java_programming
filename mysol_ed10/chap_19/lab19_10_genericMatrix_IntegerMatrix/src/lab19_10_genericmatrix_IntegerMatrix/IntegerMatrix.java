@@ -1,4 +1,4 @@
-package lab19_10_genericmatrix;
+package lab19_10_genericmatrix_IntegerMatrix;
 
 public class IntegerMatrix extends GenericMatrix<Integer> {
   @Override /** Add two integers */
