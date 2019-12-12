@@ -20,6 +20,7 @@ public class Lab20_2 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Collection<String> arrList1 = new ArrayList<>();
     }
     
 }
