@@ -60,8 +60,6 @@ public class Lab20_1 {
         c1.removeAll(arrList2);
         System.out.print("Cities in collection1, but not in 2: ");
         System.out.println(c1);
-        
-        
     }
     
 }
