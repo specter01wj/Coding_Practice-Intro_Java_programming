@@ -9,6 +9,8 @@ package lab20_2;
  *
  * @author james.wang
  */
+
+// TestIterator
 public class Lab20_2 {
 
     /**
