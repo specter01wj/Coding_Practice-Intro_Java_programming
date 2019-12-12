@@ -25,6 +25,8 @@ public class Lab20_2 {
         arrList1.add("Atlanta"); 
         arrList1.add("Dallas"); 
         arrList1.add("Madison"); 
+        
+        Iterator<String> iter1 = arrList1.iterator();
     }
     
 }
