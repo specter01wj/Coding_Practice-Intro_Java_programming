@@ -27,6 +27,9 @@ public class Lab20_2 {
         arrList1.add("Madison"); 
         
         Iterator<String> iter1 = arrList1.iterator();
+        while(iter1.hasNext()) {
+            System.out.println(iter1.next().toUpperCase() + " ");
+        }
     }
     
 }
