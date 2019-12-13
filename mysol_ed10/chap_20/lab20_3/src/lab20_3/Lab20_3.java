@@ -5,6 +5,8 @@
  */
 package lab20_3;
 
+import java.util.*;
+
 /**
  *
  * @author james.wang
@@ -18,6 +20,7 @@ public class Lab20_3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        List<Integer> arrList1 = new ArrayList<>();
     }
     
 }
