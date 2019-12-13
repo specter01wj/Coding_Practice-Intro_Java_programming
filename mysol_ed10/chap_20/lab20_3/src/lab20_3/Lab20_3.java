@@ -38,6 +38,11 @@ public class Lab20_3 {
         linkedList1.removeLast();
         linkedList1.addFirst("green");
         System.out.println("Display linkedlist: " + linkedList1);
+        
+        System.out.println("Display the linked list backward:");
+        for (int i = linkedList1.size() - 1; i >= 0; i--) {
+          System.out.print(linkedList1.get(i) + " ");
+        }
     }
     
 }
