@@ -33,6 +33,11 @@ public class Lab20_3 {
         System.out.println(arrList1);
         
         LinkedList<Object> linkedList1 = new LinkedList<>(arrList1);
+//        System.out.println("Display linkedlist: " + linkedList1);
+        linkedList1.add(1, "red");
+        linkedList1.removeLast();
+        linkedList1.addFirst("green");
+        System.out.println("Display linkedlist: " + linkedList1);
     }
     
 }
