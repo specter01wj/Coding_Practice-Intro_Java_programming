@@ -40,6 +40,7 @@ public class Lab20_3 {
         
         
         
+        
         System.out.println("Display linkedlist: " + linkedList1);
         
         System.out.println("Display the linked list backward:");
