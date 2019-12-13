@@ -31,6 +31,8 @@ public class Lab20_3 {
         
         System.out.println("A list of integers in the array list:");
         System.out.println(arrList1);
+        
+        LinkedList<Object> linkedList1 = new LinkedList<>(arrList1);
     }
     
 }
