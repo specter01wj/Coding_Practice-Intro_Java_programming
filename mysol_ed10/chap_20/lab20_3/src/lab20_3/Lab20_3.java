@@ -28,6 +28,9 @@ public class Lab20_3 {
         arrList1.add(4);
         arrList1.add(0, 10);
         arrList1.add(3, 30);
+        
+        System.out.println("A list of integers in the array list:");
+        System.out.println(arrList1);
     }
     
 }
