@@ -37,6 +37,7 @@ public class Lab20_3 {
         linkedList1.add(1, "red");
         linkedList1.removeLast();
         linkedList1.addFirst("green");
+        
         System.out.println("Display linkedlist: " + linkedList1);
         
         System.out.println("Display the linked list backward:");
