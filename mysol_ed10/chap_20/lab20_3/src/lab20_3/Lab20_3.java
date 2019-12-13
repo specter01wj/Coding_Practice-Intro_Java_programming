@@ -9,6 +9,8 @@ package lab20_3;
  *
  * @author james.wang
  */
+
+// TestArrayAndLinkedList
 public class Lab20_3 {
 
     /**
