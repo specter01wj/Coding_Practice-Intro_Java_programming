@@ -31,6 +31,7 @@ public class Lab20_2 {
             System.out.println(iter1.next().toUpperCase() + " ");
             
             
+            
         }
     }
     
