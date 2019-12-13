@@ -30,6 +30,7 @@ public class Lab20_2 {
         while(iter1.hasNext()) {
             System.out.println(iter1.next().toUpperCase() + " ");
             
+            
         }
     }
     
