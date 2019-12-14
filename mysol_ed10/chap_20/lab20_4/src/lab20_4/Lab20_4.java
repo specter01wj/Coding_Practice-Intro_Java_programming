@@ -27,4 +27,12 @@ public class Lab20_4 {
         GeometricObject g2 = new Circle(5);
     }
     
+    public static GeometricObject max(GeometricObject g1, GeometricObject g2, Comparator<GeometricObject> c) {
+        if (c.compare(g1, g2) > 0) {
+          return g1;
+        } else {
+          return g2;
+        }
+    }
+    
 }
