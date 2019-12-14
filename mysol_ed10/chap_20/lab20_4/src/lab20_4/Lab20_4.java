@@ -23,6 +23,8 @@ public class Lab20_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        GeometricObject g1 = new Rectangle(5, 5);
+        GeometricObject g2 = new Circle(5);
     }
     
 }
