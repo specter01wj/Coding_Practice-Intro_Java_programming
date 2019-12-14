@@ -5,9 +5,9 @@
  */
 package lab20_4;
 
-import chapter13.GeometricObject;
-import chapter13.Rectangle;
-import chapter13.Circle;
+import lab20_4.GeometricObject;
+import lab20_4.Rectangle;
+import lab20_4.Circle;
 import java.util.Comparator;
 
 /**
