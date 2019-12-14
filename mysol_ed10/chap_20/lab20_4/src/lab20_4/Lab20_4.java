@@ -5,6 +5,11 @@
  */
 package lab20_4;
 
+import chapter13.GeometricObject;
+import chapter13.Rectangle;
+import chapter13.Circle;
+import java.util.Comparator;
+
 /**
  *
  * @author james.wang
