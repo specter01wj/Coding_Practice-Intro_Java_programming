@@ -5,6 +5,9 @@
  */
 package lab20_4;
 
+import lab20_4.GeometricObject;
+import java.util.Comparator;
+
 /**
  *
  * @author james.wang
