@@ -9,6 +9,8 @@ package lab20_4;
  *
  * @author james.wang
  */
+
+// GeometricObjectComparator
 public class GeometricObjectComparator {
     
 }
