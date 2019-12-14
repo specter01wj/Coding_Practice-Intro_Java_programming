@@ -9,6 +9,8 @@ package lab20_4;
  *
  * @author james.wang
  */
+
+// TestComparator
 public class Lab20_4 {
 
     /**
