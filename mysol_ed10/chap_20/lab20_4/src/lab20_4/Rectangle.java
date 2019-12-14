@@ -3,6 +3,7 @@ package lab20_4;
 public class Rectangle extends GeometricObject {
   private double width;
   private double height;
+  private String name = "Rectangle";
 
   public Rectangle() {
   }
@@ -10,6 +11,11 @@ public class Rectangle extends GeometricObject {
   public Rectangle(double width, double height) {
     this.width = width;
     this.height = height;
+  }
+  
+    /** Return name */
+  public String getName() {
+    return this.name;
   }
 
   /** Return width */

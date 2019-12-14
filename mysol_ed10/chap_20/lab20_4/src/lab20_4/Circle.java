@@ -2,12 +2,18 @@ package lab20_4;
 
 public class Circle extends GeometricObject {
   private double radius;
+  private String name = "Circle";
 
   public Circle() {
   }
 
   public Circle(double radius) {
     this.radius = radius;
+  }
+  
+  /** Return name */
+  public String getName() {
+    return this.name;
   }
 
   /** Return radius */

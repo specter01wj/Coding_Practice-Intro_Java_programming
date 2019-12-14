@@ -28,7 +28,7 @@ public class Lab20_4 {
         
         GeometricObject g = max(g1, g2, new GeometricObjectComparator());
         
-        System.out.println("The area of the larger object is " + g.getArea());
+        System.out.println("Larger area: " + g.getName() + "; Area: " + g.getArea());
     }
     
     public static GeometricObject max(GeometricObject g1, GeometricObject g2, Comparator<GeometricObject> c) {
