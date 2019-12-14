@@ -25,6 +25,8 @@ public class Lab20_4 {
         // TODO code application logic here
         GeometricObject g1 = new Rectangle(5, 5);
         GeometricObject g2 = new Circle(5);
+        
+        GeometricObject g = max(g1, g2, new GeometricObjectComparator());
     }
     
     public static GeometricObject max(GeometricObject g1, GeometricObject g2, Comparator<GeometricObject> c) {
