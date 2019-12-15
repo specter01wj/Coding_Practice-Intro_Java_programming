@@ -111,14 +111,13 @@ public class Lab20_5_multipleBounceBall extends Application {
                 // Check boundaries
                 if (ball.getCenterX() < ball.getRadius() || 
                     ball.getCenterX() > getWidth() - ball.getRadius()) {
-                  ball.dx *= -1; // Change ball move direction
+                  ball.dx *= -1;
                 }
                 if (ball.getCenterY() < ball.getRadius() || 
                     ball.getCenterY() > getHeight() - ball.getRadius()) {
-                  ball.dy *= -1; // Change ball move direction
+                  ball.dy *= -1;
                 }
-
-                // Adjust ball position
+                
                 ball.setCenterX(ball.dx + ball.getCenterX());
                 ball.setCenterY(ball.dy + ball.getCenterY());
             }
