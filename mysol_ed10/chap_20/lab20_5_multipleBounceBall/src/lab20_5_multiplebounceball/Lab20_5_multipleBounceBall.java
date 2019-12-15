@@ -130,6 +130,15 @@ public class Lab20_5_multipleBounceBall extends Application {
             }
         }
     }
+    
+    class Ball extends Circle {
+        private double dx = 1, dy = 1;
+
+        Ball(double x, double y, double radius, Color color) {
+            super(x, y, radius);
+            setFill(color); // Set ball color
+        }
+    }
     /**
      * @param args the command line arguments
      */
