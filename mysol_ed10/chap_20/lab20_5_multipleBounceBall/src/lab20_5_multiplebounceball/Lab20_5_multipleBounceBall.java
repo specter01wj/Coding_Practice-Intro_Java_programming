@@ -67,11 +67,9 @@ public class Lab20_5_multipleBounceBall extends Application {
         private Timeline animation;
 
         public MultipleBallPane() {
-            // Create an animation for moving the ball
-            animation = new Timeline(
-              new KeyFrame(Duration.millis(50), e -> moveBall()));
+            animation = new Timeline(new KeyFrame(Duration.millis(50), e -> moveBall()));
             animation.setCycleCount(Timeline.INDEFINITE);
-            animation.play(); // Start animation
+            animation.play();
         }
 
         public void add() {
