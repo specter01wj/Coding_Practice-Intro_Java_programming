@@ -30,7 +30,7 @@ import javafx.util.Duration;
 // MultipleBounceBall
 public class Lab20_5_multipleBounceBall extends Application {
 
-    @Override // Override the start method in the Application class
+    @Override
     public void start(Stage primaryStage) {
         MultipleBallPane ballPane = new MultipleBallPane();
         ballPane.setStyle("-fx-border-color: yellow");
@@ -40,16 +40,13 @@ public class Lab20_5_multipleBounceBall extends Application {
         HBox hBox = new HBox(10);
         hBox.getChildren().addAll(btAdd, btSubtract);
         hBox.setAlignment(Pos.CENTER);
-
-        // Add or remove a ball
+        
         btAdd.setOnAction(e -> ballPane.add());
         btSubtract.setOnAction(e -> ballPane.subtract());
-
-        // Pause and resume animation
+        
         ballPane.setOnMousePressed(e -> ballPane.pause());
         ballPane.setOnMouseReleased(e -> ballPane.play());
-
-        // Use a scroll bar to control animation speed
+        
         ScrollBar sbSpeed = new ScrollBar();
         sbSpeed.setMax(20);
         sbSpeed.setValue(10);
