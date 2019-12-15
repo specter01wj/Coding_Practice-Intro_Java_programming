@@ -79,36 +79,36 @@ public class Lab20_5_multipleBounceBall extends Application {
         }
 
         public void add() {
-          Color color = new Color(Math.random(), 
-            Math.random(), Math.random(), 0.5);
-          getChildren().add(new Ball(30, 30, 20, color)); 
+            Color color = new Color(Math.random(), 
+              Math.random(), Math.random(), 0.5);
+            getChildren().add(new Ball(30, 30, 20, color)); 
         }
 
         public void subtract() {
-          if (getChildren().size() > 0) {
-            getChildren().remove(getChildren().size() - 1); 
-          }
+            if (getChildren().size() > 0) {
+                getChildren().remove(getChildren().size() - 1); 
+            }
         }
 
         public void play() {
-          animation.play();
+            animation.play();
         }
 
         public void pause() {
-          animation.pause();
+            animation.pause();
         }
 
         public void increaseSpeed() {
-          animation.setRate(animation.getRate() + 0.1);
+            animation.setRate(animation.getRate() + 0.1);
         }
 
         public void decreaseSpeed() {
-          animation.setRate(
-            animation.getRate() > 0 ? animation.getRate() - 0.1 : 0);
+            animation.setRate(
+              animation.getRate() > 0 ? animation.getRate() - 0.1 : 0);
         }
 
         public DoubleProperty rateProperty() {
-          return animation.rateProperty();
+            return animation.rateProperty();
         }
 
         protected void moveBall() {
