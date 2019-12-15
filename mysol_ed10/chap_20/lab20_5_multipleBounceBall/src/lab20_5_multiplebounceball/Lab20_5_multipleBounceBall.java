@@ -97,8 +97,7 @@ public class Lab20_5_multipleBounceBall extends Application {
         }
 
         public void decreaseSpeed() {
-            animation.setRate(
-              animation.getRate() > 0 ? animation.getRate() - 0.1 : 0);
+            animation.setRate(animation.getRate() > 0 ? animation.getRate() - 0.1 : 0);
         }
 
         public DoubleProperty rateProperty() {
