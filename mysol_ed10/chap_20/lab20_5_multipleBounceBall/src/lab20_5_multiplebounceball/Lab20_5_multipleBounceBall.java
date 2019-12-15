@@ -48,7 +48,7 @@ public class Lab20_5_multipleBounceBall extends Application {
         ballPane.setOnMouseReleased(e -> ballPane.play());
         
         ScrollBar sbSpeed = new ScrollBar();
-        sbSpeed.setMax(20);
+        sbSpeed.setMax(50);
         sbSpeed.setValue(10);
         ballPane.rateProperty().bind(sbSpeed.valueProperty());
 
