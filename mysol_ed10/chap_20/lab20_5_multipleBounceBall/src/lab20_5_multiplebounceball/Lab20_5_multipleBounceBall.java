@@ -111,11 +111,11 @@ public class Lab20_5_multipleBounceBall extends Application {
                 // Check boundaries
                 if (ball.getCenterX() < ball.getRadius() || 
                     ball.getCenterX() > getWidth() - ball.getRadius()) {
-                  ball.dx *= -1;
+                    ball.dx *= -1;
                 }
                 if (ball.getCenterY() < ball.getRadius() || 
                     ball.getCenterY() > getHeight() - ball.getRadius()) {
-                  ball.dy *= -1;
+                    ball.dy *= -1;
                 }
                 
                 ball.setCenterX(ball.dx + ball.getCenterX());
