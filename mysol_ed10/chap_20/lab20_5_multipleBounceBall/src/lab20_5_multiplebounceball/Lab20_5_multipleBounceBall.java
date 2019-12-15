@@ -108,7 +108,7 @@ public class Lab20_5_multipleBounceBall extends Application {
         protected void moveBall() {
             for (Node node: this.getChildren()) {
                 Ball ball = (Ball)node;
-                // Check boundaries
+                
                 if (ball.getCenterX() < ball.getRadius() || 
                     ball.getCenterX() > getWidth() - ball.getRadius()) {
                     ball.dx *= -1;
