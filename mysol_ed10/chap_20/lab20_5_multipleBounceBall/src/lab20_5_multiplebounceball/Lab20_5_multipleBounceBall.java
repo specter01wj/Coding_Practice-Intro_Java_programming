@@ -130,7 +130,7 @@ public class Lab20_5_multipleBounceBall extends Application {
 
         Ball(double x, double y, double radius, Color color) {
             super(x, y, radius);
-            setFill(color); // Set ball color
+            setFill(color);
         }
     }
     /**
