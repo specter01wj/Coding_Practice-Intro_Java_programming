@@ -56,12 +56,11 @@ public class Lab20_5_multipleBounceBall extends Application {
         pane.setCenter(ballPane);
         pane.setTop(sbSpeed);
         pane.setBottom(hBox);
-
-        // Create a scene and place the pane in the stage
+        
         Scene scene = new Scene(pane, 250, 150);
-        primaryStage.setTitle("MultipleBounceBall"); // Set the stage title
-        primaryStage.setScene(scene); // Place the scene in the stage
-        primaryStage.show(); // Display the stage
+        primaryStage.setTitle("MultipleBounceBall");
+        primaryStage.setScene(scene);
+        primaryStage.show();
     }
     
     private class MultipleBallPane extends Pane {
