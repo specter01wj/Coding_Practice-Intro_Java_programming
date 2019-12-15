@@ -35,6 +35,7 @@ public class Lab20_5_multipleBounceBall extends Application {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Application.launch(args);
     }
     
 }
