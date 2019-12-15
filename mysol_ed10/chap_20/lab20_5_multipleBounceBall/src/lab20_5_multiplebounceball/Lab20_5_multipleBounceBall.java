@@ -57,7 +57,7 @@ public class Lab20_5_multipleBounceBall extends Application {
         pane.setTop(sbSpeed);
         pane.setBottom(hBox);
         
-        Scene scene = new Scene(pane, 250, 150);
+        Scene scene = new Scene(pane, 550, 450);
         primaryStage.setTitle("MultipleBounceBall");
         primaryStage.setScene(scene);
         primaryStage.show();
