@@ -73,8 +73,7 @@ public class Lab20_5_multipleBounceBall extends Application {
         }
 
         public void add() {
-            Color color = new Color(Math.random(), 
-              Math.random(), Math.random(), 0.5);
+            Color color = new Color(Math.random(), Math.random(), Math.random(), 0.5);
             getChildren().add(new Ball(30, 30, 20, color)); 
         }
 
