@@ -28,7 +28,7 @@ import javafx.util.Duration;
  */
 
 // MultipleBounceBall
-public class Lab20_5_multipleBounceBall {
+public class Lab20_5_multipleBounceBall extends Application {
 
     /**
      * @param args the command line arguments
