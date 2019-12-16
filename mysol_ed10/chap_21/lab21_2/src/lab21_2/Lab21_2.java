@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package lab21_1;
+package lab21_2;
 
 import java.util.*;
 
@@ -12,8 +12,8 @@ import java.util.*;
  * @author james.wang
  */
 
-// TestHashSet
-public class Lab21_1 {
+// TestMethodsInCollection
+public class Lab21_2 {
 
     /**
      * @param args the command line arguments
@@ -26,11 +26,9 @@ public class Lab21_1 {
         set1.add("New York");
         set1.add("San Francisco");
         set1.add("Beijing");
-        set1.add("New York");
         
-        System.out.println("Set: " + set1);
-        
-        set1.forEach(e -> System.out.print(e.toUpperCase() + " "));
+        System.out.println("set1 is " + set1);
+        System.out.println(set1.size() + " elements in set1");
     }
     
 }
