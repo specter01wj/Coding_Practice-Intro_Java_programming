@@ -27,7 +27,11 @@ public class Lab21_2 {
         set1.add("San Francisco");
         set1.add("Beijing");
         
-        System.out.println("set1 is " + set1);
+        System.out.println("set1 is: " + set1);
+        System.out.println(set1.size() + " elements in set1");
+        
+        set1.remove("London");
+        System.out.println("After remove set1 is: " + set1);
         System.out.println(set1.size() + " elements in set1");
     }
     
