@@ -24,16 +24,17 @@ public class Lab21_5 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Set<GeometricObject> set = new TreeSet<>(new GeometricObjectComparator());
-        set.add(new Rectangle(4, 5));
-        set.add(new Circle(40));
-        set.add(new Circle(40));
-        set.add(new Rectangle(4, 1));
+        Set<GeometricObject> set1 = new TreeSet<>(new GeometricObjectComparator());
+        set1.add(new Rectangle(4, 5));
+        set1.add(new Circle(40));
+        set1.add(new Circle(40));
+        set1.add(new Rectangle(4, 1));
 
         // Display geometric objects in the tree set
         System.out.println("A sorted set of geometric objects");
-        for (GeometricObject element: set)
-          System.out.println("area = " + element.getArea());
+        for (GeometricObject element: set1) {
+            System.out.println("area = " + element.getArea());
+        }
     }
     
 }

@@ -1,4 +1,4 @@
-package chapter13;
+package lab21_5;
 
 public abstract class GeometricObject {
   private String color = "white";

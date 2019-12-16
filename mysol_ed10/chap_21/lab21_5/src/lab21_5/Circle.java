@@ -1,4 +1,4 @@
-package chapter13;
+package lab21_5;
 
 public class Circle extends GeometricObject {
   private double radius;

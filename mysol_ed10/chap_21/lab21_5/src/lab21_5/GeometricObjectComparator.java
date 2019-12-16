@@ -1,6 +1,6 @@
-package chapter20;
+package lab21_5;
 
-import chapter13.GeometricObject;
+import lab21_5.GeometricObject;
 import java.util.Comparator;
 
 public class GeometricObjectComparator
