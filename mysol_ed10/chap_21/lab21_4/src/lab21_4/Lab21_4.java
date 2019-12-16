@@ -43,6 +43,14 @@ public class Lab21_4 {
           treeSet1.headSet("New York"));
         System.out.println("tailSet(\"New York\"): " + 
           treeSet1.tailSet("New York"));
+        
+        System.out.println("lower(\"P\"): " + treeSet1.lower("P"));
+        System.out.println("higher(\"P\"): " + treeSet1.higher("P"));
+        System.out.println("floor(\"P\"): " + treeSet1.floor("P"));
+        System.out.println("ceiling(\"P\"): " + treeSet1.ceiling("P"));
+        System.out.println("pollFirst(): " + treeSet1.pollFirst());
+        System.out.println("pollLast(): " + treeSet1.pollLast());
+        System.out.println("New tree set: " + treeSet1);
     }
     
 }
