@@ -31,13 +31,18 @@ public class Lab21_4 {
         TreeSet<String> treeSet1 = new TreeSet<>(set1);
         System.out.println("Sorted tree set1: " + treeSet1);
         
-        TreeSet<String> set2 = new TreeSet<>();
-        set2.add("China");
-        set2.add("USA");
-        set2.add("Taiwan");
-        System.out.println("set2: " + set2);
+        TreeSet<String> treeSet2 = new TreeSet<>();
+        treeSet2.add("China");
+        treeSet2.add("USA");
+        treeSet2.add("Taiwan");
+        System.out.println("set2: " + treeSet2);
         
-        
+        System.out.println("first(): " + treeSet1.first());
+        System.out.println("last(): " + treeSet1.last());
+        System.out.println("headSet(\"New York\"): " + 
+          treeSet1.headSet("New York"));
+        System.out.println("tailSet(\"New York\"): " + 
+          treeSet1.tailSet("New York"));
     }
     
 }
