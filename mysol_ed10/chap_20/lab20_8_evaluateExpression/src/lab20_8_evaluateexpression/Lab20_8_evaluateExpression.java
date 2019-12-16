@@ -107,18 +107,19 @@ public class Lab20_8_evaluateExpression {
     }
 
     public static String insertBlanks(String s) {
-      String result = "";
+        String result = "";
 
-      for (int i = 0; i < s.length(); i++) {
-        if (s.charAt(i) == '(' || s.charAt(i) == ')' || 
-            s.charAt(i) == '+' || s.charAt(i) == '-' ||
-            s.charAt(i) == '*' || s.charAt(i) == '/')
-          result += " " + s.charAt(i) + " ";
-        else
-          result += s.charAt(i);
-      }
+        for (int i = 0; i < s.length(); i++) {
+          if (s.charAt(i) == '(' || s.charAt(i) == ')' || 
+              s.charAt(i) == '+' || s.charAt(i) == '-' ||
+              s.charAt(i) == '*' || s.charAt(i) == '/') {
+            result += " " + s.charAt(i) + " ";
+          } else {
+            result += s.charAt(i);
+          }
+        }
 
-      return result;
+        return result;
     }
     
 }
