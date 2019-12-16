@@ -26,10 +26,22 @@ public class Lab20_7 {
         queue1.offer("Georgia");
         queue1.offer("Texas");
 
-        System.out.println("Priority queue using Comparable:");
+        System.out.println("Priority queue1 using Comparable:");
         System.out.println("Queue1: " + queue1);
         while (queue1.size() > 0) {
           System.out.print(queue1.remove() + " ");
+        }
+        
+        PriorityQueue<String> queue2 = new PriorityQueue<>(4, Collections.reverseOrder());
+        queue2.offer("Oklahoma");
+        queue2.offer("Indiana");
+        queue2.offer("Georgia");
+        queue2.offer("Texas");
+
+        System.out.println("\n\nPriority queue2 using Comparator:");
+        System.out.println("Queue2: " + queue2);
+        while (queue2.size() > 0) {
+            System.out.print(queue2.remove() + " ");
         }
     }
     
