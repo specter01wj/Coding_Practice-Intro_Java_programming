@@ -29,6 +29,8 @@ public class Lab21_1 {
         set1.add("New York");
         
         System.out.println("Set: " + set1);
+        
+        set1.forEach(e -> System.out.print(e.toLowerCase() + " "));
     }
     
 }
