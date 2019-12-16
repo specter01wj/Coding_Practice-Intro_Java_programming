@@ -5,10 +5,14 @@
  */
 package lab21_1;
 
+import java.util.*;
+
 /**
  *
  * @author james.wang
  */
+
+// TestHashSet
 public class Lab21_1 {
 
     /**
@@ -16,6 +20,15 @@ public class Lab21_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Set<String> set1 = new HashSet<>();
+        set1.add("London");
+        set1.add("Paris");
+        set1.add("New York");
+        set1.add("San Francisco");
+        set1.add("Beijing");
+        set1.add("New York");
+        
+        System.out.println("Set: " + set1);
     }
     
 }
