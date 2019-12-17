@@ -34,6 +34,7 @@ public class Lab21_5 {
         System.out.println("A sorted set of geometric objects");
         for (GeometricObject element: set1) {
             
+            
             System.out.println("area = " + element.getArea());
         }
     }
