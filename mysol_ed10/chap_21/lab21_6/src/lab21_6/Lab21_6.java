@@ -33,4 +33,14 @@ public class Lab21_6 {
         Collection<Integer> set1 = new HashSet<>(list1);
     }
     
+    public static long getTestTime(Collection<Integer> c) {
+        long startTime = System.currentTimeMillis();
+        
+        for (int i = 0; i < N; i++) {
+          c.contains((int)(Math.random() * 2 * N));
+        }
+
+        return System.currentTimeMillis() - startTime; 
+    }
+    
 }
