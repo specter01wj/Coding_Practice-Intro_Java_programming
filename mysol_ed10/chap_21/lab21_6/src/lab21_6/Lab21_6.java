@@ -29,6 +29,8 @@ public class Lab21_6 {
         System.out.println("List1: " + list1);
         Collections.shuffle(list1);
         System.out.println("Shuffle List1: " + list1);
+        
+        Collection<Integer> set1 = new HashSet<>(list1);
     }
     
 }
