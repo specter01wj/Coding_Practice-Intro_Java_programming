@@ -14,7 +14,9 @@ import java.util.*;
 
 // SetListPerformanceTest
 public class Lab21_6 {
-
+    
+    static final int N = 50000;
+    
     /**
      * @param args the command line arguments
      */
