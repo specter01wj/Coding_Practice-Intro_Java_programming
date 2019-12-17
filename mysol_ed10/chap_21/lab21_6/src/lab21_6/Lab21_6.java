@@ -36,6 +36,10 @@ public class Lab21_6 {
         System.out.println("Remove element time for hash set is " + getRemoveTime(set1) + " milliseconds");
         
         Collection<Integer> set2 = new LinkedHashSet<>(list1);
+        System.out.println("Member test time for linked hash set is " +
+      getTestTime(set2) + " milliseconds");
+    System.out.println("Remove element time for linked hash set is "
+      + getRemoveTime(set2) + " milliseconds");
     }
     
     public static long getTestTime(Collection<Integer> c) {
