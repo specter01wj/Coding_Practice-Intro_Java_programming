@@ -27,6 +27,8 @@ public class Lab21_6 {
             list1.add(i);
         }
         System.out.println("List1: " + list1);
+        Collections.shuffle(list1);
+        System.out.println("Shuffle List1: " + list1);
     }
     
 }
