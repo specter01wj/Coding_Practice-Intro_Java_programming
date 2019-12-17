@@ -26,7 +26,7 @@ public class Lab21_6 {
         for (int i = 0; i < N; i++) {
             list1.add(i);
         }
-      
+        System.out.println("List1: " + list1);
     }
     
 }
