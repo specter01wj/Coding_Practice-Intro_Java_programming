@@ -31,6 +31,7 @@ public class Lab21_6 {
         System.out.println("Shuffle List1: " + list1);
         
         Collection<Integer> set1 = new HashSet<>(list1);
+        System.out.println("Set1: " + set1);
     }
     
     public static long getTestTime(Collection<Integer> c) {
