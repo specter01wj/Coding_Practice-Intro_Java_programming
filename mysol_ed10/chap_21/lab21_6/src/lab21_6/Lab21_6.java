@@ -20,6 +20,7 @@ public class Lab21_6 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        List<Integer> list1 = new ArrayList<>();
     }
     
 }
