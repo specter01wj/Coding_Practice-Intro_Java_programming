@@ -21,6 +21,10 @@ public class Lab21_6 {
     public static void main(String[] args) {
         // TODO code application logic here
         List<Integer> list1 = new ArrayList<>();
+        for (int i = 0; i < N; i++) {
+            list1.add(i);
+        }
+      
     }
     
 }
