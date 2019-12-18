@@ -39,11 +39,9 @@ public class Lab21_6 {
         System.out.println("Member test time for linked hash set is " + getTestTime(set2) + " milliseconds");
         System.out.println("Remove element time for linked hash set is " + getRemoveTime(set2) + " milliseconds");
         
-        Collection<Integer> set3 = new TreeSet<>(list);
-        System.out.println("Member test time for tree set is " +
-          getTestTime(set3) + " milliseconds");
-        System.out.println("Remove element time for tree set is " +
-          getRemoveTime(set3) + " milliseconds");
+        Collection<Integer> set3 = new TreeSet<>(list1);
+        System.out.println("Member test time for tree set is " + getTestTime(set3) + " milliseconds");
+        System.out.println("Remove element time for tree set is " + getRemoveTime(set3) + " milliseconds");
         
         
     }
