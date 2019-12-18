@@ -29,7 +29,7 @@ public class Lab21_8 {
         System.out.println(hashMap1 + "\n");
         
         Map<String, Integer> treeMap1 = new TreeMap<>(hashMap1);
-        System.out.println("Display entries in ascending order of key");
+        System.out.println("Display entries in TreeMap in ascending order of key");
         System.out.println(treeMap1 + "\n");
         
         Map<String, Integer> linkedHashMap1 = new LinkedHashMap<>(16, 0.75f, true);
@@ -42,6 +42,10 @@ public class Lab21_8 {
         System.out.println(linkedHashMap1 + "\n");
         System.out.println("The age for Lewis is " + linkedHashMap1.get("Lewis"));
         
+        System.out.print("\nNames and ages are: \n");
+        treeMap1.forEach(
+            (name, age) -> System.out.println(name + ": " + age + " ")
+        );
     }
     
 }
