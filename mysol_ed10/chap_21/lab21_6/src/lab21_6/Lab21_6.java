@@ -44,10 +44,10 @@ public class Lab21_6 {
         System.out.println("Remove element time for tree set is " + getRemoveTime(set3) + " milliseconds");
         
         Collection<Integer> list2 = new ArrayList<>(list1);
-    System.out.println("Member test time for array list is " +
-      getTestTime(list1) + " milliseconds");
-    System.out.println("Remove element time for array list is " +
-      getRemoveTime(list1) + " milliseconds");
+        System.out.println("Member test time for array list is " +
+          getTestTime(list1) + " milliseconds");
+        System.out.println("Remove element time for array list is " +
+          getRemoveTime(list1) + " milliseconds");
         
         
         
