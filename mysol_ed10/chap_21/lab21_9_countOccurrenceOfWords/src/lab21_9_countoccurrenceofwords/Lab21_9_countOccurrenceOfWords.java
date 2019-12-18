@@ -5,6 +5,8 @@
  */
 package lab21_9_countoccurrenceofwords;
 
+import java.util.*;
+
 /**
  *
  * @author james.wang
@@ -18,6 +20,28 @@ public class Lab21_9_countOccurrenceOfWords {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        String text = "Good morning. Have a good class. Have a good visit. Have fun!";
+        
+        Map<String, Integer> map1 = new TreeMap<>();
+        
+        String[] words = text.split("[\\s+\\p{P}]");
+        
+        for(int i = 0; i < words.length; i++) {
+            String key = words[i].toLowerCase();
+            
+            if(key.length() > 0) {
+                if(!map1.containsKey(key)) {
+                    map1.put(key, 1);
+                } else {
+                    int value = map1.get(key);
+                    value++;
+                    map1.put(key, value);
+                }
+            }
+        }
+        
+        map1.forEach((k, v) -> System.out.println(k + "\t" + v));
+        
     }
     
 }
