@@ -47,7 +47,9 @@ public class Lab21_6 {
         System.out.println("Member test time for array list is " + getTestTime(list2) + " milliseconds");
         System.out.println("Remove element time for array list is " + getRemoveTime(list2) + " milliseconds");
         
-        
+        Collection<Integer> list3 = new LinkedList<>(list1);
+        System.out.println("Member test time for linked list is " + getTestTime(list3) + " milliseconds");
+        System.out.println("Remove element time for linked list is " + getRemoveTime(list3) + " milliseconds");
         
     }
     
