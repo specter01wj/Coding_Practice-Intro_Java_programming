@@ -30,7 +30,18 @@ public class Lab21_8 {
         
         Map<String, Integer> treeMap1 = new TreeMap<>(hashMap1);
         System.out.println("Display entries in ascending order of key");
-        System.out.println(treeMap1);
+        System.out.println(treeMap1 + "\n");
+        
+        Map<String, Integer> linkedHashMap1 = new LinkedHashMap<>(16, 0.75f, true);
+        System.out.println("Display entries in LinkedHashMap");
+        System.out.println(linkedHashMap1 + "\n");
+        linkedHashMap1.put("Smith", 30);
+        linkedHashMap1.put("Anderson", 31);
+        linkedHashMap1.put("Lewis", 29);
+        linkedHashMap1.put("Cook", 29);
+        System.out.println(linkedHashMap1 + "\n");
+        System.out.println("The age for Lewis is " + linkedHashMap1.get("Lewis"));
+        
     }
     
 }
