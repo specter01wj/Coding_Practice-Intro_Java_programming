@@ -15,7 +15,7 @@ import java.util.*;
 // SetListPerformanceTest
 public class Lab21_6 {
     
-    static final int N = 5000;
+    static final int N = 50000;
     
     /**
      * @param args the command line arguments
@@ -32,24 +32,32 @@ public class Lab21_6 {
         
         Collection<Integer> set1 = new HashSet<>(list1);
         System.out.println("Set1: " + set1);
-        System.out.println("Member test time for hash set is " + getTestTime(set1) + " milliseconds");
-        System.out.println("Remove element time for hash set is " + getRemoveTime(set1) + " milliseconds");
+        System.out.println("Member test time for HashSet is " + getTestTime(set1) + " milliseconds");
+        System.out.println("Remove element time for HashSet is " + getRemoveTime(set1) + " milliseconds");
+        
+        System.out.println();
         
         Collection<Integer> set2 = new LinkedHashSet<>(list1);
-        System.out.println("Member test time for linked hash set is " + getTestTime(set2) + " milliseconds");
-        System.out.println("Remove element time for linked hash set is " + getRemoveTime(set2) + " milliseconds");
+        System.out.println("Member test time for LinkedHash set is " + getTestTime(set2) + " milliseconds");
+        System.out.println("Remove element time for LinkedHash set is " + getRemoveTime(set2) + " milliseconds");
+        
+        System.out.println();
         
         Collection<Integer> set3 = new TreeSet<>(list1);
-        System.out.println("Member test time for tree set is " + getTestTime(set3) + " milliseconds");
-        System.out.println("Remove element time for tree set is " + getRemoveTime(set3) + " milliseconds");
+        System.out.println("Member test time for TreeSet is " + getTestTime(set3) + " milliseconds");
+        System.out.println("Remove element time for TreeSet is " + getRemoveTime(set3) + " milliseconds");
+        
+        System.out.println();
         
         Collection<Integer> list2 = new ArrayList<>(list1);
-        System.out.println("Member test time for array list is " + getTestTime(list2) + " milliseconds");
-        System.out.println("Remove element time for array list is " + getRemoveTime(list2) + " milliseconds");
+        System.out.println("Member test time for ArrayList is " + getTestTime(list2) + " milliseconds");
+        System.out.println("Remove element time for ArrayList is " + getRemoveTime(list2) + " milliseconds");
+        
+        System.out.println();
         
         Collection<Integer> list3 = new LinkedList<>(list1);
-        System.out.println("Member test time for linked list is " + getTestTime(list3) + " milliseconds");
-        System.out.println("Remove element time for linked list is " + getRemoveTime(list3) + " milliseconds");
+        System.out.println("Member test time for LinkedList is " + getTestTime(list3) + " milliseconds");
+        System.out.println("Remove element time for LinkedList is " + getRemoveTime(list3) + " milliseconds");
         
     }
     
