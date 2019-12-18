@@ -24,6 +24,7 @@ public class Lab21_8 {
         hashMap1.put("Smith", 30);
         hashMap1.put("Anderson", 31);
         hashMap1.put("Lewis", 29);
+        hashMap1.put("Lewis", 29);
         hashMap1.put("Cook", 29);
         System.out.println("Display entries in HashMap");
         System.out.println(hashMap1 + "\n");
