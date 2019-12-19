@@ -27,6 +27,7 @@ public class Lab21_8 {
         hashMap1.put("Lewis", 29);
         hashMap1.put("Cook", 29);
         System.out.println("Display entries in HashMap");
+        
         System.out.println(hashMap1 + "\n");
         
         Map<String, Integer> treeMap1 = new TreeMap<>(hashMap1);
