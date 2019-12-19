@@ -30,6 +30,7 @@ public class Lab21_8 {
         
         
         
+        
         System.out.println(hashMap1 + "\n");
         
         Map<String, Integer> treeMap1 = new TreeMap<>(hashMap1);
