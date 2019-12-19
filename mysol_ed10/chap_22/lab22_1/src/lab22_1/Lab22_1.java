@@ -9,6 +9,8 @@ package lab22_1;
  *
  * @author james.wang
  */
+
+// PerformanceTest
 public class Lab22_1 {
 
     /**
@@ -16,6 +18,10 @@ public class Lab22_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        getTime(1000000);
+        getTime(10000000);
+        getTime(100000000);
+        getTime(1000000000);
     }
     
 }
