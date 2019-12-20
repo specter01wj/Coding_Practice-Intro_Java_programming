@@ -9,6 +9,8 @@ package lab22_3;
  *
  * @author james.wang
  */
+
+// GCD
 public class Lab22_3 {
 
     /**
