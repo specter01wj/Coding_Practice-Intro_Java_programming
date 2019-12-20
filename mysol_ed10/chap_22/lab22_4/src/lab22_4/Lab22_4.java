@@ -35,6 +35,7 @@ public class Lab22_4 {
         
         
         
+        
         System.out.print("Enter second integer: ");
         int n = input.nextInt();
 
