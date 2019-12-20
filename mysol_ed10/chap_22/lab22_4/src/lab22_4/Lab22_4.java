@@ -18,6 +18,16 @@ public class Lab22_4 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+
+        // Prompt the user to enter two integers
+        System.out.print("Enter first integer: ");
+        int m = input.nextInt();
+        System.out.print("Enter second integer: ");
+        int n = input.nextInt();
+
+        System.out.println("The greatest common divisor for " + m +
+          " and " + n + " is " + gcd(m, n));
     }
     
 }
