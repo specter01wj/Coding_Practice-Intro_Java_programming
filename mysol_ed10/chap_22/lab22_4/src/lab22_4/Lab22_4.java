@@ -25,20 +25,6 @@ public class Lab22_4 {
         System.out.print("Enter first integer: ");
         int m = input.nextInt();
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         System.out.print("Enter second integer: ");
         int n = input.nextInt();
 
