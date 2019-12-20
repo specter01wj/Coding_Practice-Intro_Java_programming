@@ -9,6 +9,8 @@ package lab22_4;
  *
  * @author james.wang
  */
+
+// GCDEuclid
 public class Lab22_4 {
 
     /**
