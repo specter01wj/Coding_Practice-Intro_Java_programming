@@ -5,6 +5,8 @@
  */
 package lab22_3;
 
+import java.util.*;
+
 /**
  *
  * @author james.wang
@@ -18,6 +20,15 @@ public class Lab22_3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        
+        System.out.print("Enter first integer: ");
+        int m = input.nextInt();
+        System.out.print("Enter second integer: ");
+        int n = input.nextInt();
+
+        System.out.println("The greatest common divisor for " + m +
+          " and " + n + " is " + gcd(m, n));
     }
     
 }
