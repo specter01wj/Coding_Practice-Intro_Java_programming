@@ -28,6 +28,7 @@ public class Lab22_5 {
     }
     
     public static void findPrimes(int n) {
+        
         final int NUMBER_PER_LINE = 10;
         int count = 0;
         int number = 2;
