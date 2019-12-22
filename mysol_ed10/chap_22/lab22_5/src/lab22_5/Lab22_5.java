@@ -45,8 +45,7 @@ public class Lab22_5 {
 
                 if (count % NUMBER_PER_LINE == 0) {
                   System.out.printf("%7d\n", number);
-                }
-                else {
+                } else {
                   System.out.printf("%7d", number);
                 }
             }
