@@ -40,16 +40,16 @@ public class Lab22_5 {
                 }
             }
             
-          if (isPrime) {
-            count++; // Increase the count
+            if (isPrime) {
+                count++; // Increase the count
 
-            if (count % NUMBER_PER_LINE == 0) {
-              // Print the number and advance to the new line
-              System.out.printf("%7d\n", number);
+                if (count % NUMBER_PER_LINE == 0) {
+                  // Print the number and advance to the new line
+                  System.out.printf("%7d\n", number);
+                }
+                else
+                  System.out.printf("%7d", number);
             }
-            else
-              System.out.printf("%7d", number);
-          }
 
           // Check if the next number is prime
           number++;
