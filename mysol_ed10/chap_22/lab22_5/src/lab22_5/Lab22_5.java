@@ -33,8 +33,7 @@ public class Lab22_5 {
         while (number <= n) {
             boolean isPrime = true;
             
-          for(int divisor = 2; divisor <= (int)(Math.sqrt(number)); 
-              divisor++) {
+            for(int divisor = 2; divisor <= (int)(Math.sqrt(number)); divisor++) {
             if (number % divisor == 0) { // If true, number is not prime
               isPrime = false; // Set isPrime to false          
               break; // Exit the for loop
