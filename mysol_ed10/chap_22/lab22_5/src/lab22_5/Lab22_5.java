@@ -41,7 +41,7 @@ public class Lab22_5 {
             }
             
             if (isPrime) {
-                count++; // Increase the count
+                count++;
 
                 if (count % NUMBER_PER_LINE == 0) {
                   // Print the number and advance to the new line
