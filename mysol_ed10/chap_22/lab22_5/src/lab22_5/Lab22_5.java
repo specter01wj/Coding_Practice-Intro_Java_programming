@@ -21,7 +21,7 @@ public class Lab22_5 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        System.out.print("Find all prime numbers <= n, enter n: ");
+        System.out.print("Find n prime numbers: ");
         int n = input.nextInt();
 
         final int NUMBER_PER_LINE = 10; // Display 10 per line
