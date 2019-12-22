@@ -23,7 +23,11 @@ public class Lab22_5 {
         Scanner input = new Scanner(System.in);
         System.out.print("Find n prime numbers: ");
         int n = input.nextInt();
-
+        
+        findPrimes(n);
+    }
+    
+    public static void findPrimes(int n) {
         final int NUMBER_PER_LINE = 10;
         int count = 0;
         int number = 2;
@@ -53,8 +57,7 @@ public class Lab22_5 {
             number++;
         }
 
-        System.out.println("\n" + count + 
-          " prime(s) less than or equal to " + n);
+        System.out.println("\n" + count + " primes less than or equal to " + n);
     }
     
 }
