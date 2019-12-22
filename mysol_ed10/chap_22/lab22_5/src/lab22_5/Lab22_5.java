@@ -32,9 +32,8 @@ public class Lab22_5 {
         
         while (number <= n) {
             boolean isPrime = true;
-
-          // ClosestPair if number is prime
-          for (int divisor = 2; divisor <= (int)(Math.sqrt(number)); 
+            
+          for(int divisor = 2; divisor <= (int)(Math.sqrt(number)); 
               divisor++) {
             if (number % divisor == 0) { // If true, number is not prime
               isPrime = false; // Set isPrime to false          
