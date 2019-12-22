@@ -35,7 +35,7 @@ public class Lab22_5 {
             
             for(int divisor = 2; divisor <= (int)(Math.sqrt(number)); divisor++) {
                 if (number % divisor == 0) {
-                  isPrime = false; // Set isPrime to false          
+                  isPrime = false;        
                   break; // Exit the for loop
                 }
             }
