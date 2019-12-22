@@ -39,8 +39,7 @@ public class Lab22_5 {
                   break;
                 }
             }
-
-          // Print the prime number and increase the count
+            
           if (isPrime) {
             count++; // Increase the count
 
