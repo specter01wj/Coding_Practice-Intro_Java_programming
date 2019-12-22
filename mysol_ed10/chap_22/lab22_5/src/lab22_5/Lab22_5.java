@@ -9,6 +9,8 @@ package lab22_5;
  *
  * @author james.wang
  */
+
+// PrimeNumbers
 public class Lab22_5 {
 
     /**
