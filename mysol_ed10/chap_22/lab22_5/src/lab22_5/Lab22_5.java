@@ -33,6 +33,7 @@ public class Lab22_5 {
         // Repeatedly find prime numbers
         while (number <= n) {
             
+            
           // Assume the number is prime
           boolean isPrime = true; // Is the current number prime?
 
