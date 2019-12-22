@@ -29,8 +29,7 @@ public class Lab22_5 {
         int number = 2;
 
         System.out.println("The prime numbers are:");
-
-        // Repeatedly find prime numbers
+        
         while (number <= n) {
             
           // Assume the number is prime
