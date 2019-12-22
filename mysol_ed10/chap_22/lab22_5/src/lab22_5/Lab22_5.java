@@ -51,7 +51,7 @@ public class Lab22_5 {
             }
 
           // Check if the next number is prime
-          number++;
+            number++;
         }
 
         System.out.println("\n" + count + 
