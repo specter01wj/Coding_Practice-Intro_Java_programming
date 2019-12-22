@@ -24,14 +24,15 @@ public class Lab22_5 {
         System.out.print("Find n prime numbers: ");
         int n = input.nextInt();
 
-        final int NUMBER_PER_LINE = 10; // Display 10 per line
-        int count = 0; // Count the number of prime numbers
-        int number = 2; // A number to be tested for primeness
+        final int NUMBER_PER_LINE = 10;
+        int count = 0;
+        int number = 2;
 
         System.out.println("The prime numbers are:");
 
         // Repeatedly find prime numbers
         while (number <= n) {
+            
           // Assume the number is prime
           boolean isPrime = true; // Is the current number prime?
 
