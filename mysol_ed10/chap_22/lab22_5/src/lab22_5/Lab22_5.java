@@ -38,6 +38,7 @@ public class Lab22_5 {
             
             
             
+            
           // Assume the number is prime
           boolean isPrime = true; // Is the current number prime?
 
