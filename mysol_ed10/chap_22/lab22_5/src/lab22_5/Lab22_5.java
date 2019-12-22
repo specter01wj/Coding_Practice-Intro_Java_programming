@@ -31,7 +31,7 @@ public class Lab22_5 {
         System.out.println("The prime numbers are:");
         
         while (number <= n) {
-            boolean isPrime = true; // Is the current number prime?
+            boolean isPrime = true;
 
           // ClosestPair if number is prime
           for (int divisor = 2; divisor <= (int)(Math.sqrt(number)); 
