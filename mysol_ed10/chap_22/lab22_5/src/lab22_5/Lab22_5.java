@@ -49,8 +49,7 @@ public class Lab22_5 {
                     System.out.printf("%7d", number);
                 }
             }
-
-          // Check if the next number is prime
+            
             number++;
         }
 
