@@ -52,8 +52,10 @@ public class Lab22_7 {
             }
         }
 
-        System.out.println("\n" + count + 
-          " prime(s) less than or equal to " + n);
+        System.out.println("\n\n" + count + " prime(s) less than or equal to " + n);
+        
     }
+    
+    
     
 }
