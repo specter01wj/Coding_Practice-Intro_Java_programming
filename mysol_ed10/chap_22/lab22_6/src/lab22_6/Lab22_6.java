@@ -57,17 +57,16 @@ public class Lab22_6 {
                 count++;
                 list.add(number);
                 if (count % NUMBER_PER_LINE == 0) {
-                  // Print the number and advance to the new line
                   System.out.printf("%7d\n", number);
                 } else
                   System.out.printf("%7d", number);
             }
-
-            // Check if the next number is prime
+            
             number++;
         }
 
         System.out.println("\n\n" + count + " prime(s) less than or equal to " + n);
+        System.out.println("List: " + list);
     }
     
 }
