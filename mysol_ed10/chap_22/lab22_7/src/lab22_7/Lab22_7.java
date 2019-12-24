@@ -25,10 +25,9 @@ public class Lab22_7 {
         int n = input.nextInt();
 
         boolean[] primes = new boolean[n + 1];
-
-        // Initialize primes[i] to true
+        
         for (int i = 0; i < primes.length; i++) {
-          primes[i] = true; 
+            primes[i] = true; 
         }
 
         for (int k = 2; k <= n / k; k++) {
