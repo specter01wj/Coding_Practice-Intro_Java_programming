@@ -22,22 +22,6 @@ public class Lab22_5 {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
         System.out.print("Find n prime numbers: ");
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         int n = input.nextInt();
         
         findPrimes(n);
