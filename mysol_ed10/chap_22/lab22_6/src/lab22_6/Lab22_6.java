@@ -21,12 +21,15 @@ public class Lab22_6 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        System.out.print("Find all prime numbers <= n, enter n: ");
+        System.out.print("Find all N prime numbers: ");
         int n = input.nextInt();
 
         // A list to hold prime numbers
-        java.util.List<Integer> list = 
-          new java.util.ArrayList<>(); 
+        
+    }
+    
+    public static void efficientPrimeNumbers(int n) {
+        java.util.List<Integer> list = new java.util.ArrayList<>(); 
 
         final int NUMBER_PER_LINE = 10; // Display 10 per line
         int count = 0; // Count the number of prime numbers
