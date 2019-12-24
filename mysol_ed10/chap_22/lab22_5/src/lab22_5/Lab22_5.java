@@ -36,6 +36,7 @@ public class Lab22_5 {
         
         
         
+        
         int n = input.nextInt();
         
         findPrimes(n);
