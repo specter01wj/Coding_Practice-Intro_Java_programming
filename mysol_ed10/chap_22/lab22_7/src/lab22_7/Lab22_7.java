@@ -21,10 +21,10 @@ public class Lab22_7 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
-        System.out.print("Find all prime numbers <= n, enter n: ");
+        System.out.print("Find all N prime numbers: ");
         int n = input.nextInt();
 
-        boolean[] primes = new boolean[n + 1]; // Prime number sieve
+        boolean[] primes = new boolean[n + 1];
 
         // Initialize primes[i] to true
         for (int i = 0; i < primes.length; i++) {
