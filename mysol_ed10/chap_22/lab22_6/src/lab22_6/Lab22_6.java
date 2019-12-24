@@ -23,8 +23,6 @@ public class Lab22_6 {
         Scanner input = new Scanner(System.in);
         System.out.print("Find all N prime numbers: ");
         int n = input.nextInt();
-
-        // A list to hold prime numbers
         
         efficientPrimeNumbers(n);
     }
