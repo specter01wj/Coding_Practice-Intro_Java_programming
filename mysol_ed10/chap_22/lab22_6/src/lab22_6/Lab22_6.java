@@ -9,6 +9,8 @@ package lab22_6;
  *
  * @author james.wang
  */
+
+// EfficientPrimeNumbers
 public class Lab22_6 {
 
     /**
