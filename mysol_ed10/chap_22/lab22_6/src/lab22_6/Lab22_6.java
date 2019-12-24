@@ -26,6 +26,7 @@ public class Lab22_6 {
 
         // A list to hold prime numbers
         
+        efficientPrimeNumbers(n);
     }
     
     public static void efficientPrimeNumbers(int n) {
@@ -39,39 +40,34 @@ public class Lab22_6 {
         System.out.println("The prime numbers are \n");
         
         while (number <= n) {
-          boolean isPrime = true;
+            boolean isPrime = true;
 
-          if (squareRoot * squareRoot < number) {
-              squareRoot++;
-          }
-
-          // ClosestPair if number is prime
-          for (int k = 0; k < list.size() 
-                            && list.get(k) <= squareRoot; k++) {
-            if (number % list.get(k) == 0) { // If true, not prime
-              isPrime = false; // Set isPrime to false          
-              break; // Exit the for loop
+            if (squareRoot * squareRoot < number) {
+                squareRoot++;
             }
-          }
 
-          // Print the prime number and increase the count
-          if (isPrime) {
-            count++; // Increase the count
-            list.add(number); // Add a new prime to the list
-            if (count % NUMBER_PER_LINE == 0) {
-              // Print the number and advance to the new line
-              System.out.println(number);
+            for (int k = 0; k < list.size() && list.get(k) <= squareRoot; k++) {
+                if (number % list.get(k) == 0) {
+                    isPrime = false;     
+                    break;
+                }
             }
-            else
-              System.out.print(number + " ");
-          }
+            
+            if (isPrime) {
+                count++;
+                list.add(number);
+                if (count % NUMBER_PER_LINE == 0) {
+                  // Print the number and advance to the new line
+                  System.out.printf("%7d\n", number);
+                } else
+                  System.out.printf("%7d", number);
+            }
 
-          // Check if the next number is prime
-          number++;
+            // Check if the next number is prime
+            number++;
         }
 
-        System.out.println("\n" + count + 
-          " prime(s) less than or equal to " + n);
+        System.out.println("\n\n" + count + " prime(s) less than or equal to " + n);
     }
     
 }
