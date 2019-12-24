@@ -31,11 +31,11 @@ public class Lab22_7 {
         }
 
         for (int k = 2; k <= n / k; k++) {
-          if (primes[k]) {
-            for (int i = k; i <= n / k; i++) {
-              primes[k * i] = false; // k * i is not prime
+            if (primes[k]) {
+                for (int i = k; i <= n / k; i++) {
+                    primes[k * i] = false;
+                }
             }
-          }
         }
 
         final int NUMBER_PER_LINE = 10; // Display 10 per line
