@@ -24,6 +24,7 @@ public class Lab22_5 {
         System.out.print("Find n prime numbers: ");
         
         
+        
         int n = input.nextInt();
         
         findPrimes(n);
