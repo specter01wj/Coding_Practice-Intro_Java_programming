@@ -37,13 +37,13 @@ public class Lab22_6 {
         int squareRoot = 1;
 
         System.out.println("The prime numbers are \n");
-
-        // Repeatedly find prime numbers
+        
         while (number <= n) {
-          // Assume the number is prime
-          boolean isPrime = true; // Is the current number prime?
+          boolean isPrime = true;
 
-          if (squareRoot * squareRoot < number) squareRoot++;
+          if (squareRoot * squareRoot < number) {
+              squareRoot++;
+          }
 
           // ClosestPair if number is prime
           for (int k = 0; k < list.size() 
