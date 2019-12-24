@@ -24,6 +24,11 @@ public class Lab22_7 {
         System.out.print("Find all N prime numbers: ");
         int n = input.nextInt();
 
+        sieveOfEratosthenes(n);
+        
+    }
+    
+    public static void sieveOfEratosthenes(int n) {
         boolean[] primes = new boolean[n + 1];
         
         for (int i = 0; i < primes.length; i++) {
@@ -53,9 +58,6 @@ public class Lab22_7 {
         }
 
         System.out.println("\n\n" + count + " prime(s) less than or equal to " + n);
-        
     }
-    
-    
     
 }
