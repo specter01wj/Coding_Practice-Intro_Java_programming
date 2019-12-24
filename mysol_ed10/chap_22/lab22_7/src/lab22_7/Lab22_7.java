@@ -42,13 +42,14 @@ public class Lab22_7 {
         int count = 0;
         
         for (int i = 2; i < primes.length; i++) {
-          if (primes[i]) {
-            count++;
-            if (count % 10 == 0) 
-              System.out.printf("%7d\n", i);
-            else
-              System.out.printf("%7d", i);          
-          }
+            if (primes[i]) {
+                count++;
+                if (count % 10 == 0) {
+                    System.out.printf("%7d\n", i);
+                } else {
+                    System.out.printf("%7d", i);  
+                }
+            }
         }
 
         System.out.println("\n" + count + 
