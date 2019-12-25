@@ -37,16 +37,17 @@ public class Lab22_9_eightQueens extends Application {
         chessBoard.setAlignment(Pos.CENTER);
         Label[][] labels = new Label[SIZE][SIZE];
         for (int i = 0; i < SIZE; i++)
-          for (int j = 0; j < SIZE; j++) {
-            chessBoard.add(labels[i][j] = new Label(), j, i);
-            labels[i][j].setStyle("-fx-border-color: black");
-            labels[i][j].setPrefSize(55, 55);
-          }
+            for (int j = 0; j < SIZE; j++) {
+                chessBoard.add(labels[i][j] = new Label(), j, i);
+                labels[i][j].setStyle("-fx-border-color: black");
+                labels[i][j].setPrefSize(55, 55);
+            }
 
         // Display queens
         Image image = new Image("image/queen_2.png");
-        for (int i = 0; i < SIZE; i++)
-          labels[i][queens[i]].setGraphic(new ImageView(image));
+        for (int i = 0; i < SIZE; i++) {
+            labels[i][queens[i]].setGraphic(new ImageView(image));
+        }
 
         // Create a scene and place it in the stage
         Scene scene = new Scene(chessBoard, 55 * SIZE, 55 * SIZE);
