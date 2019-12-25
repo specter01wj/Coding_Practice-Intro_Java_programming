@@ -164,7 +164,10 @@ public class Lab22_8_closestPairofPoints {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        int n = StdIn.readInt();
+//        int n = StdIn.readInt();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Inut N points: ");
+        int n = input.nextInt();
         Point2D[] points = new Point2D[n];
         for (int i = 0; i < n; i++) {
             double x = StdIn.readDouble();
