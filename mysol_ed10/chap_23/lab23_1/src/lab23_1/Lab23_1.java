@@ -23,6 +23,7 @@ public class Lab23_1 {
         int[] list = {1, 9, 4, 7, 13, 45, 6, 13, 100, 3};
         System.out.println("Origin List: " + Arrays.toString(list));
         
+        insertionSort(list);
     }
     
     public static void insertionSort(int[] list) {
