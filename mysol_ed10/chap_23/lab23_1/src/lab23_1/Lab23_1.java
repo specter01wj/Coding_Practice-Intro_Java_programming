@@ -25,7 +25,7 @@ public class Lab23_1 {
             int currElem = list[i];
             int k;
             for(k = i - 1; k >= 0 && list[k] > currElem; k--) {
-                
+                list[k + 1] = list[k];
             }
         }
     }
