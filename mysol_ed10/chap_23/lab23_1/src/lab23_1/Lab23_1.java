@@ -24,6 +24,9 @@ public class Lab23_1 {
         for(int i = 1; i < list.length; i++) {
             int currElem = list[i];
             int k;
+            for(k = i - 1; k >= 0 && list[k] > currElem; k--) {
+                
+            }
         }
     }
     
