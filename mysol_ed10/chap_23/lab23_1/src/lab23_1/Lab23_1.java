@@ -9,6 +9,8 @@ package lab23_1;
  *
  * @author james.wang
  */
+
+// InsertionSort
 public class Lab23_1 {
 
     /**
