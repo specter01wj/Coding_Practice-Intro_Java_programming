@@ -21,7 +21,9 @@ public class Lab23_1 {
     }
     
     public static void insertionSort(int[] list) {
-        
+        for(int i = 1; i < list.length; i++) {
+            
+        }
     }
     
 }
