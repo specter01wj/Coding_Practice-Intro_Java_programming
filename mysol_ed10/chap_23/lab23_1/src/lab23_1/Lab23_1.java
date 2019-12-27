@@ -25,6 +25,7 @@ public class Lab23_1 {
         
         insertionSort(list);
         
+        
         System.out.println("Sorted List: " + Arrays.toString(list));
     }
     
