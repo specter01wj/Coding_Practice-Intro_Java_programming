@@ -5,6 +5,8 @@
  */
 package lab23_1;
 
+import java.util.Arrays;
+
 /**
  *
  * @author james.wang
@@ -18,6 +20,9 @@ public class Lab23_1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        int[] list = {1, 9, 4, 7, 13, 45, 6, 13, 100, 3};
+        System.out.println("Origin List: " + Arrays.toString(list));
+        
     }
     
     public static void insertionSort(int[] list) {
