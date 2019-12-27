@@ -20,4 +20,8 @@ public class Lab23_1 {
         // TODO code application logic here
     }
     
+    public static void insertionSort(int[] list) {
+        
+    }
+    
 }
