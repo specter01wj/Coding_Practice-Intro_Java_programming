@@ -14,11 +14,12 @@ public class lab23_3_mergeSort {
     
     public static void main(String[] args) {
         int[] input = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
-        int[] output = mergeSort(input);
-        System.out.println("input: " + Arrays.toString(input) + "\noutput: " + Arrays.toString(output));
+        System.out.println("input: " + Arrays.toString(input));
+        mergeSort(input);
+        System.out.println("output: " + Arrays.toString(input));
     }
     
-    public static int[] mergeSort(int[] list) {
+    public static void mergeSort(int[] list) {
         
         if(list.length > 1) {
             int[] firstHalf = new int[list.length / 2];
