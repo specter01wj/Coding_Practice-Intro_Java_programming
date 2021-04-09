@@ -13,7 +13,9 @@ public class lab23_2_bubbleSort {
     public static void bubbleSort(int[] list) {
         boolean needNextPass = true;
 
-        
+        for(int k = 1; k < list.length && needNextPass; k++) {
+            
+        }
 
     }
 
