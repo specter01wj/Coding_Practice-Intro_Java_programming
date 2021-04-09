@@ -11,6 +11,9 @@ public class lab23_2_bubbleSort {
     }
 
     public static void bubbleSort(int[] list) {
+        boolean needNextPass = true;
+
+        
 
     }
 
