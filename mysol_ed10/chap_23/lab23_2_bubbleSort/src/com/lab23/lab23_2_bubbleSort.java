@@ -6,17 +6,27 @@ public class lab23_2_bubbleSort {
     public static void main(String[] args) {
         int[] input = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
         System.out.println("input: " + Arrays.toString(input));
-        int output = bubbleSort(input);
-        System.out.println("output: " + (output));
+        int[] output = bubbleSort(input);
+        System.out.println("output: " + Arrays.toString(output));
     }
 
-    public static void bubbleSort(int[] list) {
+    public static int[] bubbleSort(int[] list) {
         boolean needNextPass = true;
+        int[] output = list;
 
-        for(int k = 1; k < list.length && needNextPass; k++) {
-
+        for(int k = 1; k < output.length && needNextPass; k++) {
+            needNextPass = false;
+            for(int i = 0; i < output.length - k; i++) {
+                if(output[i] > output[i + 1]) {
+                    int tmp = output[i];
+                    output[i] = output[i + 1];
+                    output[i + 1] = tmp;
+                    needNextPass = true;
+                }
+            }
         }
 
+        return output;
     }
 
 }
