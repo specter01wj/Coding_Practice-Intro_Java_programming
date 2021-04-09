@@ -4,11 +4,14 @@ import java.util.*;
 public class lab23_2_bubbleSort {
 
     public static void main(String[] args) {
-        int[] input = {7,1,5,3,6,4};//{7,6,4,3,1};
-        int output = maxProfit(input);
-        System.out.println("input: " + Arrays.toString(input) + "\noutput: " + (output));
+        int[] input = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
+        System.out.println("input: " + Arrays.toString(input));
+        int output = bubbleSort(input);
+        System.out.println("output: " + (output));
     }
 
+    public static void bubbleSort(int[] list) {
 
+    }
 
 }
