@@ -22,6 +22,7 @@ public class lab23_4_quickSort {
         
         
         
+        
         System.out.println("output: " + Arrays.toString(input));
     }
     
