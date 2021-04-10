@@ -18,11 +18,15 @@ public class lab23_6_externalSort {
 
     public static void main(String[] args) throws Exception {
       // Sort largedata.dat to sortedfile.dat
+      System.out.println("Input: ---- ");
       displayFile("largedata.dat");
       
       sort("largedata.dat", "sortedfile.dat");
-
+      
+      System.out.println("");
+      
       // Display the first 100 numbers in the sorted file
+      System.out.println("Output: ---- ");
       displayFile("sortedfile.dat");
     }
 
