@@ -18,6 +18,8 @@ public class lab23_6_externalSort {
 
     public static void main(String[] args) throws Exception {
       // Sort largedata.dat to sortedfile.dat
+      displayFile("largedata.dat");
+      
       sort("largedata.dat", "sortedfile.dat");
 
       // Display the first 100 numbers in the sorted file
