@@ -16,22 +16,6 @@ public class lab23_4_quickSort {
         int[] input = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
         System.out.println("input: " + Arrays.toString(input));
         quickSort(input);
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         System.out.println("output: " + Arrays.toString(input));
     }
     
