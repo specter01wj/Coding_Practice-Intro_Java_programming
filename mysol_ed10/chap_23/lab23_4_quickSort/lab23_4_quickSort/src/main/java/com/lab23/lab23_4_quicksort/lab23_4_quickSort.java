@@ -18,6 +18,7 @@ public class lab23_4_quickSort {
         quickSort(input);
         
         
+        
         System.out.println("output: " + Arrays.toString(input));
     }
     
