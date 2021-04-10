@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.lab23.lab23_4_quicksort;
+package com.lab23.lab23_5_heapsort;
 
 /**
  *

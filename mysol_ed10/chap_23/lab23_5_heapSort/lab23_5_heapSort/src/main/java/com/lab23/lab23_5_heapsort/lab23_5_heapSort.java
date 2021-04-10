@@ -13,7 +13,7 @@ import java.util.*;
 public class lab23_5_heapSort {
     
     public static void main(String[] args) {
-        int[] input = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
+        Integer[] input = {2, 3, 2, 5, 6, 1, -2, 3, 14, 12};
         System.out.println("input: " + Arrays.toString(input));
         heapSort(input);
         System.out.println("output: " + Arrays.toString(input));
