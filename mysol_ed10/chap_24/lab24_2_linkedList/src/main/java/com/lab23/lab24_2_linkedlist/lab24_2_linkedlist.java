@@ -58,6 +58,7 @@ public class lab24_2_linkedlist {
         
         
         
+        
         System.out.println("\nAfter clearing the list, the list size is " 
           + list.size());
       }
