@@ -1,5 +1,5 @@
-# INTRODUCTION TO JAVA PROGRAMMING, 8th Edition 
-## Volume I - Fundamentals (brief version)
+# Introduction to Java Programming, 10th Edition 
+## Volume I - Fundamentals (Comprehensive Version)
 ###### by Y. Daniel Liang
 
 **Description**
