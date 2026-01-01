@@ -45,6 +45,7 @@ public class lab24_2_linkedlist {
         System.out.println("(9) " + list);
 
         list.remove(list.size() - 1); // Remove the last element
+        
         System.out.print("(10) " + list + "\n(11) ");
 
         for (String s: list)
