@@ -46,7 +46,6 @@ public class lab24_1_arrayList {
 
         for (String s: list)
           System.out.print(s.toUpperCase() + " ");
-        
       }
     
 }
