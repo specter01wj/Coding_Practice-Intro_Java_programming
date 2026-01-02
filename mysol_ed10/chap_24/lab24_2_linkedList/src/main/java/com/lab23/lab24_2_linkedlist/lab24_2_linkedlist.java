@@ -40,7 +40,6 @@ public class lab24_2_linkedlist {
         // Remove elements from the list
         list.remove(0); // Same as list.remove("Australia") in this case
         System.out.println("(8) " + list);
-        
 
         list.remove(2); // Remove the element at index 2
         System.out.println("(9) " + list);
