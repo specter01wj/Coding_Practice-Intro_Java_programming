@@ -23,6 +23,7 @@ public class lab24_4_priorityQueue {
         priorityQueue.enqueue(patient2);
         priorityQueue.enqueue(patient3);
         
+        
         priorityQueue.enqueue(patient4);
 
         while (priorityQueue.getSize() > 0) 
