@@ -45,7 +45,7 @@ public class Lab26_1_TestAVLTree {
         tree.postorder();
         System.out.print("\nPreorder: ");
         tree.preorder();
-        System.out.print("\nThe number of nodes is " + tree.getSize());
+        System.out.print("\nThe number of nodes is " + tree.size());
         System.out.println();
     }
 }
