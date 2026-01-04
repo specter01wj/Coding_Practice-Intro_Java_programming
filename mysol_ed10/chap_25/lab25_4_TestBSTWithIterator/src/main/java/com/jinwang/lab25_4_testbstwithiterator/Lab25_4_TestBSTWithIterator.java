@@ -1,6 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package com.jinwang.lab25_4_testbstwithiterator;
 
@@ -11,6 +8,19 @@ package com.jinwang.lab25_4_testbstwithiterator;
 public class Lab25_4_TestBSTWithIterator {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        BST<String> tree = new BST<>();
+
+        tree.add("George");
+        tree.add("Michael");
+        tree.add("Tom");
+        tree.add("Adam");
+        tree.add("Jones");
+        tree.add("Peter");
+        tree.add("Daniel");
+
+        System.out.print("Inorder traversal using iterator: ");
+        for (String s : tree) {
+          System.out.print(s.toUpperCase() + " ");
+        }
     }
 }
