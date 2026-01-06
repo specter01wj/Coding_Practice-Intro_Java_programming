@@ -17,9 +17,6 @@ public class Lab27_1_TestMyHashMap {
         System.out.println(map);
 
         System.out.println("\nGet value by key:");
-        
-        
-        
         System.out.println("Lewis -> " + map.get("Lewis"));
 
         System.out.println("\nKey / Value checks:");
