@@ -1,7 +1,6 @@
 
 package com.jinwang.lab27_2_testmyhashset;
 
-
 public class Lab27_2_TestMyHashSet {
 
     public static void main(String[] args) {
