@@ -13,7 +13,7 @@ import javafx.stage.Stage;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Lab28_4_ConnectedCircles {
+public class Lab28_4_ConnectedCircles extends Application {
 
     @Override
     public void start(Stage primaryStage) {

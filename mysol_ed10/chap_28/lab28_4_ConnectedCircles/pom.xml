@@ -10,4 +10,31 @@
         <maven.compiler.release>25</maven.compiler.release>
         <exec.mainClass>com.jinwang.lab28_4_connectedcircles.Lab28_4_ConnectedCircles</exec.mainClass>
     </properties>
+    <dependencies>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-controls</artifactId>
+          <version>25</version>
+        </dependency>
+        <dependency>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-graphics</artifactId>
+          <version>25</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.openjfx</groupId>
+          <artifactId>javafx-maven-plugin</artifactId>
+          <version>0.0.8</version>
+          <configuration>
+            <mainClass>
+              com.jinwang.lab28_4_connectedcircles.Lab28_4_ConnectedCircles
+            </mainClass>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
 </project>
