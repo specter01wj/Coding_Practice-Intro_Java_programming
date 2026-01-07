@@ -179,13 +179,38 @@ public abstract class AbstractGraph<V> implements Graph<V> {
       this.searchOrder = searchOrder;
     }
 
+    public int getRoot() {
+      return root;
+    }
+
+    public int getParent(int v) {
+      return parent[v];
+    }
+
+    public List<Integer> getSearchOrder() {
+      return searchOrder;
+    }
+
+    public int getNumberOfVerticesFound() {
+      return searchOrder.size();
+    }
+
+    public List<V> getPath(int index) {
+      List<V> path = new ArrayList<>();
+      do {
+        path.add(vertices.get(index));
+        index = parent[index];
+      } while (index != -1);
+      return path;
+    }
+
     public void printTree() {
-      System.out.println("Root: " + vertices.get(root));
+      System.out.println("Root is: " + vertices.get(root));
       System.out.print("Edges: ");
       for (int i = 0; i < parent.length; i++) {
         if (parent[i] != -1) {
-          System.out.print("(" + vertices.get(parent[i]) +
-                           ", " + vertices.get(i) + ") ");
+          System.out.print("(" + vertices.get(parent[i]) + ", "
+              + vertices.get(i) + ") ");
         }
       }
       System.out.println();
