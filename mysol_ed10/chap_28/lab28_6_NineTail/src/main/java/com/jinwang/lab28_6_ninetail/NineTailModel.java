@@ -13,7 +13,7 @@ public class NineTailModel {
   public NineTailModel() {
     List<AbstractGraph.Edge> edges = getEdges();
     UnweightedGraph<Integer> graph =
-        new UnweightedGraph<>(edges, NUMBER_OF_NODES);
+        new UnweightedGraph<Integer>(edges, NUMBER_OF_NODES);
     tree = graph.bfs(511); // Goal state: all T
   }
 

@@ -19,5 +19,9 @@ public class UnweightedGraph<V> extends AbstractGraph<V> {
   public UnweightedGraph(List<V> vertices, List<Edge> edges) {
     super(vertices, edges);
   }
+  
+  public UnweightedGraph(List<AbstractGraph.Edge> edges, int numberOfVertices) {
+    super(edges, numberOfVertices);
+  }
 
 }
