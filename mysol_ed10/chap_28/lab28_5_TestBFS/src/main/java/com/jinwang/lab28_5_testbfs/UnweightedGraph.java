@@ -1,5 +1,5 @@
 
-package com.jinwang.lab28_4_connectedcircles;
+package com.jinwang.lab28_5_testbfs;
 
 import java.util.List;
 
