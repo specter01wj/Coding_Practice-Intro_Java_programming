@@ -1,5 +1,5 @@
 
-package com.jinwang.lab29_2_testminimumspanningtree;
+package com.jinwang.lab29_3_testshortestpath;
 
 import java.util.*;
 
