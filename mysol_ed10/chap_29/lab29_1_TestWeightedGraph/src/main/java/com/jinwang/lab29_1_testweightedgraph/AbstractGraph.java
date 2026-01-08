@@ -89,6 +89,10 @@ public abstract class AbstractGraph<V> implements Graph<V> {
     neighbors.get(u).add(e);
     return true;
   }
+  
+  public boolean addEdge(Edge e) {
+    return addEdge(e.u, e.v);
+  }
 
   /* ---------------- DFS ---------------- */
 
@@ -214,6 +218,13 @@ public abstract class AbstractGraph<V> implements Graph<V> {
         }
       }
       System.out.println();
+    }
+    
+    public void printPath(int index) {
+        List<V> path = getPath(index);
+        for (int i = path.size() - 1; i >= 0; i--) {
+          System.out.print(path.get(i) + " ");
+        }
     }
   }
 }
