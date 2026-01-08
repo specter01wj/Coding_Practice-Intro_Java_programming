@@ -1,6 +1,7 @@
 
 package com.jinwang.lab29_4_weightedninetail;
 
+import java.util.Scanner;
 
 public class Lab29_4_WeightedNineTail {
 

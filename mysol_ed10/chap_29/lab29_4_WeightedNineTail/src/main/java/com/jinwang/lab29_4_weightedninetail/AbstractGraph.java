@@ -19,6 +19,16 @@ public abstract class AbstractGraph<V> implements Graph<V> {
     for (V v : vertices) addVertex(v);
     for (Edge e : edges) addEdge(e.u, e.v);
   }
+  
+  @SuppressWarnings("unchecked")
+  protected AbstractGraph(List<Edge> edges, int numberOfVertices) {
+    for (int i = 0; i < numberOfVertices; i++) {
+      addVertex((V) Integer.valueOf(i));
+    }
+    for (Edge e : edges) {
+      addEdge(e.u, e.v);
+    }
+  }
 
   @Override
   public int getSize() {

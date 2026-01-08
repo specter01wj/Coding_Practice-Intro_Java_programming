@@ -1,5 +1,5 @@
 
-package com.jinwang.lab29_3_testshortestpath;
+package com.jinwang.lab29_4_weightedninetail;
 
 
 public class WeightedEdge extends AbstractGraph.Edge
