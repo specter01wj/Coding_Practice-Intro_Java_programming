@@ -1,5 +1,5 @@
 
-package com.jinwang.lab29_1_testweightedgraph;
+package com.jinwang.lab29_2_testminimumspanningtree;
 
 
 public class WeightedEdge extends AbstractGraph.Edge
