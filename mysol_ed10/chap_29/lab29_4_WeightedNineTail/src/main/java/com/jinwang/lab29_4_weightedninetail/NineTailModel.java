@@ -1,5 +1,5 @@
 
-package com.jinwang.lab28_6_ninetail;
+package com.jinwang.lab29_4_weightedninetail;
 
 import java.util.ArrayList;
 import java.util.List;
